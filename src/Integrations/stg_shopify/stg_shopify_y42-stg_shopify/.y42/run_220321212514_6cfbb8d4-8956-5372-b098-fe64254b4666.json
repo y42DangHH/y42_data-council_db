@@ -49,5 +49,15 @@
     }
   },
   "created_at": "2022-03-21T21:25:14.349135+00:00",
-  "_signature": "uDZayxS3C0/w5OZ/5i2CGiay3EReOZlPYzm7/m4jELp9riF3SOGboVKcxgK1X/vW/3S1H3Qf5idGkrtdPZmHBA=="
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-03-21T21:25:38.627271+00:00",
+    "external_state": {
+      "schema_hash": "278af2b4767f58fc27ca99ee6eeeb86a"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "c97fe982-bb25-4af6-943d-acbea3539766",
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/63268124-7341-4224-a6b8-cc151dcf60c2"
+  },
+  "_signature": "XCVj92Sih/6zrdaTAT56SLQer9858fN+FmdFw0XJfDAMkhGr1VeSaNs+LbbW6zDpocvICOPx2mHU8Y8+x9gkAw=="
 }
