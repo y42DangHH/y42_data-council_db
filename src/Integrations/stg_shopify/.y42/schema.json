@@ -1,0 +1,419 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "stg_shopify_y42-stg_shopify",
+      "key_properties": [
+        "__sdc_row"
+      ],
+      "schema": {
+        "properties": {
+          "__sdc_spreadsheet_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "__sdc_sheet_id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "__sdc_row": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Name": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Star": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Type": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Tags": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Last Used": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Tables": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Rows": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object",
+        "additionalProperties": false
+      },
+      "stream": "stg_shopify_y42-stg_shopify",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "__sdc_row"
+            ],
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available",
+            "sheet": "{\"properties\": {\"sheetId\": 1314582567, \"title\": \"stg_shopify\", \"index\": 0, \"sheetType\": \"GRID\", \"gridProperties\": {\"rowCount\": 1000, \"columnCount\": 26}}}",
+            "spreadsheet_id": "1rlFFSgUQYd31cSxiXLg94UHz30VDtaytiVcwC_fgryw"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "__sdc_spreadsheet_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "__sdc_sheet_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "__sdc_row"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Name"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Star"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Type"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tags"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Last Used"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Tables"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Rows"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Status"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    },
+    {
+      "tap_stream_id": "hai_bigbrother_out-hai_bigbrother_out",
+      "key_properties": [
+        "__sdc_row"
+      ],
+      "schema": {
+        "properties": {
+          "__sdc_spreadsheet_id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "__sdc_sheet_id": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "__sdc_row": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "date_closed_ticket": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "integration": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "model": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "visualization": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "misc": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "orchestration": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "automation": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "data_lineage": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "self_serve_sprints": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "a_c_l": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object",
+        "additionalProperties": false
+      },
+      "stream": "hai_bigbrother_out-hai_bigbrother_out",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "__sdc_row"
+            ],
+            "forced-replication-method": "FULL_TABLE",
+            "inclusion": "available",
+            "sheet": "{\"properties\": {\"sheetId\": 973306184, \"title\": \"hai_bigbrother_out\", \"index\": 0, \"sheetType\": \"GRID\", \"gridProperties\": {\"rowCount\": 1000, \"columnCount\": 26}}}",
+            "spreadsheet_id": "10wnNJTqzyGIji9BUoXOIjY99hm5jwbsPw1MQksel0e4"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "__sdc_spreadsheet_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "__sdc_sheet_id"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "__sdc_row"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "date_closed_ticket"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "integration"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "model"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "visualization"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "misc"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "orchestration"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "automation"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "data_lineage"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "self_serve_sprints"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "a_c_l"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ]
+    }
+  ],
+  "_signature": "nC6RDDAjOS8D3cMuFCvLISSQpdGiYqONk9euMRzOHj7Mk3DvyDOSsxmsl3wMv7nOnvxKOVrNKYpKTIDKoYjfCA=="
+}
