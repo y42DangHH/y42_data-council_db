@@ -1,0 +1,31 @@
+{
+  "layer": "default",
+  "locked": false,
+  "objectProperties": {
+    "resizable": true,
+    "movable": true,
+    "selectable": true,
+    "rotatable": true
+  },
+  "$schema": "/json-schema/d.json",
+  "type": "Widget",
+  "position": {
+    "x": 198.56936645507812,
+    "y": 4.76977014541626
+  },
+  "size": {
+    "width": 402.4942932128906,
+    "height": 295.30444860458374
+  },
+  "zIndex": 1,
+  "angle": 0,
+  "typeSettings": null,
+  "styles": {
+    "background-color": "#ffffff",
+    "border-color": "#f5f5f5",
+    "border-style": "solid",
+    "border-width": "1px",
+    "border-radius": "0",
+    "filter": "drop-shadow(0px 0px 0px #939393)"
+  }
+}
