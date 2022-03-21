@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220321212514_6cfbb8d4-8956-5372-b098-fe64254b4666",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "77dff91a-4268-46b6-b506-4b56b6012f26",
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
@@ -57,7 +57,71 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "c97fe982-bb25-4af6-943d-acbea3539766",
-    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/63268124-7341-4224-a6b8-cc151dcf60c2"
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/63268124-7341-4224-a6b8-cc151dcf60c2",
+    "import_finished_at": "2022-03-21T21:25:43.064265+00:00",
+    "row_count": 80,
+    "current_import_row_count": 80,
+    "size_in_bytes": 12247,
+    "columns": [
+      {
+        "field_name": "sdc_spreadsheet_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "sdc_sheet_id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "sdc_row",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "star",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "type",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "tags",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "last_used",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "tables",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "rows",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "status",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220321212514_6cfbb8d4-8956-5372-b098-fe64254b4666",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220321212514_6cfbb8d4-8956-5372-b098-fe64254b4666&page=table"
   },
-  "_signature": "XCVj92Sih/6zrdaTAT56SLQer9858fN+FmdFw0XJfDAMkhGr1VeSaNs+LbbW6zDpocvICOPx2mHU8Y8+x9gkAw=="
+  "finished_at": "2022-03-21T21:25:43.064437+00:00",
+  "_signature": "L7DegPnlfMoTUrPS/loDAcR+LZpznM2Nx279uSEChQnZI1vh3jrQLzrLrIrfy80YzFFQPySxmgnt/au6r2n/Aw=="
 }
