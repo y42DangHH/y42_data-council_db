@@ -1,0 +1,68 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220321225842_40bf454d-3de8-5ddc-95fd-880fbce2ec5d",
+  "status": "pending",
+  "request": {
+    "source_credentials": "ddb498b6-eba1-48f9-874c-d64ed7f22534",
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/table",
+      "columns": [
+        "__sdc_spreadsheet_id",
+        "__sdc_sheet_id",
+        "__sdc_row",
+        "line_item_gross_price",
+        "line_item_total_discount_amount",
+        "order_id",
+        "line_item_id",
+        "line_item_product_id",
+        "line_item_product_name",
+        "line_item_product_title",
+        "line_item_product_sku",
+        "line_item_variant_id",
+        "line_item_quantity",
+        "line_item_tax_amount",
+        "line_item_tax_rate",
+        "refund_line_items_quantity",
+        "refund_line_items_amount",
+        "line_item_quantity_after_refund",
+        "order_level_refund_amount",
+        "gross_sales",
+        "line_item_gross_discount_amount",
+        "net_sales",
+        "line_item_total_gross_refund_amount",
+        "order_total_tax",
+        "refund_date",
+        "gross_sales_after_discount"
+      ],
+      "import": "stg_shopify_order_items-stg_shopify_order_items"
+    },
+    "created_at": "2022-03-21T22:58:42.090589+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/stg_shopify_orders/stg_shopify_order_items-stg_shopify_order_items",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "5a790e542380ec59e390749cde622be8665fe4b6"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5239",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-21T22:58:42.090589+00:00",
+  "_signature": "i53Zq7GKMelvsikcjFELv3AIO0ej6YgeXqHxpD+IPDOz+Q+4zSaZcW23ohiXBtO+yfqD26ClfW7EAJDb4/ugAw=="
+}
