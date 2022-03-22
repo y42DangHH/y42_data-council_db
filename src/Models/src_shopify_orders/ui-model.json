@@ -1,0 +1,8 @@
+{
+  "class": "go.GraphLinksModel",
+  "nodeCategoryProperty": "category",
+  "linkFromPortIdProperty": "frompid",
+  "linkToPortIdProperty": "topid",
+  "nodeDataArray": [],
+  "linkDataArray": []
+}
