@@ -1,0 +1,205 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "9ab24a91-a32c-4d88-9f49-cce8c8bf7db0.json",
+  "title": "COHORT ANALYSIS",
+  "description": "",
+  "version": 1,
+  "chart_type": 105,
+  "settings": {
+    "series": [
+      {
+        "field_id": "1f5462b3_cc28_4129_9aba_338ae0544cc9",
+        "type": null,
+        "header_name": "order_id",
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": false,
+        "sort": "asc"
+      }
+    ],
+    "dimensions": [
+      {
+        "field_id": "c021bfa4_0af8_48ca_a353_0ceb907ba49e",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": false,
+        "sort": "asc"
+      }
+    ],
+    "breakdowns": [
+      {
+        "field_id": "c21da574_ff39_4912_833a_cc3797c1a64c",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": false,
+        "sort": "asc"
+      }
+    ],
+    "showInPercentage": true,
+    "showFooterTotal": true,
+    "cohortColors": [
+      "#62BE7B",
+      "#F8696B"
+    ],
+    "twoColorCutPoint": 0
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "1f5462b3_cc28_4129_9aba_338ae0544cc9",
+      "field": "order_id",
+      "type": "NUMERIC",
+      "alias": "SUM_order_id_1f5462b3_cc28_4129_9aba_338ae0544cc9",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "c21da574_ff39_4912_833a_cc3797c1a64c",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_c21da574_ff39_4912_833a_cc3797c1a64c",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "c021bfa4_0af8_48ca_a353_0ceb907ba49e",
+      "field": "customer_email",
+      "type": "STRING",
+      "alias": "VALUE_customer_email_c021bfa4_0af8_48ca_a353_0ceb907ba49e",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
