@@ -11,7 +11,7 @@
   "type": "Widget",
   "position": {
     "x": 344.97821044921875,
-    "y": 999.5459594726562
+    "y": 1001.9587111548519
   },
   "size": {
     "height": 355.4690140531885,
@@ -19,7 +19,9 @@
   },
   "zIndex": 6,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/060e2c76-1531-4556-86ba-43bb57be4a6c.json"
+  },
   "styles": {
     "background-color": "#333333",
     "border-color": "#1a1a1a",
