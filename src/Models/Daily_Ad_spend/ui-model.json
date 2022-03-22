@@ -11,11 +11,11 @@
       "transformationStep": {
         "id": "7cd1e5f6-aa6c-4629-88f4-35665ea3ff05",
         "title": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-        "datasourceName": "Beginner's Journey Google Ads Data",
+        "datasourceName": "Google Ads & Facebook Ads",
         "transformObject": {
-          "lang": "",
-          "table": "a7cee777-d84b-4db9-9734-40c6af664977",
-          "source": "3f9c4290-68ee-4207-a835-3846f5df9ca9"
+          "source": "src/Integrations/Google_Ads___Facebook_Ads",
+          "table": "src/Integrations/Google_Ads___Facebook_Ads/Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data",
+          "lang": ""
         },
         "transformationType": "INPUT"
       },
@@ -1104,11 +1104,11 @@
       "transformationStep": {
         "id": "5c50d00a-daf6-44ba-83b9-91e3e6b9bdbb",
         "title": "Beginner's Journey Facebook Ads Data - ads_insights",
-        "datasourceName": "Beginner's Journey Facebook Ads Data",
+        "datasourceName": "Google Ads & Facebook Ads",
         "transformObject": {
-          "lang": "",
-          "table": "13fe25ba-b997-411b-ba7c-c01ca67f3de0",
-          "source": "0a97d2d3-2984-42ff-a18e-a19480ddbd8b"
+          "source": "src/Integrations/Google_Ads___Facebook_Ads",
+          "table": "src/Integrations/Google_Ads___Facebook_Ads/Beginner's Journey Facebook Ads Data-Beginner's Journey Facebook Ads Data",
+          "lang": ""
         },
         "transformationType": "INPUT"
       },
