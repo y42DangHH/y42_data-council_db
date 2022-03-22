@@ -1,6 +1,6 @@
 {
   "$schema": "/json-schema/i.json",
-  "name": "dd9b01a9-6352-4ffa-bfb5-ed3fd8ca03c0.json",
+  "name": "5fddf166-53dd-4329-a815-ecd5c29995bf.json",
   "title": "",
   "description": "",
   "version": 1,
@@ -8,7 +8,7 @@
   "settings": {
     "series": [
       {
-        "field_id": "c101aad4_d1a3_4b09_a5a7_e45a463d3c79",
+        "field_id": "0ed81c63_f304_4082_9abc_d241849f2676",
         "mark": "bar",
         "stack_name": 1,
         "label": {
@@ -28,7 +28,7 @@
         "hidden": false
       },
       {
-        "field_id": "1caf4b66_ec1b_4e10_b5a6_01af9576c130",
+        "field_id": "0ea594ce_9240_4b69_9b69_30ca98728004",
         "mark": "bar",
         "stack_name": 2,
         "label": {
@@ -58,7 +58,7 @@
       }
     },
     "dimensions": [
-      "af56f950_c25a_4868_bc9e_cf732846b4fd"
+      "b6cd79b3_ac96_477b_a038_00f37a10f804"
     ],
     "breakdowns": [],
     "series_on_y": true,
@@ -233,35 +233,35 @@
   "filters": [],
   "fields": [
     {
-      "aggregation": "SUM",
-      "functionTree": null,
-      "show_in_percentage": false,
-      "id": "c101aad4_d1a3_4b09_a5a7_e45a463d3c79",
-      "field": "total_price",
-      "type": "NUMERIC",
-      "alias": "SUM_total_price_c101aad4_d1a3_4b09_a5a7_e45a463d3c79",
-      "filters": [],
-      "lowCodeString": null
-    },
-    {
       "aggregation": "MONTH_YEAR",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "af56f950_c25a_4868_bc9e_cf732846b4fd",
+      "id": "b6cd79b3_ac96_477b_a038_00f37a10f804",
       "field": "order_created_at_date",
       "type": "DATE",
-      "alias": "MONTH_YEAR_order_created_at_date_af56f950_c25a_4868_bc9e_cf732846b4fd",
+      "alias": "MONTH_YEAR_order_created_at_date_b6cd79b3_ac96_477b_a038_00f37a10f804",
       "filters": [],
       "lowCodeString": null
     },
     {
-      "aggregation": "AVG",
+      "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "1caf4b66_ec1b_4e10_b5a6_01af9576c130",
-      "field": "order_number",
+      "id": "0ed81c63_f304_4082_9abc_d241849f2676",
+      "field": "total_price",
       "type": "NUMERIC",
-      "alias": "AVG_order_number_1caf4b66_ec1b_4e10_b5a6_01af9576c130",
+      "alias": "SUM_total_price_0ed81c63_f304_4082_9abc_d241849f2676",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "0ea594ce_9240_4b69_9b69_30ca98728004",
+      "field": "total_discounts",
+      "type": "NUMERIC",
+      "alias": "SUM_total_discounts_0ea594ce_9240_4b69_9b69_30ca98728004",
       "filters": [],
       "lowCodeString": null
     }
