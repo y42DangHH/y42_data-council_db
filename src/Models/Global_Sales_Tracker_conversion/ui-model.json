@@ -1,8 +1,382 @@
 {
-  "class": "go.GraphLinksModel",
-  "nodeCategoryProperty": "category",
+  "class": "GraphLinksModel",
   "linkFromPortIdProperty": "frompid",
   "linkToPortIdProperty": "topid",
-  "nodeDataArray": [],
-  "linkDataArray": []
+  "nodeDataArray": [
+    {
+      "key": "dc6c272e-e43e-4c27-80c9-5cf83057e86d",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "dc6c272e-e43e-4c27-80c9-5cf83057e86d",
+        "title": "Global Sales Tracker-Global Sales Tracker",
+        "transformationType": "INPUT",
+        "datasourceName": "Google Ads & Facebook Ads",
+        "transformObject": {
+          "source": "src/Integrations/Google_Ads___Facebook_Ads",
+          "table": "src/Integrations/Google_Ads___Facebook_Ads/Global Sales Tracker-Global Sales Tracker",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "0 0"
+    },
+    {
+      "key": "3ed06878-f10b-4cae-83a3-73b2f0217904",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "3ed06878-f10b-4cae-83a3-73b2f0217904",
+        "title": "Type conversion",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "units_sold",
+            "source": "units_sold",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "units_sold",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "unit_price",
+            "source": "unit_price",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "unit_price",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "unit_cost",
+            "source": "unit_cost",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "unit_cost",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_revenue",
+            "source": "total_revenue",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "total_revenue",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_cost",
+            "source": "total_cost",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "total_cost",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "double_field_13",
+            "source": "double_field_13",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "double_field_13",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "247 0"
+    },
+    {
+      "key": "de69dcdc-4e03-4429-b592-0bdad775ed5d",
+      "type": "DATE_PARSER",
+      "category": "DATE_PARSER",
+      "transformationStep": {
+        "id": "de69dcdc-4e03-4429-b592-0bdad775ed5d",
+        "title": "Parse Date",
+        "transformationType": "DATE_PARSER",
+        "transformObject": [
+          {
+            "target": "order_date",
+            "targetColumn": "order_date",
+            "format": "YYYY-MM-DD",
+            "timeZone": "UTC"
+          },
+          {
+            "target": "ship_date",
+            "targetColumn": "ship_date",
+            "format": "YYYY-MM-DD",
+            "timeZone": "UTC"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "515 0"
+    },
+    {
+      "key": "4b0cfced-5a04-4180-848a-0d59f793a930",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "4b0cfced-5a04-4180-848a-0d59f793a930",
+        "title": "global_sales_tracker_conversion",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "global_sales_tracker_conversion",
+          "fields": [
+            {
+              "target": "units_sold",
+              "source": "units_sold",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "units_sold",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "unit_price",
+              "source": "unit_price",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "unit_price",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "unit_cost",
+              "source": "unit_cost",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "unit_cost",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_revenue",
+              "source": "total_revenue",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_revenue",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_cost",
+              "source": "total_cost",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_cost",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "double_field_13",
+              "source": "double_field_13",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "double_field_13",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sdc_spreadsheet_id",
+              "source": "sdc_spreadsheet_id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "sdc_spreadsheet_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sdc_sheet_id",
+              "source": "sdc_sheet_id",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "sdc_sheet_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sdc_row",
+              "source": "sdc_row",
+              "type": "INTEGER",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "sdc_row",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "region",
+              "source": "region",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "region",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "country",
+              "source": "country",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "country",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "item_type",
+              "source": "item_type",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "item_type",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sales_channel",
+              "source": "sales_channel",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "sales_channel",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_priority",
+              "source": "order_priority",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_priority",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_date",
+              "source": "order_date",
+              "type": "date",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_date",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_id",
+              "source": "order_id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "ship_date",
+              "source": "ship_date",
+              "type": "date",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "ship_date",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1030 0"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "to": "3ed06878-f10b-4cae-83a3-73b2f0217904",
+      "from": "dc6c272e-e43e-4c27-80c9-5cf83057e86d",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "3ed06878-f10b-4cae-83a3-73b2f0217904",
+      "to": "de69dcdc-4e03-4429-b592-0bdad775ed5d",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "de69dcdc-4e03-4429-b592-0bdad775ed5d",
+      "to": "4b0cfced-5a04-4180-848a-0d59f793a930",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ]
 }
