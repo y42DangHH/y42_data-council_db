@@ -3207,9 +3207,9 @@
           {
             "target": "line_item_gross_price",
             "source": "line_item_price",
-            "type": "number",
+            "type": "NUMERIC",
             "display": true,
-            "changed": false,
+            "changed": true,
             "description": "",
             "display_name": "line_item_gross_price",
             "source_alias": "Function Node",
@@ -3219,9 +3219,9 @@
           {
             "target": "line_item_total_discount_amount",
             "source": "discount_amount",
-            "type": "number",
+            "type": "NUMERIC",
             "display": true,
-            "changed": false,
+            "changed": true,
             "description": "",
             "display_name": "line_item_total_discount_amount",
             "source_alias": "Group By",
