@@ -1,0 +1,103 @@
+{
+  "linkDataArray": [],
+  "nodeDataArray": [
+    {
+      "key": "6741791d-6d77-417e-bff8-b1dc62e647eb",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "Google Ads & Facebook Ads",
+        "sub_entry_id": "Beginner's Journey Facebook Ads Data-Beginner's Journey Facebook Ads Data"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "0 0",
+      "ignore_failure": false,
+      "settings": "src/Integrations/Google_Ads___Facebook_Ads"
+    },
+    {
+      "key": "897ef4a6-dad4-42d8-84f0-ef36f30b1df7",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "Google Ads & Facebook Ads",
+        "sub_entry_id": "Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "0 68.52284749830793",
+      "ignore_failure": false,
+      "settings": "src/Integrations/Google_Ads___Facebook_Ads"
+    },
+    {
+      "key": "0b66d582-2c0b-4bd3-b76e-c82bd6a3ec1b",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "Google Ads & Facebook Ads",
+        "sub_entry_id": "Global Sales Tracker-Global Sales Tracker"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "0 137.04569499661588",
+      "ignore_failure": false,
+      "settings": "src/Integrations/Google_Ads___Facebook_Ads"
+    },
+    {
+      "key": "d339fd4e-016f-4924-aacc-20e32ff44b79",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "Main Adwords",
+        "sub_entry_id": "ad_groups"
+      },
+      "is_automation": false,
+      "type": "adwords",
+      "location": "0 205.5685424949238",
+      "ignore_failure": false,
+      "settings": "src/Integrations/Main_Adwords"
+    },
+    {
+      "key": "89fd2c4c-8a80-4613-abeb-d9f2d4c3f215",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "Y42 mysql",
+        "sub_entry_id": "campaign"
+      },
+      "is_automation": false,
+      "type": "mysql",
+      "location": "0 274.09138999323176",
+      "ignore_failure": false,
+      "settings": "src/Integrations/Y42_mysql"
+    },
+    {
+      "key": "efc33641-8a6a-4f36-8ac2-42fb3dbde906",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "Y42 mysql",
+        "sub_entry_id": "segment_member"
+      },
+      "is_automation": false,
+      "type": "mysql",
+      "location": "0 342.6142374915397",
+      "ignore_failure": false,
+      "settings": "src/Integrations/Y42_mysql"
+    },
+    {
+      "key": "f1c82a48-7a56-4ec1-8c07-f453a7443eea",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_shopify",
+        "sub_entry_id": "stg_shopify_y42-stg_shopify"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "0 411.13708498984766",
+      "ignore_failure": false,
+      "settings": "src/Integrations/stg_shopify"
+    }
+  ]
+}
