@@ -1,5 +1,5 @@
 {
   "name": "stg_shopify_order_items",
-  "description": "",
+  "description": "Staging model for Shopify DE datasource",
   "tags": []
 }
