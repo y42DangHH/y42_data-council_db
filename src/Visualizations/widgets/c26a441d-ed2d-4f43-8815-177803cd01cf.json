@@ -1,0 +1,227 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "c26a441d-ed2d-4f43-8815-177803cd01cf.json",
+  "title": "PRODUCT LIST",
+  "description": "",
+  "version": 1,
+  "chart_type": 103,
+  "settings": {
+    "series": [
+      {
+        "field_id": "4e3d1457_b6b7_40fc_925c_307d1f395209",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": false,
+        "sort": "asc"
+      }
+    ],
+    "dimensions": [
+      {
+        "field_id": "16dad29b_b29a_45a1_bfde_b7fad0c49d36",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": false,
+        "sort": "asc"
+      },
+      {
+        "field_id": "5dbff2a0_e627_48de_9c33_9e5ae5341266",
+        "type": null,
+        "header_name": null,
+        "renderer": "default",
+        "cellSettings": {
+          "backgroundColor": "transparent",
+          "borderColor": "#000000",
+          "borderWidth": 1,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7",
+          "borderPosition": "noneBorder",
+          "wordBreak": "keepAll",
+          "activeStyles": false
+        },
+        "cellTypesSettings": {
+          "barSettings": {
+            "max": 0,
+            "displayPercent": false,
+            "diffColumn": [
+              "none"
+            ]
+          },
+          "imageSettings": {
+            "width": 50,
+            "height": 50
+          },
+          "distributionSettings": {
+            "type": "bar"
+          }
+        },
+        "format": "inherit",
+        "showAggregationText": false,
+        "sort": "asc"
+      }
+    ],
+    "breakdowns": [],
+    "columnState": [],
+    "groupExpandedKeys": [],
+    "suppressMovable": false,
+    "paging": true,
+    "sortable": true,
+    "resizable": true,
+    "showFooterTotal": false,
+    "rowSettings": {
+      "backgroundColor": "#00000000",
+      "borderColor": "#000000",
+      "borderWidth": 1,
+      "fontSize": 12,
+      "align": "center",
+      "fontStyle": "normal",
+      "fontWeight": "normal",
+      "verticalAlign": "middle",
+      "fontFamily": "Arial",
+      "borderRadius": 0,
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "color": "#a7a7a7",
+      "colorTo": "#a7a7a7",
+      "borderPosition": "noneBorder",
+      "wordBreak": "keepAll",
+      "activeStyles": false
+    }
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_order_items",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "16dad29b_b29a_45a1_bfde_b7fad0c49d36",
+      "field": "line_item_product_title",
+      "type": "STRING",
+      "alias": "VALUE_line_item_product_title_16dad29b_b29a_45a1_bfde_b7fad0c49d36",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "5dbff2a0_e627_48de_9c33_9e5ae5341266",
+      "field": "line_item_product_name",
+      "type": "STRING",
+      "alias": "VALUE_line_item_product_name_5dbff2a0_e627_48de_9c33_9e5ae5341266",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "DISTINCT",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "4e3d1457_b6b7_40fc_925c_307d1f395209",
+      "field": "line_item_product_title",
+      "type": "STRING",
+      "alias": "DISTINCT_line_item_product_title_4e3d1457_b6b7_40fc_925c_307d1f395209",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
