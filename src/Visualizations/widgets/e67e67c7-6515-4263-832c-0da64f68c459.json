@@ -1,0 +1,252 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "e67e67c7-6515-4263-832c-0da64f68c459.json",
+  "title": "NET SALES BY NEW VS. RECURRING CUSTOMER BY MONTH",
+  "description": "",
+  "version": 1,
+  "chart_type": 100,
+  "settings": {
+    "series": [
+      {
+        "field_id": "0cf25f93_f744_4867_8ab4_9afd8a95e98d",
+        "mark": "bar",
+        "stack_name": 1,
+        "label": {
+          "show": false,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "tooltip": {
+          "show": true,
+          "field_ids": []
+        },
+        "show_right_axis": false,
+        "format": "inherit",
+        "cumulative": false,
+        "hidden": false
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "961a672c_84d5_4e02_98e4_127e9d1ec1a6"
+    ],
+    "breakdowns": [
+      "d3503ed5_892f_4ace_920d_9033a3765881"
+    ],
+    "series_on_y": true,
+    "serieAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "value",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "right",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "dimensionAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "time",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "center",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "show_stack_by": false,
+    "show_stack_by_100_percent": false,
+    "sort": {
+      "order": "NONE",
+      "sort_by": "SERIES",
+      "sortByField": true,
+      "fieldSortKey": null,
+      "stackNameSortKey": null
+    },
+    "show_total_for_stacks": []
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "0cf25f93_f744_4867_8ab4_9afd8a95e98d",
+      "field": "net_sales",
+      "type": "NUMERIC",
+      "alias": "SUM_net_sales_0cf25f93_f744_4867_8ab4_9afd8a95e98d",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "961a672c_84d5_4e02_98e4_127e9d1ec1a6",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_961a672c_84d5_4e02_98e4_127e9d1ec1a6",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "d3503ed5_892f_4ace_920d_9033a3765881",
+      "field": "customer_type",
+      "type": "STRING",
+      "alias": "VALUE_customer_type_d3503ed5_892f_4ace_920d_9033a3765881",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
