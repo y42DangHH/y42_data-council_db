@@ -1,3 +1,5 @@
 {
-  "$schema": "https://s.y42.com/integrations/adwords/0.0.0/source"
+  "$schema": "https://s.y42.com/integrations/adwords/0.0.0/source",
+  "parent_id": "1630223965,8998031546",
+  "start_date": "2021-03-22T04:46:14Z"
 }
