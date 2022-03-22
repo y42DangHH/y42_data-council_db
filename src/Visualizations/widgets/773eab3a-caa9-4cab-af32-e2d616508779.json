@@ -1,0 +1,302 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "773eab3a-caa9-4cab-af32-e2d616508779.json",
+  "title": " AVG ITEMS PER ORDER THIS MONTH VS. LAST MONTH ",
+  "description": "",
+  "version": 1,
+  "chart_type": 100,
+  "settings": {
+    "series": [
+      {
+        "field_id": "4b7e7e29_b192_40a5_9fde_2c3c6cde0194",
+        "mark": "bar",
+        "stack_name": 1,
+        "label": {
+          "show": false,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "tooltip": {
+          "show": true,
+          "field_ids": []
+        },
+        "show_right_axis": false,
+        "format": "inherit",
+        "cumulative": false,
+        "hidden": false
+      },
+      {
+        "field_id": "bbaabee3_f0ba_4177_ad35_13d423ee0beb",
+        "mark": "bar",
+        "stack_name": 2,
+        "label": {
+          "show": false,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "tooltip": {
+          "show": true,
+          "field_ids": []
+        },
+        "show_right_axis": false,
+        "format": "inherit",
+        "cumulative": false,
+        "hidden": false
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "955fb135_97fe_422b_ba32_2ec49f5f9b62"
+    ],
+    "breakdowns": [],
+    "series_on_y": true,
+    "serieAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "value",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "right",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "dimensionAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "time",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "center",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "show_stack_by": false,
+    "show_stack_by_100_percent": false,
+    "sort": {
+      "order": "NONE",
+      "sort_by": "SERIES",
+      "sortByField": true,
+      "fieldSortKey": null,
+      "stackNameSortKey": null
+    },
+    "show_total_for_stacks": []
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "DAY",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "955fb135_97fe_422b_ba32_2ec49f5f9b62",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "DAY_order_created_at_date_955fb135_97fe_422b_ba32_2ec49f5f9b62",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "AVG",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "4b7e7e29_b192_40a5_9fde_2c3c6cde0194",
+      "field": "line_item_quantity",
+      "type": "NUMERIC",
+      "alias": "AVG_line_item_quantity_4b7e7e29_b192_40a5_9fde_2c3c6cde0194",
+      "filters": [
+        {
+          "variable_field_name": "order_created_at_date",
+          "variable_type": "DATE",
+          "operations": [
+            {
+              "operator": "-",
+              "values": [
+                "20211001",
+                "20211031"
+              ],
+              "operator_type": "absolute",
+              "value_type": "NONE"
+            }
+          ]
+        }
+      ],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "AVG",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "bbaabee3_f0ba_4177_ad35_13d423ee0beb",
+      "field": "line_item_quantity",
+      "type": "NUMERIC",
+      "alias": "AVG_line_item_quantity_bbaabee3_f0ba_4177_ad35_13d423ee0beb",
+      "filters": [
+        {
+          "variable_field_name": "order_created_at_date",
+          "variable_type": "DATE",
+          "operations": [
+            {
+              "operator": "-",
+              "values": [
+                "20211101",
+                "20211130"
+              ],
+              "operator_type": "absolute",
+              "value_type": "NONE"
+            }
+          ]
+        }
+      ],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

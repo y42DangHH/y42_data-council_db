@@ -10,17 +10,17 @@
   "$schema": "/json-schema/d.json",
   "type": "Widget",
   "position": {
-    "x": 580,
-    "y": 426
+    "x": 858,
+    "y": 167
   },
   "size": {
-    "width": 840,
-    "height": 422
+    "height": 246,
+    "width": 554
   },
   "zIndex": 5,
   "angle": 0,
   "typeSettings": {
-    "widgetPath": "src/Visualizations/widgets/72f0d3c1-2c7d-4116-bafa-df902e094010.json"
+    "widgetPath": "src/Visualizations/widgets/da9ec3e4-9821-47e3-89eb-1e3a28664baa.json"
   },
   "styles": {
     "background-color": "#ffffff",
