@@ -1,0 +1,56 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "effa4440-5fc2-46a5-9e0b-8de59094706d.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 104,
+  "settings": {
+    "series": [
+      {
+        "field_id": "30e8aba3_45b8_40f9_b421_937d793c5a0b",
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "4e7fa719_71ed_45b4_b346_78d6932380ea"
+    ],
+    "breakdowns": []
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_order_items",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "4e7fa719_71ed_45b4_b346_78d6932380ea",
+      "field": "shipping_country",
+      "type": "STRING",
+      "alias": "VALUE_shipping_country_4e7fa719_71ed_45b4_b346_78d6932380ea",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "30e8aba3_45b8_40f9_b421_937d793c5a0b",
+      "field": "net_sales",
+      "type": "NUMERIC",
+      "alias": "SUM_net_sales_30e8aba3_45b8_40f9_b421_937d793c5a0b",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
