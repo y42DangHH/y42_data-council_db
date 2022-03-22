@@ -10,17 +10,17 @@
   "$schema": "/json-schema/d.json",
   "type": "Picture",
   "position": {
-    "x": 1501.3146067415748,
-    "y": 894.5
+    "x": 1626.2639485509656,
+    "y": 884.8532770893744
   },
   "size": {
-    "height": 43,
-    "width": 123.68539325842696
+    "height": 37,
+    "width": 106.42696629213484
   },
   "zIndex": 6,
   "angle": 0,
   "typeSettings": {
-    "url": "https://storage.googleapis.com/datos-d/images/FfFNeWz6nmq3m99JhSevaGDsIM56aW8orLnMGSC1.png"
+    "url": "https://storage.googleapis.com/datos-d/images/UOqOuLuAgkkDdUMnztryP4bjVIEAI9gIQb9QMgF8.png"
   },
   "styles": {
     "background-color": "none",

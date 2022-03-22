@@ -1,0 +1,72 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "9f7f240f-582a-4f62-8599-2e37c0863905.json",
+  "title": "YTD Sales Revenue - All Products",
+  "description": "",
+  "version": 1,
+  "chart_type": 102,
+  "settings": {
+    "series": [
+      {
+        "field_id": "09fb988b_5d46_48d6_ab47_bd753d85b69d",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [],
+    "breakdowns": [
+      "a16a7b91_5067_4da9_aaaf_33f8e6753d90"
+    ],
+    "show_as_donut": false
+  },
+  "datasource_table_path": "src/Integrations/Google_Ads___Facebook_Ads/Global Sales Tracker-Global Sales Tracker",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "a16a7b91_5067_4da9_aaaf_33f8e6753d90",
+      "field": "region",
+      "type": "STRING",
+      "alias": "VALUE_region_a16a7b91_5067_4da9_aaaf_33f8e6753d90",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "COUNT",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "09fb988b_5d46_48d6_ab47_bd753d85b69d",
+      "field": "item_type",
+      "type": "STRING",
+      "alias": "COUNT_item_type_09fb988b_5d46_48d6_ab47_bd753d85b69d",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

@@ -14,8 +14,8 @@
     "y": 23
   },
   "size": {
-    "width": 1515,
-    "height": 979
+    "height": 932,
+    "width": 1575.0085657790478
   },
   "zIndex": 0,
   "angle": 0,
@@ -23,7 +23,7 @@
     "shapePath": "M 512 512 H 0 V 0 h 512 v 512 Z"
   },
   "styles": {
-    "background-color": "#393939ff",
+    "background-color": "#ffffffff",
     "border-color": "#5a9deb",
     "border-style": "none",
     "border-width": "none",

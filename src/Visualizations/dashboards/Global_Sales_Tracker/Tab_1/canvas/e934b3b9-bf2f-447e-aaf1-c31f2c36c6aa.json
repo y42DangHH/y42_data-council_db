@@ -15,14 +15,16 @@
   },
   "size": {
     "height": 384,
-    "width": 452
+    "width": 553.1909148431005
   },
   "zIndex": 4,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/2976f5b2-02f6-4628-829e-9a114881ba80.json"
+  },
   "styles": {
-    "background-color": "#333333",
-    "border-color": "#1a1a1a",
+    "background-color": "#ffffff",
+    "border-color": "#f5f5f5",
     "border-style": "solid",
     "border-width": "1px",
     "border-radius": "0",

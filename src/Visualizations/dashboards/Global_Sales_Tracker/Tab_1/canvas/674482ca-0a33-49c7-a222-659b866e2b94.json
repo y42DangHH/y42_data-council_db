@@ -14,17 +14,19 @@
     "y": 74.5
   },
   "size": {
-    "height": 316,
+    "height": 313,
     "width": 268
   },
   "zIndex": 1,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/9f7f240f-582a-4f62-8599-2e37c0863905.json"
+  },
   "styles": {
-    "background-color": "#333333",
-    "border-color": "#1a1a1a",
+    "background-color": "#ffffff",
+    "border-color": "#ffffffff",
     "border-style": "solid",
-    "border-width": "1px",
+    "border-width": 1,
     "border-radius": "0",
     "filter": "drop-shadow(0px 0px 0px #939393)"
   }
