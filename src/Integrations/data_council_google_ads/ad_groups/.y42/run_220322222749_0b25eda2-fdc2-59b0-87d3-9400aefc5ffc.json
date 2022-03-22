@@ -1,0 +1,139 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322222749_0b25eda2-fdc2-59b0-87d3-9400aefc5ffc",
+  "status": "ready",
+  "request": {
+    "source_credentials": "bce6bb00-4fd0-4421-b5ce-4cbae6a83d44",
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/adwords/0.0.0/source",
+      "parent_id": "1630223965,8998031546",
+      "start_date": "2021-03-22T05:26:48Z"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/adwords/0.0.0/table",
+      "columns": [
+        "status",
+        "campaignName",
+        "id",
+        "campaignId",
+        "baseCampaignId",
+        "name",
+        "adGroupType",
+        "settings",
+        "biddingStrategyConfiguration",
+        "baseAdGroupId",
+        "labels",
+        "urlCustomParameters"
+      ],
+      "import": "ad_groups",
+      "_datos_write_settings": {
+        "max_flatten_depth": 0,
+        "decimals": false
+      }
+    },
+    "created_at": "2022-03-22T22:27:49.304647+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/data_council_google_ads/ad_groups",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "git-data-council"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "29179606a4eb8291f7410927e1807b62181962c9"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5239",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T22:27:49.304647+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-03-22T22:28:43.444183+00:00",
+    "external_state": {
+      "schema_hash": "30a7c5cb2504c297e96657fbfadcd4e2"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "69bbdf2f-cba5-43f1-ac55-90438aa3210e",
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-adwords/7e4b3e10-f259-4d3d-b9a1-c0c6041699bb",
+    "import_finished_at": "2022-03-22T22:28:47.409660+00:00",
+    "row_count": 24,
+    "current_import_row_count": 24,
+    "size_in_bytes": 9074,
+    "columns": [
+      {
+        "field_name": "status",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "campaignname",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "campaignid",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "basecampaignid",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgrouptype",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "settings",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "biddingstrategyconfiguration",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "baseadgroupid",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "labels",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "urlcustomparameters",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322222749_0b25eda2-fdc2-59b0-87d3-9400aefc5ffc",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322222749_0b25eda2-fdc2-59b0-87d3-9400aefc5ffc&page=table"
+  },
+  "finished_at": "2022-03-22T22:28:47.409775+00:00",
+  "_signature": "ACCRxaQFWdcHzHm+OmNQ3CLLpPXsexThwIvCihWFPxkMf0GO63HcSTy3Qrxq+LoFzg5f8/JNuWPi5AipRLbhCw=="
+}
