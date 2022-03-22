@@ -1,0 +1,73 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "265e990d-8251-4811-916a-c5c611259c36.json",
+  "title": "NET SALES",
+  "description": "",
+  "version": 1,
+  "chart_type": 111,
+  "settings": {
+    "series": [
+      {
+        "field_id": "055dc6cc_cdc4_40f4_8376_fad2c44e13c9",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "a842c1bc_e951_4ab2_aed2_200ba3cd1f70"
+    ],
+    "breakdowns": [],
+    "show_as_donut": false,
+    "digit_format": false
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "a842c1bc_e951_4ab2_aed2_200ba3cd1f70",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_a842c1bc_e951_4ab2_aed2_200ba3cd1f70",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "055dc6cc_cdc4_40f4_8376_fad2c44e13c9",
+      "field": "net_sales",
+      "type": "NUMERIC",
+      "alias": "SUM_net_sales_055dc6cc_cdc4_40f4_8376_fad2c44e13c9",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
