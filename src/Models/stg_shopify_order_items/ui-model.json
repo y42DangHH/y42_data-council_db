@@ -36,7 +36,7 @@
             "key": "id",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "line_item_product_id",
@@ -44,7 +44,7 @@
             "key": "product_id",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "line_item_product_name",
@@ -52,7 +52,7 @@
             "key": "name",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "line_item_product_title",
@@ -60,7 +60,7 @@
             "key": "title",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "line_item_product_sku",
@@ -68,7 +68,7 @@
             "key": "sku",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "line_item_variant_id",
@@ -76,7 +76,7 @@
             "key": "variant_id",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "line_item_price",
@@ -84,7 +84,7 @@
             "key": "price",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "discount_allocations",
@@ -92,7 +92,7 @@
             "key": "discount_allocations",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "line_item_quantity",
@@ -100,7 +100,7 @@
             "key": "quantity",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "line_item_tax_lines",
@@ -108,7 +108,7 @@
             "key": "tax_lines",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           }
         ]
       },
@@ -130,7 +130,7 @@
             "key": "amount",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           }
         ]
       },
@@ -153,7 +153,7 @@
             "key": "line_item_id",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "refund_line_items_quantity",
@@ -161,7 +161,7 @@
             "key": "quantity",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "refund_line_items_amount",
@@ -169,7 +169,7 @@
             "key": "subtotal",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "STRING"
           }
         ]
       },
@@ -192,7 +192,7 @@
             "key": "price",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "line_item_tax_rate",
@@ -200,7 +200,7 @@
             "key": "rate",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           }
         ]
       },
@@ -332,7 +332,7 @@
             "key": "refund_line_items",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "refund_order_adjustments",
@@ -340,7 +340,7 @@
             "key": "order_adjustments",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "refund_date",
@@ -348,7 +348,7 @@
             "key": "created_at",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           }
         ]
       },
@@ -371,7 +371,7 @@
             "key": "amount",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "NUMERIC"
           },
           {
             "target": "refund_order_adjustment_kind",
@@ -379,7 +379,7 @@
             "key": "kind",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "NUMERIC"
           }
         ]
       },
@@ -424,743 +424,11 @@
           {
             "target": "order_name",
             "source": "order_name",
-            "type": "text",
+            "type": "STRING",
             "display": false,
-            "changed": false,
+            "changed": true,
             "description": "",
             "display_name": "order_name",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "presentment_currency",
-            "source": "presentment_currency",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "presentment_currency",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_price",
-            "source": "total_price",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_price",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "processing_method",
-            "source": "processing_method",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "processing_method",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "order_number",
-            "source": "order_number",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "order_number",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "confirmed",
-            "source": "confirmed",
-            "type": "boolean",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "confirmed",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_discounts",
-            "source": "total_discounts",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_discounts",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_line_items_price",
-            "source": "total_line_items_price",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_line_items_price",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "order_adjustments",
-            "source": "order_adjustments",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "order_adjustments",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "shipping_lines",
-            "source": "shipping_lines",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "shipping_lines",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "admin_graphql_api_id",
-            "source": "admin_graphql_api_id",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "admin_graphql_api_id",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "device_id",
-            "source": "device_id",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "device_id",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "cancel_reason",
-            "source": "cancel_reason",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "cancel_reason",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "currency",
-            "source": "currency",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "currency",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "payment_gateway_names",
-            "source": "payment_gateway_names",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "payment_gateway_names",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "source_identifier",
-            "source": "source_identifier",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "source_identifier",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "processed_at",
-            "source": "processed_at",
-            "type": "TIMESTAMP",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "processed_at",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "referring_site",
-            "source": "referring_site",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "referring_site",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "contact_email",
-            "source": "contact_email",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "contact_email",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "location_id",
-            "source": "location_id",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "location_id",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "current_total_price",
-            "source": "current_total_price",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "current_total_price",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "current_subtotal_price",
-            "source": "current_subtotal_price",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "current_subtotal_price",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "fulfillments",
-            "source": "fulfillments",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "fulfillments",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "customer",
-            "source": "customer",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "customer",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "test",
-            "source": "test",
-            "type": "boolean",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "test",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_tax",
-            "source": "total_tax",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_tax",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "payment_details",
-            "source": "payment_details",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "payment_details",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "number",
-            "source": "number",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "number",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "email",
-            "source": "email",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "email",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "source_name",
-            "source": "source_name",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "source_name",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "landing_site_ref",
-            "source": "landing_site_ref",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "landing_site_ref",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "shipping_address",
-            "source": "shipping_address",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "shipping_address",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_price_usd",
-            "source": "total_price_usd",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_price_usd",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "closed_at",
-            "source": "closed_at",
-            "type": "TIMESTAMP",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "closed_at",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "discount_applications",
-            "source": "discount_applications",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "discount_applications",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "note",
-            "source": "note",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "note",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "user_id",
-            "source": "user_id",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "user_id",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "source_url",
-            "source": "source_url",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "source_url",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "subtotal_price",
-            "source": "subtotal_price",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "subtotal_price",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "billing_address",
-            "source": "billing_address",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "billing_address",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "landing_site",
-            "source": "landing_site",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "landing_site",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "taxes_included",
-            "source": "taxes_included",
-            "type": "boolean",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "taxes_included",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "token",
-            "source": "token",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "token",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "app_id",
-            "source": "app_id",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "app_id",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_tip_received",
-            "source": "total_tip_received",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_tip_received",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "browser_ip",
-            "source": "browser_ip",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "browser_ip",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "discount_codes",
-            "source": "discount_codes",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "discount_codes",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "tax_lines",
-            "source": "tax_lines",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "tax_lines",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "phone",
-            "source": "phone",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "phone",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "note_attributes",
-            "source": "note_attributes",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "note_attributes",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "fulfillment_status",
-            "source": "fulfillment_status",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "fulfillment_status",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "order_status_url",
-            "source": "order_status_url",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "order_status_url",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "client_details",
-            "source": "client_details",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "client_details",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "buyer_accepts_marketing",
-            "source": "buyer_accepts_marketing",
-            "type": "boolean",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "buyer_accepts_marketing",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "checkout_token",
-            "source": "checkout_token",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "checkout_token",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "tags",
-            "source": "tags",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "tags",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "financial_status",
-            "source": "financial_status",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "financial_status",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "customer_locale",
-            "source": "customer_locale",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "customer_locale",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "checkout_id",
-            "source": "checkout_id",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "checkout_id",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "total_weight",
-            "source": "total_weight",
-            "type": "number",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "total_weight",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "gateway",
-            "source": "gateway",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "gateway",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "cart_token",
-            "source": "cart_token",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "cart_token",
             "source_alias": "orders",
             "applied": true,
             "sourceTypeChanged": false
@@ -1178,73 +446,181 @@
             "sourceTypeChanged": false
           },
           {
+            "target": "total_price",
+            "source": "total_price",
+            "type": "NUMERIC",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "total_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_number",
+            "source": "order_number",
+            "type": "NUMERIC",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "order_number",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_discounts",
+            "source": "total_discounts",
+            "type": "NUMERIC",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "total_discounts",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_line_items_price",
+            "source": "total_line_items_price",
+            "type": "NUMERIC",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "total_line_items_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "taxes_included",
+            "source": "taxes_included",
+            "type": "BOOLEAN",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "taxes_included",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_lines",
+            "source": "shipping_lines",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "shipping_lines",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "currency",
+            "source": "currency",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "currency",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "fulfillments",
+            "source": "fulfillments",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "fulfillments",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer",
+            "source": "customer",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "customer",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_address",
+            "source": "shipping_address",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "shipping_address",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "discount_codes",
+            "source": "discount_codes",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "discount_codes",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "fulfillment_status",
+            "source": "fulfillment_status",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "fulfillment_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "financial_status",
+            "source": "financial_status",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "financial_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "gateway",
+            "source": "gateway",
+            "type": "STRING",
+            "display": false,
+            "changed": true,
+            "description": "",
+            "display_name": "gateway",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
             "target": "refunds",
             "source": "refunds",
-            "type": "text",
+            "type": "STRING",
             "display": false,
-            "changed": false,
+            "changed": true,
             "description": "",
             "display_name": "refunds",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "created_at",
-            "source": "created_at",
-            "type": "TIMESTAMP",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "created_at",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "updated_at",
-            "source": "updated_at",
-            "type": "TIMESTAMP",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "updated_at",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "reference",
-            "source": "reference",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "reference",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "store",
-            "source": "store",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "store",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "customer_id",
-            "source": "customer_id",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "customer_id",
             "source_alias": "orders",
             "applied": true,
             "sourceTypeChanged": false
