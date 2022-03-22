@@ -254,7 +254,7 @@
               "display_name": "order_created_at_timestamp",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_updated_at_timestamp",
@@ -266,7 +266,7 @@
               "display_name": "order_updated_at_timestamp",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_id",
@@ -278,7 +278,7 @@
               "display_name": "order_id",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_name",
@@ -290,7 +290,7 @@
               "display_name": "order_name",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_number",
@@ -302,7 +302,7 @@
               "display_name": "order_number",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "currency",
@@ -314,7 +314,7 @@
               "display_name": "currency",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "customer",
@@ -326,7 +326,7 @@
               "display_name": "customer",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "shipping_address",
@@ -338,7 +338,7 @@
               "display_name": "shipping_address",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "taxes_included",
@@ -350,7 +350,7 @@
               "display_name": "taxes_included",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "fulfillment_status",
@@ -362,7 +362,7 @@
               "display_name": "fulfillment_status",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "financial_status",
@@ -374,7 +374,7 @@
               "display_name": "financial_status",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "gateway",
@@ -386,7 +386,7 @@
               "display_name": "gateway",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "cancelled_at",
@@ -398,7 +398,7 @@
               "display_name": "cancelled_at",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "customer_id",
@@ -410,7 +410,7 @@
               "display_name": "customer_id",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "customer_email",
@@ -422,7 +422,7 @@
               "display_name": "customer_email",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "shipping_country",
@@ -434,7 +434,7 @@
               "display_name": "shipping_country",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "shipping_province",
@@ -446,7 +446,7 @@
               "display_name": "shipping_province",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "shipping_city",
@@ -458,7 +458,7 @@
               "display_name": "shipping_city",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "country_code",
@@ -470,7 +470,7 @@
               "display_name": "country_code",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_created_at_date",
@@ -482,7 +482,7 @@
               "display_name": "order_created_at_date",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_created_at_hour",
@@ -494,7 +494,7 @@
               "display_name": "order_created_at_hour",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_rank",
@@ -506,7 +506,7 @@
               "display_name": "order_rank",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "discount_codes",
@@ -518,7 +518,7 @@
               "display_name": "discount_codes",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "order_rank_text",
@@ -530,7 +530,7 @@
               "display_name": "order_rank_text",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "customer_type",
@@ -542,7 +542,7 @@
               "display_name": "customer_type",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_gross_price",
@@ -554,7 +554,7 @@
               "display_name": "line_item_gross_price",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_gross_discount_amount",
@@ -566,7 +566,7 @@
               "display_name": "line_item_gross_discount_amount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "net_sales",
@@ -578,7 +578,7 @@
               "display_name": "net_sales",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_tax_rate",
@@ -590,7 +590,7 @@
               "display_name": "line_item_tax_rate",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_quantity",
@@ -602,7 +602,7 @@
               "display_name": "line_item_quantity",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_tax_amount",
@@ -614,7 +614,7 @@
               "display_name": "line_item_tax_amount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "refund_line_items_quantity",
@@ -626,7 +626,7 @@
               "display_name": "refund_line_items_quantity",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_quantity_after_refund",
@@ -638,7 +638,7 @@
               "display_name": "line_item_quantity_after_refund",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "shipping_gross_price",
@@ -650,7 +650,7 @@
               "display_name": "shipping_gross_price",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "is_cancelled",
@@ -662,7 +662,7 @@
               "display_name": "is_cancelled",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_gross_sales_after_discount",
@@ -674,7 +674,7 @@
               "display_name": "line_item_gross_sales_after_discount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "line_item_total_gross_refund_amount",
@@ -686,7 +686,7 @@
               "display_name": "line_item_total_gross_refund_amount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "fulfillment_date",
@@ -717,7 +717,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "886.6014918082042 523.2480008095765"
+      "location": "1261.685904239041 521.0545247134897"
     },
     {
       "key": "b62f1b4f-4e7f-46f7-8fac-f5bce816c7c0",
@@ -1518,12 +1518,6 @@
       "topid": "R"
     },
     {
-      "to": "d155b3f5-faa4-44fa-b5a9-21f93a0b318a",
-      "from": "b62f1b4f-4e7f-46f7-8fac-f5bce816c7c0",
-      "frompid": "OUT",
-      "topid": "IN"
-    },
-    {
       "to": "4f5bb5e7-73c3-485c-8eea-5f5d4b7bb87a",
       "from": "24904125-3ab3-46f6-ae33-3b7ec7a121a3",
       "frompid": "OUT",
@@ -1532,6 +1526,12 @@
     {
       "from": "ec3c2230-d2d5-467c-b70e-767218dcbb69",
       "to": "b62f1b4f-4e7f-46f7-8fac-f5bce816c7c0",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "b62f1b4f-4e7f-46f7-8fac-f5bce816c7c0",
+      "to": "d155b3f5-faa4-44fa-b5a9-21f93a0b318a",
       "frompid": "OUT",
       "topid": "IN"
     }

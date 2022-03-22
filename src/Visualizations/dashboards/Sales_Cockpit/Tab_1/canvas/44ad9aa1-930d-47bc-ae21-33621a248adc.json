@@ -10,12 +10,12 @@
   "$schema": "/json-schema/d.json",
   "type": "Widget",
   "position": {
-    "x": 1172,
-    "y": 272
+    "x": 1222.676513671875,
+    "y": -6.721105424958864
   },
   "size": {
-    "width": 698,
-    "height": 422
+    "height": 700.7211054249589,
+    "width": 651.7948608398438
   },
   "zIndex": 6,
   "angle": 0,
