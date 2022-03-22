@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0",
-  "status": "ready",
+  "status": "invalid",
   "finished_at": "2022-03-22T12:59:03.166455+00:00",
   "details": {
     "invalid_rows": 0,
@@ -360,5 +360,8 @@
     "table_name": "220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0",
     "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0&page=table"
   },
-  "_signature": "EptbA6HybYlGXvOEh5c9Q1DWK2+TJP30/KbfXTXnay1Dekg3mAYD4u/2XV3FTnA5RPs50gvSnLNxuffNINyqBw=="
+  "failed_at": "2022-03-22T14:15:02.010960+00:00",
+  "error_code": 422,
+  "error_message": "",
+  "_signature": "ec0OoM29fqtzQ7QP9L9hwhQo8lhH2yexDr4nxG2nZrrrS17IEy/EQ/Sc8tmzjgoTHOSJAE0rIc5qlzaFJwi0Aw=="
 }
