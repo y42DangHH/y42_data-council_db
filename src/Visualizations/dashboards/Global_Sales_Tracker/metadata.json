@@ -4,5 +4,5 @@
   "description": "",
   "tags": [],
   "theme": "Global Sales Tracker4da3ec33-3617-47ca-bb5e-5bfb176c3a67.json",
-  "last_used_datasource_table_path": "src/Integrations/Google_Ads___Facebook_Ads/Global Sales Tracker-Global Sales Tracker"
+  "last_used_datasource_table_path": "src/Models/stg_shopify_orders/stg_shopify_orders"
 }
