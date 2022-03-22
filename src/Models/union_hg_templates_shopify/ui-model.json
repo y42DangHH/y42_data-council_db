@@ -96,7 +96,7 @@
               "target": "sdc_spreadsheet_id",
               "source": "sdc_spreadsheet_id",
               "type": "STRING",
-              "display": true,
+              "display": false,
               "changed": false,
               "description": "",
               "display_name": "sdc_spreadsheet_id",
@@ -108,7 +108,7 @@
               "target": "sdc_sheet_id",
               "source": "sdc_sheet_id",
               "type": "INTEGER",
-              "display": true,
+              "display": false,
               "changed": false,
               "description": "",
               "display_name": "sdc_sheet_id",
@@ -120,7 +120,7 @@
               "target": "sdc_row",
               "source": "sdc_row",
               "type": "INTEGER",
-              "display": true,
+              "display": false,
               "changed": false,
               "description": "",
               "display_name": "sdc_row",
@@ -961,7 +961,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "957.9999999999997 -2.000000000000057"
+      "location": "762 0"
     }
   ],
   "linkDataArray": [
