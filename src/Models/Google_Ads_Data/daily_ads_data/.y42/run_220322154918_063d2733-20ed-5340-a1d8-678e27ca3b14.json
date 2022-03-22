@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322154918_063d2733-20ed-5340-a1d8-678e27ca3b14",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
     "source_settings": {
@@ -35,5 +35,33 @@
     }
   },
   "created_at": "2022-03-22T15:49:18.908900+00:00",
-  "_signature": "hfS25BQAqOTx4SIhIJVtG/Vyx3l2aMLFqi8ffT5W102ZX6RVVLyF5dYDG5q+cj6FHCaJtRlITeH5yNwEmGeDBA=="
+  "finished_at": "2022-03-22T15:49:31.432345+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "import_finished_at": "2022-03-22T15:49:31.432239+00:00",
+    "row_count": 5956,
+    "current_import_row_count": 5956,
+    "size_in_bytes": 193310,
+    "external_id": "97374797-f970-4abe-b20d-2ab378f001e7",
+    "columns": [
+      {
+        "field_name": "date",
+        "data_type": "DATE",
+        "external_data_type": "DATE"
+      },
+      {
+        "field_name": "spend",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "platform",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322154918_063d2733-20ed-5340-a1d8-678e27ca3b14",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322154918_063d2733-20ed-5340-a1d8-678e27ca3b14&page=table"
+  },
+  "_signature": "WrQTsB4qcO19kRLcTe2LMNY5+9smff/Ig4Pol4jZTzh7Bm/Wjbg6Hcx6LFbct8KMoSVfHOxBnMB9G9IZ6C+aBw=="
 }
