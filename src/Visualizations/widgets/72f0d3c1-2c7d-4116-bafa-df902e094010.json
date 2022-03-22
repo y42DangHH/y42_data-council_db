@@ -1,0 +1,69 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "72f0d3c1-2c7d-4116-bafa-df902e094010.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 104,
+  "settings": {
+    "series": [
+      {
+        "field_id": "b20d577e_d730_4881_a5fc_5734ae46a06f",
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "963169a7_d258_4328_a108_e0cc9dd575ff"
+    ],
+    "breakdowns": [
+      "a5403a43_469d_4c51_b2ee_b6a6bdc3cbf8"
+    ]
+  },
+  "datasource_table_path": "src/Models/Global_Sales_Tracker_conversion/global_sales_tracker_conversion",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "963169a7_d258_4328_a108_e0cc9dd575ff",
+      "field": "region",
+      "type": "STRING",
+      "alias": "VALUE_region_963169a7_d258_4328_a108_e0cc9dd575ff",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "a5403a43_469d_4c51_b2ee_b6a6bdc3cbf8",
+      "field": "item_type",
+      "type": "STRING",
+      "alias": "VALUE_item_type_a5403a43_469d_4c51_b2ee_b6a6bdc3cbf8",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "AVG",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "b20d577e_d730_4881_a5fc_5734ae46a06f",
+      "field": "total_revenue",
+      "type": "NUMERIC",
+      "alias": "AVG_total_revenue_b20d577e_d730_4881_a5fc_5734ae46a06f",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

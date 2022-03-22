@@ -8,23 +8,23 @@
     "rotatable": true
   },
   "$schema": "/json-schema/d.json",
-  "type": "Shape",
+  "type": "Picture",
   "position": {
-    "x": 534.8963623046875,
-    "y": 117.88147735595703
+    "x": 1869.8202247190993,
+    "y": 857.5
   },
   "size": {
-    "height": 827,
-    "width": 1495
+    "height": 39,
+    "width": 112.17977528089887
   },
-  "zIndex": 1,
+  "zIndex": 8,
   "angle": 0,
   "typeSettings": {
-    "shapePath": "M 512 512 H 0 V 0 h 512 v 512 Z"
+    "url": "https://storage.googleapis.com/datos-d/images/wkcVnhSya4M3HDTuNhIMX5Jxyd6205xUjfLMSrS7.png"
   },
   "styles": {
-    "background-color": "#ffffffff",
-    "border-color": "#5a9deb",
+    "background-color": "none",
+    "border-color": "none",
     "border-style": "none",
     "border-width": "none",
     "border-radius": "0",
