@@ -1,0 +1,67 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322154918_063d2733-20ed-5340-a1d8-678e27ca3b14",
+  "status": "ready",
+  "request": {
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/ui_model/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/ui_model/0.0.0/table",
+      "output_key": "b502426e-d83d-43b9-b6c2-d42ebe7506a7"
+    },
+    "created_at": "2022-03-22T15:49:18.908900+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Models/Google_Ads_Data/daily_ads_data",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "351caf4df2df9482726635fb698a0e368b39987a"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5488",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T15:49:18.908900+00:00",
+  "finished_at": "2022-03-22T15:49:31.432345+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "import_finished_at": "2022-03-22T15:49:31.432239+00:00",
+    "row_count": 5956,
+    "current_import_row_count": 5956,
+    "size_in_bytes": 193310,
+    "external_id": "97374797-f970-4abe-b20d-2ab378f001e7",
+    "columns": [
+      {
+        "field_name": "date",
+        "data_type": "DATE",
+        "external_data_type": "DATE"
+      },
+      {
+        "field_name": "spend",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "platform",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322154918_063d2733-20ed-5340-a1d8-678e27ca3b14",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322154918_063d2733-20ed-5340-a1d8-678e27ca3b14&page=table"
+  },
+  "_signature": "WrQTsB4qcO19kRLcTe2LMNY5+9smff/Ig4Pol4jZTzh7Bm/Wjbg6Hcx6LFbct8KMoSVfHOxBnMB9G9IZ6C+aBw=="
+}
