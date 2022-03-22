@@ -25841,7 +25841,7 @@
           "metadata": {
             "selected-by-default": false,
             "database-name": "datasources",
-            "row-count": 2797123,
+            "row-count": 2797126,
             "is-view": false,
             "y42-extraction-key": "sdc_extracted_at",
             "table-key-properties": [
@@ -28819,7 +28819,7 @@
           "metadata": {
             "selected-by-default": false,
             "database-name": "datasources",
-            "row-count": 2975807,
+            "row-count": 2975810,
             "is-view": false,
             "y42-extraction-key": "sdc_extracted_at",
             "table-key-properties": [
@@ -29093,7 +29093,7 @@
           "metadata": {
             "selected-by-default": false,
             "database-name": "datasources",
-            "row-count": 2490750,
+            "row-count": 2490753,
             "is-view": false,
             "y42-extraction-key": "sdc_extracted_at",
             "table-key-properties": [
@@ -31457,7 +31457,7 @@
           "metadata": {
             "selected-by-default": false,
             "database-name": "hydra",
-            "row-count": 28247319,
+            "row-count": 28247441,
             "is-view": false,
             "y42-extraction-key": "sdc_extracted_at",
             "table-key-properties": [
@@ -38498,7 +38498,7 @@
           "metadata": {
             "selected-by-default": false,
             "database-name": "notifications",
-            "row-count": 201981267,
+            "row-count": 201982220,
             "is-view": false,
             "y42-extraction-key": "sdc_extracted_at",
             "table-key-properties": [
@@ -40273,7 +40273,7 @@
           "metadata": {
             "selected-by-default": false,
             "database-name": "orchestrations",
-            "row-count": 6200939,
+            "row-count": 6200943,
             "is-view": false,
             "y42-extraction-key": "sdc_extracted_at",
             "table-key-properties": [
@@ -69039,5 +69039,5 @@
       ]
     }
   ],
-  "_signature": "ZbRIZymXZr/tZBO0ncLRMQd/cDdgjoUefuSiBE3bK0k1rlsScH/xkhaaWjrzrxyuE+DM9LvqXXLg3HbINi7yCw=="
+  "_signature": "GGbnHdSHnv4ZmmM+HeeL8QXAkkJ9ZfQE72U/HjDzrMp38zrsiTWnpW6jAOpVpDsMoqoJIBw7tPYrqs4dBLJoAQ=="
 }
