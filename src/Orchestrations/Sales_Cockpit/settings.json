@@ -1,0 +1,182 @@
+{
+  "linkDataArray": [
+    {
+      "from": "ee002718-a4eb-407c-a250-a11089c036fe",
+      "to": "c03eed5c-b7b2-41b9-a9b0-b93b5aaeec30"
+    },
+    {
+      "from": "c3915ba6-b325-45b0-b91d-4d72e5831d39",
+      "to": "8a156db1-c523-4c52-9656-26209fba4d46"
+    },
+    {
+      "from": "533f433d-f70f-43c5-bc49-478182da229d",
+      "to": "c3915ba6-b325-45b0-b91d-4d72e5831d39"
+    },
+    {
+      "from": "5404e2c3-3e07-40c0-9976-2dd67534a9c3",
+      "to": "ee002718-a4eb-407c-a250-a11089c036fe"
+    },
+    {
+      "from": "08998047-abf7-4474-908d-67a0a0f6ac8c",
+      "to": "ee002718-a4eb-407c-a250-a11089c036fe"
+    },
+    {
+      "from": "08998047-abf7-4474-908d-67a0a0f6ac8c",
+      "to": "c3915ba6-b325-45b0-b91d-4d72e5831d39"
+    },
+    {
+      "from": "97b2b877-e283-49d9-826c-61c875aaf60c",
+      "to": "08998047-abf7-4474-908d-67a0a0f6ac8c"
+    },
+    {
+      "from": "17f1e625-b8fa-4f88-a4fc-4b425e06145d",
+      "to": "08998047-abf7-4474-908d-67a0a0f6ac8c"
+    },
+    {
+      "from": "13c70877-2791-44aa-87eb-44a707c1dc79",
+      "to": "08998047-abf7-4474-908d-67a0a0f6ac8c"
+    }
+  ],
+  "nodeDataArray": [
+    {
+      "key": "8a156db1-c523-4c52-9656-26209fba4d46",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "mrt_orders",
+        "sub_entry_id": "mrt_order_items"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "1540.5685424949238 245.56854249492378",
+      "ignore_failure": false,
+      "settings": "src/Models/mrt_orders"
+    },
+    {
+      "key": "c03eed5c-b7b2-41b9-a9b0-b93b5aaeec30",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "mrt_orders",
+        "sub_entry_id": "mrt_orders"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "1540.5685424949231 137.0456949966158",
+      "ignore_failure": false,
+      "settings": "src/Models/mrt_orders"
+    },
+    {
+      "key": "c3915ba6-b325-45b0-b91d-4d72e5831d39",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_shopify_order_items",
+        "sub_entry_id": "stg_shopify_order_items"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "1027.045694996616 245.56854249492378",
+      "ignore_failure": false,
+      "settings": "src/Models/stg_shopify_order_items"
+    },
+    {
+      "key": "ee002718-a4eb-407c-a250-a11089c036fe",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_shopify_orders",
+        "sub_entry_id": "stg_shopify_orders"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "1027.045694996616 137.0456949966159",
+      "ignore_failure": false,
+      "settings": "src/Models/stg_shopify_orders"
+    },
+    {
+      "key": "533f433d-f70f-43c5-bc49-478182da229d",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_shopify_orders",
+        "sub_entry_id": "stg_shopify_order_items-stg_shopify_order_items"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "0 0",
+      "ignore_failure": false,
+      "settings": "src/Integrations/stg_shopify_orders"
+    },
+    {
+      "key": "5404e2c3-3e07-40c0-9976-2dd67534a9c3",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_shopify_orders",
+        "sub_entry_id": "stg_shopify_orders-stg_shopify_orders"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "1.1368683772161603e-13 68.52284749830801",
+      "ignore_failure": false,
+      "settings": "src/Integrations/stg_shopify_orders"
+    },
+    {
+      "key": "08998047-abf7-4474-908d-67a0a0f6ac8c",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "src_shopify_orders",
+        "sub_entry_id": "src_shopify_orders"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "513.522847498308 191.3071187457699",
+      "ignore_failure": false,
+      "settings": "src/Models/src_shopify_orders"
+    },
+    {
+      "key": "13c70877-2791-44aa-87eb-44a707c1dc79",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "hg_templates_shopify_de",
+        "sub_entry_id": "1_hg_templates_shopify_de-Customers_1"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "2.2737367544323206e-13 191.30711874576986",
+      "ignore_failure": false,
+      "settings": "src/Integrations/hg_templates_shopify_de_1"
+    },
+    {
+      "key": "17f1e625-b8fa-4f88-a4fc-4b425e06145d",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "hg_templates_shopify_de",
+        "sub_entry_id": "2_hg_templates_shopify_de-Customers_2"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "2.2737367544323206e-13 314.0913899932318",
+      "ignore_failure": false,
+      "settings": "src/Integrations/hg_templates_shopify_de_1"
+    },
+    {
+      "key": "97b2b877-e283-49d9-826c-61c875aaf60c",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "hg_templates_shopify_de",
+        "sub_entry_id": "3_hg_templates_shopify_de-Customers_3"
+      },
+      "is_automation": false,
+      "type": "singer-google-sheets",
+      "location": "2.2737367544323206e-13 382.61423749153965",
+      "ignore_failure": false,
+      "settings": "src/Integrations/hg_templates_shopify_de_1"
+    }
+  ]
+}
