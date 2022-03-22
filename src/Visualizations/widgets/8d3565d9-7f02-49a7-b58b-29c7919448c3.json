@@ -1,0 +1,73 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "8d3565d9-7f02-49a7-b58b-29c7919448c3.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 111,
+  "settings": {
+    "series": [
+      {
+        "field_id": "06d49118_e8fe_405a_9b8f_9be47302721c",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "84aa5d9b_7ccb_464a_b461_2633bca133b8"
+    ],
+    "breakdowns": [],
+    "show_as_donut": false,
+    "digit_format": false
+  },
+  "datasource_table_path": "src/Models/Google_Ads_Data/daily_ads_data",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "06d49118_e8fe_405a_9b8f_9be47302721c",
+      "field": "spend",
+      "type": "NUMERIC",
+      "alias": "SUM_spend_06d49118_e8fe_405a_9b8f_9be47302721c",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "84aa5d9b_7ccb_464a_b461_2633bca133b8",
+      "field": "date",
+      "type": "DATE",
+      "alias": "YEAR_date_84aa5d9b_7ccb_464a_b461_2633bca133b8",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

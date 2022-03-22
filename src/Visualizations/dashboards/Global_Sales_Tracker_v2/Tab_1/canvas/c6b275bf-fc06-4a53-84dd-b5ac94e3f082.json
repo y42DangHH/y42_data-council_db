@@ -10,8 +10,8 @@
   "$schema": "/json-schema/d.json",
   "type": "Shape",
   "position": {
-    "x": 526,
-    "y": 67
+    "x": 559.8963679674405,
+    "y": 64.88147700203501
   },
   "size": {
     "width": 1426,
