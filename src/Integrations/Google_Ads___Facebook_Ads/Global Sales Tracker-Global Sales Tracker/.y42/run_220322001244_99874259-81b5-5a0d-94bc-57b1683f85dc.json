@@ -1,0 +1,59 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322001244_99874259-81b5-5a0d-94bc-57b1683f85dc",
+  "status": "pending",
+  "request": {
+    "source_credentials": "3901bb35-e2c6-4e32-9194-4194c7220fbe",
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/table",
+      "columns": [
+        "__sdc_spreadsheet_id",
+        "__sdc_sheet_id",
+        "__sdc_row",
+        "Region",
+        "Country",
+        "Item_Type",
+        "Sales_Channel",
+        "Order_Priority",
+        "Order_Date",
+        "Order_ID",
+        "Ship_Date",
+        "Units_Sold",
+        "Unit_Price",
+        "Unit_Cost",
+        "Total_Revenue",
+        "Total_Cost",
+        "double_field_13"
+      ],
+      "import": "Global Sales Tracker-Global Sales Tracker"
+    },
+    "created_at": "2022-03-22T00:12:44.696755+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/Google_Ads___Facebook_Ads/Global Sales Tracker-Global Sales Tracker",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "d06e7228aeaf74f8c05546e4922a16433e1ed5dc"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5239",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T00:12:44.696755+00:00",
+  "_signature": "5cRgcHqY89fO1TqaG0E731/CatSqVtT0mHiV+0bGqnY6oY0v+HfyZ/FKuCCuoCRHNODPao41xFlEN5GVBRcrCg=="
+}
