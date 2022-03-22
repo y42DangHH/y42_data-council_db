@@ -1,0 +1,84 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322010628_54f5cd3a-66a6-5a1b-b1d7-d351095accbd",
+  "status": "pending",
+  "request": {
+    "source_credentials": "a0e497db-312d-49f5-bf60-6fd285f255ce",
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/mysql/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/mysql/0.0.0/table",
+      "columns": [
+        "id",
+        "type",
+        "create_time",
+        "archive_url",
+        "long_archive_url",
+        "status",
+        "send_time",
+        "content_type",
+        "list_id",
+        "segment_text",
+        "segment_id",
+        "title",
+        "to_name",
+        "authenticate",
+        "timewarp",
+        "subject_line",
+        "from_name",
+        "reply_to",
+        "use_conversation",
+        "folder_id",
+        "auto_footer",
+        "inline_css",
+        "auto_tweet",
+        "fb_comments",
+        "template_id",
+        "drag_and_drop",
+        "clicktale",
+        "track_html_clicks",
+        "track_text_clicks",
+        "track_goals",
+        "track_opens",
+        "track_ecomm_360",
+        "google_analytics",
+        "_fivetran_deleted",
+        "winning_combination_id",
+        "winning_campaign_id",
+        "winner_criteria",
+        "wait_time",
+        "test_size",
+        "_fivetran_synced",
+        "sdc_deleted_at",
+        "sdc_extracted_at"
+      ],
+      "import": "tmp_test_data-campaign"
+    },
+    "created_at": "2022-03-22T01:06:28.317702+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/Y42_mysql/campaign",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "d70e81d508c5c26603a8a4aaaa53a95a650d5369"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5239",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T01:06:28.317702+00:00",
+  "_signature": "hJnuUWNZgGvijiJBrtjVAwyBkQF9JDrN9WghBuBeDyBpqf0+XOIlE4gqvxj5WTvDfI4/E41dGjy+ClO6+seKDg=="
+}
