@@ -10,16 +10,18 @@
   "$schema": "/json-schema/d.json",
   "type": "Widget",
   "position": {
-    "x": 1173,
-    "y": -10.078008651733398
+    "x": 949.4268188476562,
+    "y": -8.58752155303955
   },
   "size": {
     "height": 264,
-    "width": 343
+    "width": 262.51370325205494
   },
   "zIndex": 3,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/49ad0432-2379-46b3-b546-2f25ea9b89d4.json"
+  },
   "styles": {
     "background-color": "#333333",
     "border-color": "#1a1a1a",

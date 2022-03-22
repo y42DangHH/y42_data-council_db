@@ -4,5 +4,5 @@
   "description": "Shopify Sales Data",
   "tags": [],
   "theme": "Sales Cockpit64b3eddb-8101-4c8b-9a1f-6ae0bf533ae8.json",
-  "last_used_datasource_table_path": "src/Models/mrt_orders/mrt_order_items"
+  "last_used_datasource_table_path": "src/Models/mrt_orders/mrt_orders"
 }

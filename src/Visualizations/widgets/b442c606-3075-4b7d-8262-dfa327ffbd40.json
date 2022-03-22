@@ -1,0 +1,72 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "b442c606-3075-4b7d-8262-dfa327ffbd40.json",
+  "title": "ORDERS BY PAYMENT GATEWAY",
+  "description": "",
+  "version": 1,
+  "chart_type": 102,
+  "settings": {
+    "series": [
+      {
+        "field_id": "7b82f8bb_5e46_49f7_a82c_83b41b08a13f",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [],
+    "breakdowns": [
+      "d8b38b03_7955_4e83_bd44_d08e8ff5b93b"
+    ],
+    "show_as_donut": false
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "d8b38b03_7955_4e83_bd44_d08e8ff5b93b",
+      "field": "gateway",
+      "type": "STRING",
+      "alias": "VALUE_gateway_d8b38b03_7955_4e83_bd44_d08e8ff5b93b",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "DISTINCT",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "7b82f8bb_5e46_49f7_a82c_83b41b08a13f",
+      "field": "order_id",
+      "type": "NUMERIC",
+      "alias": "DISTINCT_order_id_7b82f8bb_5e46_49f7_a82c_83b41b08a13f",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
