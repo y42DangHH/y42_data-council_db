@@ -1,0 +1,73 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "d1383599-1bf0-48b8-acb4-07384c1db4f2.json",
+  "title": "CUSTOMERS",
+  "description": "",
+  "version": 1,
+  "chart_type": 111,
+  "settings": {
+    "series": [
+      {
+        "field_id": "2d992f46_fb6a_4a17_bb39_c9b85c62bd7f",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "4c9000b2_0351_4db0_8b28_9e61a8a75a00"
+    ],
+    "breakdowns": [],
+    "show_as_donut": false,
+    "digit_format": false
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "DISTINCT",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "2d992f46_fb6a_4a17_bb39_c9b85c62bd7f",
+      "field": "customer_id",
+      "type": "NUMERIC",
+      "alias": "DISTINCT_customer_id_2d992f46_fb6a_4a17_bb39_c9b85c62bd7f",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "4c9000b2_0351_4db0_8b28_9e61a8a75a00",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_4c9000b2_0351_4db0_8b28_9e61a8a75a00",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

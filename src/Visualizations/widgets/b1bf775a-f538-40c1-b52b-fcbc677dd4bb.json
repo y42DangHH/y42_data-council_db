@@ -1,38 +1,18 @@
 {
-  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
-  "name": "26886e28-df10-4c29-8758-37f838c4259b.json",
-  "title": "",
+  "$schema": "/json-schema/i.json",
+  "name": "b1bf775a-f538-40c1-b52b-fcbc677dd4bb.json",
+  "title": "MONTH-TO-DATE NET SALES",
   "description": "",
   "version": 1,
   "chart_type": 100,
   "settings": {
     "series": [
       {
-        "field_id": "0ed81c63_f304_4082_9abc_d241849f2676",
-        "mark": "area",
+        "field_id": "b40c0484_3d09_4794_859f_abf19f749133",
+        "mark": "bar",
         "stack_name": 1,
         "label": {
-          "show": true,
-          "field_ids": [],
-          "rotate": 0,
-          "align": "center",
-          "verticalAlign": "top"
-        },
-        "tooltip": {
-          "show": true,
-          "field_ids": []
-        },
-        "show_right_axis": false,
-        "format": "inherit",
-        "cumulative": false,
-        "hidden": false
-      },
-      {
-        "field_id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-        "mark": "bar",
-        "stack_name": 2,
-        "label": {
-          "show": true,
+          "show": false,
           "field_ids": [],
           "rotate": 0,
           "align": "center",
@@ -58,7 +38,7 @@
       }
     },
     "dimensions": [
-      "b6cd79b3_ac96_477b_a038_00f37a10f804"
+      "22402313_0efb_4938_90db_1e5c6e107d5a"
     ],
     "breakdowns": [],
     "series_on_y": true,
@@ -229,17 +209,33 @@
     },
     "show_total_for_stacks": []
   },
-  "datasource_table_path": "src/Models/stg_shopify_orders/stg_shopify_orders",
-  "filters": [],
+  "datasource_table_path": "src/Models/mrt_orders/mrt_order_items",
+  "filters": [
+    {
+      "variable_field_name": "order_created_at_date",
+      "variable_type": "DATE",
+      "operations": [
+        {
+          "operator": "-",
+          "values": [
+            "20211201",
+            "20211231"
+          ],
+          "operator_type": "absolute",
+          "value_type": "NONE"
+        }
+      ]
+    }
+  ],
   "fields": [
     {
-      "aggregation": "MONTH_YEAR",
+      "aggregation": "DAY_MONTH_YEAR",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "id": "22402313_0efb_4938_90db_1e5c6e107d5a",
       "field": "order_created_at_date",
       "type": "DATE",
-      "alias": "MONTH_YEAR_order_created_at_date_b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "alias": "DAY_MONTH_YEAR_order_created_at_date_22402313_0efb_4938_90db_1e5c6e107d5a",
       "filters": [],
       "lowCodeString": null
     },
@@ -247,27 +243,13 @@
       "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ed81c63_f304_4082_9abc_d241849f2676",
-      "field": "total_price",
+      "id": "b40c0484_3d09_4794_859f_abf19f749133",
+      "field": "net_sales",
       "type": "NUMERIC",
-      "alias": "SUM_total_price_0ed81c63_f304_4082_9abc_d241849f2676",
-      "filters": [],
-      "lowCodeString": null
-    },
-    {
-      "aggregation": "SUM",
-      "functionTree": null,
-      "show_in_percentage": false,
-      "id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-      "field": "total_discounts",
-      "type": "NUMERIC",
-      "alias": "SUM_total_discounts_0ea594ce_9240_4b69_9b69_30ca98728004",
+      "alias": "SUM_net_sales_b40c0484_3d09_4794_859f_abf19f749133",
       "filters": [],
       "lowCodeString": null
     }
   ],
-  "property": "",
-  "extra_echarts_config": {
-    "animationEasing": "elasticOut"
-  }
+  "property": ""
 }

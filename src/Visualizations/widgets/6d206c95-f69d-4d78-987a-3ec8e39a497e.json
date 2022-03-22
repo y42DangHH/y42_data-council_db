@@ -1,18 +1,18 @@
 {
-  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
-  "name": "26886e28-df10-4c29-8758-37f838c4259b.json",
-  "title": "",
+  "$schema": "/json-schema/i.json",
+  "name": "6d206c95-f69d-4d78-987a-3ec8e39a497e.json",
+  "title": "NET SALES BY CUSTOMER TYPE, THIS MONTH VS. LAST MONTH, BY DAY",
   "description": "",
   "version": 1,
   "chart_type": 100,
   "settings": {
     "series": [
       {
-        "field_id": "0ed81c63_f304_4082_9abc_d241849f2676",
-        "mark": "area",
+        "field_id": "c6a4743b_4403_465b_92fe_c21aed153df6",
+        "mark": "bar",
         "stack_name": 1,
         "label": {
-          "show": true,
+          "show": false,
           "field_ids": [],
           "rotate": 0,
           "align": "center",
@@ -28,11 +28,11 @@
         "hidden": false
       },
       {
-        "field_id": "0ea594ce_9240_4b69_9b69_30ca98728004",
+        "field_id": "c88cd512_37d3_46b6_a8aa_7a8ac5e258cc",
         "mark": "bar",
         "stack_name": 2,
         "label": {
-          "show": true,
+          "show": false,
           "field_ids": [],
           "rotate": 0,
           "align": "center",
@@ -58,9 +58,11 @@
       }
     },
     "dimensions": [
-      "b6cd79b3_ac96_477b_a038_00f37a10f804"
+      "52090321_375b_4d21_b3d3_76503604bc29"
     ],
-    "breakdowns": [],
+    "breakdowns": [
+      "0b5135a3_6ca2_4763_8726_10c5d4338d0b"
+    ],
     "series_on_y": true,
     "serieAxis": {
       "min": null,
@@ -218,7 +220,7 @@
         "end": 100
       }
     },
-    "show_stack_by": false,
+    "show_stack_by": true,
     "show_stack_by_100_percent": false,
     "sort": {
       "order": "NONE",
@@ -229,17 +231,28 @@
     },
     "show_total_for_stacks": []
   },
-  "datasource_table_path": "src/Models/stg_shopify_orders/stg_shopify_orders",
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
   "filters": [],
   "fields": [
     {
-      "aggregation": "MONTH_YEAR",
+      "aggregation": "DAY",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "id": "52090321_375b_4d21_b3d3_76503604bc29",
       "field": "order_created_at_date",
       "type": "DATE",
-      "alias": "MONTH_YEAR_order_created_at_date_b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "alias": "DAY_order_created_at_date_52090321_375b_4d21_b3d3_76503604bc29",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "0b5135a3_6ca2_4763_8726_10c5d4338d0b",
+      "field": "customer_type",
+      "type": "STRING",
+      "alias": "VALUE_customer_type_0b5135a3_6ca2_4763_8726_10c5d4338d0b",
       "filters": [],
       "lowCodeString": null
     },
@@ -247,27 +260,56 @@
       "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ed81c63_f304_4082_9abc_d241849f2676",
-      "field": "total_price",
+      "id": "c6a4743b_4403_465b_92fe_c21aed153df6",
+      "field": "net_sales",
       "type": "NUMERIC",
-      "alias": "SUM_total_price_0ed81c63_f304_4082_9abc_d241849f2676",
-      "filters": [],
+      "alias": "SUM_net_sales_c6a4743b_4403_465b_92fe_c21aed153df6",
+      "filters": [
+        {
+          "variable_field_name": "order_created_at_date",
+          "variable_type": "DATE",
+          "operations": [
+            {
+              "operator": "-",
+              "values": [
+                "20211001",
+                "20211031"
+              ],
+              "operator_type": "absolute",
+              "value_type": "NONE"
+            }
+          ]
+        }
+      ],
       "lowCodeString": null
     },
     {
       "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-      "field": "total_discounts",
+      "id": "c88cd512_37d3_46b6_a8aa_7a8ac5e258cc",
+      "field": "net_sales",
       "type": "NUMERIC",
-      "alias": "SUM_total_discounts_0ea594ce_9240_4b69_9b69_30ca98728004",
-      "filters": [],
+      "alias": "SUM_net_sales_c88cd512_37d3_46b6_a8aa_7a8ac5e258cc",
+      "filters": [
+        {
+          "variable_field_name": "order_created_at_date",
+          "variable_type": "DATE",
+          "operations": [
+            {
+              "operator": "-",
+              "values": [
+                "20211101",
+                "20211130"
+              ],
+              "operator_type": "absolute",
+              "value_type": "NONE"
+            }
+          ]
+        }
+      ],
       "lowCodeString": null
     }
   ],
-  "property": "",
-  "extra_echarts_config": {
-    "animationEasing": "elasticOut"
-  }
+  "property": ""
 }

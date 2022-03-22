@@ -1,18 +1,18 @@
 {
-  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
-  "name": "26886e28-df10-4c29-8758-37f838c4259b.json",
-  "title": "",
+  "$schema": "/json-schema/i.json",
+  "name": "cfff25e4-2f2f-4b90-ae9d-a1a4e34a3003.json",
+  "title": "AVG ITEMS QUANTITY PER ORDER BY MONTH",
   "description": "",
   "version": 1,
   "chart_type": 100,
   "settings": {
     "series": [
       {
-        "field_id": "0ed81c63_f304_4082_9abc_d241849f2676",
-        "mark": "area",
+        "field_id": "4a949525_0713_4f72_8803_fc7765a2f24d",
+        "mark": "bar",
         "stack_name": 1,
         "label": {
-          "show": true,
+          "show": false,
           "field_ids": [],
           "rotate": 0,
           "align": "center",
@@ -23,29 +23,23 @@
           "field_ids": []
         },
         "show_right_axis": false,
-        "format": "inherit",
+        "format": "0.0a",
         "cumulative": false,
-        "hidden": false
-      },
-      {
-        "field_id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-        "mark": "bar",
-        "stack_name": 2,
-        "label": {
-          "show": true,
-          "field_ids": [],
-          "rotate": 0,
-          "align": "center",
-          "verticalAlign": "top"
-        },
-        "tooltip": {
-          "show": true,
-          "field_ids": []
-        },
-        "show_right_axis": false,
-        "format": "inherit",
-        "cumulative": false,
-        "hidden": false
+        "hidden": false,
+        "formatConfig": {
+          "numeralFormat": "0.0a",
+          "formatType": "NUMBER",
+          "decimalPlaces": 1,
+          "negativeSymbol": {
+            "show": true,
+            "type": "symbol"
+          },
+          "displayType": "DISPLAY_UNITS",
+          "separator": "NONE",
+          "locale": "",
+          "prefixOrSuffix": "suffix",
+          "customFormat": ""
+        }
       }
     ],
     "show_legend": true,
@@ -58,7 +52,7 @@
       }
     },
     "dimensions": [
-      "b6cd79b3_ac96_477b_a038_00f37a10f804"
+      "6ed2964f_dc8e_45df_ba4f_c194285a6208"
     ],
     "breakdowns": [],
     "series_on_y": true,
@@ -229,45 +223,31 @@
     },
     "show_total_for_stacks": []
   },
-  "datasource_table_path": "src/Models/stg_shopify_orders/stg_shopify_orders",
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
   "filters": [],
   "fields": [
     {
       "aggregation": "MONTH_YEAR",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "id": "6ed2964f_dc8e_45df_ba4f_c194285a6208",
       "field": "order_created_at_date",
       "type": "DATE",
-      "alias": "MONTH_YEAR_order_created_at_date_b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "alias": "MONTH_YEAR_order_created_at_date_6ed2964f_dc8e_45df_ba4f_c194285a6208",
       "filters": [],
       "lowCodeString": null
     },
     {
-      "aggregation": "SUM",
+      "aggregation": "AVG",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ed81c63_f304_4082_9abc_d241849f2676",
-      "field": "total_price",
+      "id": "4a949525_0713_4f72_8803_fc7765a2f24d",
+      "field": "line_item_quantity",
       "type": "NUMERIC",
-      "alias": "SUM_total_price_0ed81c63_f304_4082_9abc_d241849f2676",
-      "filters": [],
-      "lowCodeString": null
-    },
-    {
-      "aggregation": "SUM",
-      "functionTree": null,
-      "show_in_percentage": false,
-      "id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-      "field": "total_discounts",
-      "type": "NUMERIC",
-      "alias": "SUM_total_discounts_0ea594ce_9240_4b69_9b69_30ca98728004",
+      "alias": "AVG_line_item_quantity_4a949525_0713_4f72_8803_fc7765a2f24d",
       "filters": [],
       "lowCodeString": null
     }
   ],
-  "property": "",
-  "extra_echarts_config": {
-    "animationEasing": "elasticOut"
-  }
+  "property": ""
 }

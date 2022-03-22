@@ -1,6 +1,6 @@
 {
-  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
-  "name": "26886e28-df10-4c29-8758-37f838c4259b.json",
+  "$schema": "/json-schema/i.json",
+  "name": "ae384e66-9b24-4abc-bf6d-140f36f42781.json",
   "title": "",
   "description": "",
   "version": 1,
@@ -8,29 +8,9 @@
   "settings": {
     "series": [
       {
-        "field_id": "0ed81c63_f304_4082_9abc_d241849f2676",
-        "mark": "area",
-        "stack_name": 1,
-        "label": {
-          "show": true,
-          "field_ids": [],
-          "rotate": 0,
-          "align": "center",
-          "verticalAlign": "top"
-        },
-        "tooltip": {
-          "show": true,
-          "field_ids": []
-        },
-        "show_right_axis": false,
-        "format": "inherit",
-        "cumulative": false,
-        "hidden": false
-      },
-      {
-        "field_id": "0ea594ce_9240_4b69_9b69_30ca98728004",
+        "field_id": "86ecfcd3_bf94_49fb_8ea8_7eba3646c8ed",
         "mark": "bar",
-        "stack_name": 2,
+        "stack_name": 1,
         "label": {
           "show": true,
           "field_ids": [],
@@ -58,9 +38,11 @@
       }
     },
     "dimensions": [
-      "b6cd79b3_ac96_477b_a038_00f37a10f804"
+      "e9c65465_b333_453a_819b_2cf9e9a17f0d"
     ],
-    "breakdowns": [],
+    "breakdowns": [
+      "4e512758_4a62_4f74_90d1_8e119b2ab6d2"
+    ],
     "series_on_y": true,
     "serieAxis": {
       "min": null,
@@ -218,7 +200,7 @@
         "end": 100
       }
     },
-    "show_stack_by": false,
+    "show_stack_by": true,
     "show_stack_by_100_percent": false,
     "sort": {
       "order": "NONE",
@@ -229,17 +211,28 @@
     },
     "show_total_for_stacks": []
   },
-  "datasource_table_path": "src/Models/stg_shopify_orders/stg_shopify_orders",
+  "datasource_table_path": "src/Models/Daily_Ad_spend/daily_ad_spend",
   "filters": [],
   "fields": [
     {
       "aggregation": "MONTH_YEAR",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "b6cd79b3_ac96_477b_a038_00f37a10f804",
-      "field": "order_created_at_date",
+      "id": "e9c65465_b333_453a_819b_2cf9e9a17f0d",
+      "field": "date",
       "type": "DATE",
-      "alias": "MONTH_YEAR_order_created_at_date_b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "alias": "MONTH_YEAR_date_e9c65465_b333_453a_819b_2cf9e9a17f0d",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "4e512758_4a62_4f74_90d1_8e119b2ab6d2",
+      "field": "platform",
+      "type": "STRING",
+      "alias": "VALUE_platform_4e512758_4a62_4f74_90d1_8e119b2ab6d2",
       "filters": [],
       "lowCodeString": null
     },
@@ -247,27 +240,13 @@
       "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ed81c63_f304_4082_9abc_d241849f2676",
-      "field": "total_price",
+      "id": "86ecfcd3_bf94_49fb_8ea8_7eba3646c8ed",
+      "field": "spend",
       "type": "NUMERIC",
-      "alias": "SUM_total_price_0ed81c63_f304_4082_9abc_d241849f2676",
-      "filters": [],
-      "lowCodeString": null
-    },
-    {
-      "aggregation": "SUM",
-      "functionTree": null,
-      "show_in_percentage": false,
-      "id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-      "field": "total_discounts",
-      "type": "NUMERIC",
-      "alias": "SUM_total_discounts_0ea594ce_9240_4b69_9b69_30ca98728004",
+      "alias": "SUM_spend_86ecfcd3_bf94_49fb_8ea8_7eba3646c8ed",
       "filters": [],
       "lowCodeString": null
     }
   ],
-  "property": "",
-  "extra_echarts_config": {
-    "animationEasing": "elasticOut"
-  }
+  "property": ""
 }

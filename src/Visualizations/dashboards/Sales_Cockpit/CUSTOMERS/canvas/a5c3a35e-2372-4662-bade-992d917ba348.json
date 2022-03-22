@@ -14,13 +14,13 @@
     "y": 793.4888305664062
   },
   "size": {
-    "height": 268.44891357421875,
-    "width": 963.7889970514084
+    "height": 448.6406207984114,
+    "width": 963.7890014648438
   },
   "zIndex": 4,
   "angle": 0,
   "typeSettings": {
-    "widgetPath": "src/Visualizations/widgets/4399a832-adbe-405b-8c11-4bc6ab65e7cd.json"
+    "widgetPath": "src/Visualizations/widgets/cc3ba93f-51fd-4857-b42c-06cf1840af07.json"
   },
   "styles": {
     "background-color": "#333333",

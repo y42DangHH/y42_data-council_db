@@ -1,6 +1,6 @@
 {
-  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
-  "name": "26886e28-df10-4c29-8758-37f838c4259b.json",
+  "$schema": "/json-schema/i.json",
+  "name": "6249255a-a406-4bca-8d02-2a1fb494488f.json",
   "title": "",
   "description": "",
   "version": 1,
@@ -8,11 +8,11 @@
   "settings": {
     "series": [
       {
-        "field_id": "0ed81c63_f304_4082_9abc_d241849f2676",
-        "mark": "area",
+        "field_id": "50c63ac0_50c8_4766_8827_544ad1824bf7",
+        "mark": "line",
         "stack_name": 1,
         "label": {
-          "show": true,
+          "show": false,
           "field_ids": [],
           "rotate": 0,
           "align": "center",
@@ -28,11 +28,11 @@
         "hidden": false
       },
       {
-        "field_id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-        "mark": "bar",
+        "field_id": "2764a0f9_0aad_4e8d_b016_a935e6e9aa39",
+        "mark": "line",
         "stack_name": 2,
         "label": {
-          "show": true,
+          "show": false,
           "field_ids": [],
           "rotate": 0,
           "align": "center",
@@ -58,7 +58,7 @@
       }
     },
     "dimensions": [
-      "b6cd79b3_ac96_477b_a038_00f37a10f804"
+      "53cb87ce_1db8_477f_ad56_2fc9aa72046d"
     ],
     "breakdowns": [],
     "series_on_y": true,
@@ -220,6 +220,7 @@
     },
     "show_stack_by": false,
     "show_stack_by_100_percent": false,
+    "conditional_formatting_rules": [],
     "sort": {
       "order": "NONE",
       "sort_by": "SERIES",
@@ -229,17 +230,17 @@
     },
     "show_total_for_stacks": []
   },
-  "datasource_table_path": "src/Models/stg_shopify_orders/stg_shopify_orders",
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
   "filters": [],
   "fields": [
     {
-      "aggregation": "MONTH_YEAR",
+      "aggregation": "DAY",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "id": "53cb87ce_1db8_477f_ad56_2fc9aa72046d",
       "field": "order_created_at_date",
       "type": "DATE",
-      "alias": "MONTH_YEAR_order_created_at_date_b6cd79b3_ac96_477b_a038_00f37a10f804",
+      "alias": "DAY_order_created_at_date_53cb87ce_1db8_477f_ad56_2fc9aa72046d",
       "filters": [],
       "lowCodeString": null
     },
@@ -247,27 +248,56 @@
       "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ed81c63_f304_4082_9abc_d241849f2676",
-      "field": "total_price",
+      "id": "50c63ac0_50c8_4766_8827_544ad1824bf7",
+      "field": "net_sales",
       "type": "NUMERIC",
-      "alias": "SUM_total_price_0ed81c63_f304_4082_9abc_d241849f2676",
-      "filters": [],
+      "alias": "SUM_net_sales_50c63ac0_50c8_4766_8827_544ad1824bf7",
+      "filters": [
+        {
+          "variable_field_name": "order_created_at_date",
+          "variable_type": "DATE",
+          "operations": [
+            {
+              "operator": "-",
+              "values": [
+                "20211001",
+                "20211031"
+              ],
+              "operator_type": "absolute",
+              "value_type": "NONE"
+            }
+          ]
+        }
+      ],
       "lowCodeString": null
     },
     {
       "aggregation": "SUM",
       "functionTree": null,
       "show_in_percentage": false,
-      "id": "0ea594ce_9240_4b69_9b69_30ca98728004",
-      "field": "total_discounts",
+      "id": "2764a0f9_0aad_4e8d_b016_a935e6e9aa39",
+      "field": "net_sales",
       "type": "NUMERIC",
-      "alias": "SUM_total_discounts_0ea594ce_9240_4b69_9b69_30ca98728004",
-      "filters": [],
+      "alias": "SUM_net_sales_2764a0f9_0aad_4e8d_b016_a935e6e9aa39",
+      "filters": [
+        {
+          "variable_field_name": "order_created_at_date",
+          "variable_type": "DATE",
+          "operations": [
+            {
+              "operator": "-",
+              "values": [
+                "20211101",
+                "20211130"
+              ],
+              "operator_type": "absolute",
+              "value_type": "NONE"
+            }
+          ]
+        }
+      ],
       "lowCodeString": null
     }
   ],
-  "property": "",
-  "extra_echarts_config": {
-    "animationEasing": "elasticOut"
-  }
+  "property": ""
 }
