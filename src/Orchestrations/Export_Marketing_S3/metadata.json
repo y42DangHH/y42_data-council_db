@@ -1,0 +1,5 @@
+{
+  "name": "Export_Marketing_S3",
+  "description": "Export Marketing tables to S3",
+  "tags": []
+}
