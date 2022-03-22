@@ -1,4 +1,96 @@
 {
-  "linkDataArray": [],
-  "nodeDataArray": []
+  "linkDataArray": [
+    {
+      "from": "66a5a76f-ecf8-4a9b-bc73-757136b70338",
+      "to": "39ee1857-ea5e-48f6-8eb8-19032d1f4068"
+    },
+    {
+      "from": "e59f6db9-79f4-42a6-adfe-ed61e3aaa1dc",
+      "to": "39ee1857-ea5e-48f6-8eb8-19032d1f4068"
+    },
+    {
+      "from": "e59f6db9-79f4-42a6-adfe-ed61e3aaa1dc",
+      "to": "fa5c6839-eeb3-4556-88a0-9a2239b5c904"
+    },
+    {
+      "from": "66a5a76f-ecf8-4a9b-bc73-757136b70338",
+      "to": "fa5c6839-eeb3-4556-88a0-9a2239b5c904"
+    },
+    {
+      "from": "fa5c6839-eeb3-4556-88a0-9a2239b5c904",
+      "to": "6f3a1766-ff84-4d17-b171-a6fdba87c77c"
+    }
+  ],
+  "nodeDataArray": [
+    {
+      "key": "66a5a76f-ecf8-4a9b-bc73-757136b70338",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_orders_typecasting",
+        "sub_entry_id": "stg_orders_typecasted"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "0 54.261423749153984",
+      "ignore_failure": false,
+      "settings": "src/Models/stg_orders_typecasting"
+    },
+    {
+      "key": "e59f6db9-79f4-42a6-adfe-ed61e3aaa1dc",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "stg_shopify_order_items_typecasting",
+        "sub_entry_id": "stg_order_items_typecasted"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "0 177.04569499661588",
+      "ignore_failure": false,
+      "settings": "src/Models/stg_shopify_order_items_typecasting"
+    },
+    {
+      "key": "39ee1857-ea5e-48f6-8eb8-19032d1f4068",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "mrt_orders",
+        "sub_entry_id": "mrt_order_items"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "513.522847498308 0",
+      "ignore_failure": false,
+      "settings": "src/Models/mrt_orders"
+    },
+    {
+      "key": "fa5c6839-eeb3-4556-88a0-9a2239b5c904",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "mrt_orders",
+        "sub_entry_id": "mrt_orders"
+      },
+      "is_automation": false,
+      "type": "ui_model",
+      "location": "513.522847498308 108.52284749830793",
+      "ignore_failure": false,
+      "settings": "src/Models/mrt_orders"
+    },
+    {
+      "key": "6f3a1766-ff84-4d17-b171-a6fdba87c77c",
+      "task_type": "IMPORT",
+      "category": "IMPORT",
+      "inputs": {
+        "entry_id": "anl_rev_projection",
+        "sub_entry_id": "table_1"
+      },
+      "is_automation": false,
+      "type": "sql_model",
+      "location": "1027.045694996616 108.52284749830793",
+      "ignore_failure": false,
+      "settings": "src/Models/anl_rev_projection"
+    }
+  ]
 }
