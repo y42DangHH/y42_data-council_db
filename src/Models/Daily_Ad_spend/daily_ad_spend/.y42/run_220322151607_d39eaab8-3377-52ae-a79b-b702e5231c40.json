@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322151607_d39eaab8-3377-52ae-a79b-b702e5231c40",
-  "status": "pending",
+  "status": "invalid",
   "request": {
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
     "source_settings": {
@@ -35,5 +35,8 @@
     }
   },
   "created_at": "2022-03-22T15:16:07.592977+00:00",
-  "_signature": "IuRIvfrQZddX92vKFRLDZHcv/FN9Zg+U+ufpPTmSBFC5G4Did9B1FIc95O9GCP1QmFdi7fAqVGpO0p5yhON1CQ=="
+  "failed_at": "2022-03-22T15:16:20.808845+00:00",
+  "error_code": 422,
+  "error_message": "",
+  "_signature": "IBSiizeYw3L/L5aDY4NY0FthpcjAuHRvY+AHp3A8nVy7EJ6kUn9mLTquZxKEWmbUtRXyEcPCUf0zmzF3iBEvDQ=="
 }
