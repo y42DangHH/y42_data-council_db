@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322001245_f9fe26f1-946a-56c1-b45f-951ddf450be6",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "3901bb35-e2c6-4e32-9194-4194c7220fbe",
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
@@ -70,7 +70,136 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "908f070e-a06f-404a-a685-665ced92a716",
-    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/4f5b6cc9-6660-4ea8-a3da-8ed20c78e0e4"
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/4f5b6cc9-6660-4ea8-a3da-8ed20c78e0e4",
+    "import_finished_at": "2022-03-22T00:13:39.492315+00:00",
+    "row_count": 4505,
+    "current_import_row_count": 4505,
+    "size_in_bytes": 1163506,
+    "columns": [
+      {
+        "field_name": "sdc_spreadsheet_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "sdc_sheet_id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "sdc_row",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "index",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "currency",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "account",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgroupid",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgroup",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgroupstate",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "network",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adtype",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "campaignid",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "campaign",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "clicks",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "conversions",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "cost",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "day",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "engagements",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ad",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adid",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "impressions",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "interactions",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adstate",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "views",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322001245_f9fe26f1-946a-56c1-b45f-951ddf450be6",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322001245_f9fe26f1-946a-56c1-b45f-951ddf450be6&page=table"
   },
-  "_signature": "FoBQjd5tGsXmnBVgI7ypYk8ltK0tEayjp9/QOQdLl3WdsDmFy0of+lVXmV14lp5Ba/SLxL7FYt3bxJlmHo92CQ=="
+  "finished_at": "2022-03-22T00:13:39.492447+00:00",
+  "_signature": "cEOu3mkqlHTdqiRp/LxWXoaK/+mU/SZJ8bF7OAZIe/ORlKsEfH1uhC3VjluugY+WwxgrYLfNM3S7IptADX/AAg=="
 }
