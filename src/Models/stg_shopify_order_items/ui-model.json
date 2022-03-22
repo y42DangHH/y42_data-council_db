@@ -10,10 +10,10 @@
         "id": "63629878-a7ff-4119-99a4-526b59431d65",
         "title": "orders",
         "transformationType": "INPUT",
-        "datasourceName": "stg_shopify",
+        "datasourceName": "src_shopify_orders",
         "transformObject": {
-          "source": "src/Integrations/stg_shopify",
-          "table": "src/Integrations/stg_shopify/stg_shopify_y42-stg_shopify",
+          "source": "src/Models/src_shopify_orders",
+          "table": "src/Models/src_shopify_orders/src_shopify_orders_1",
           "lang": ""
         }
       },
@@ -7332,156 +7332,6 @@
       "layerName": "bringToFront",
       "zOrder": 2,
       "textAlignment": "center"
-    },
-    {
-      "key": "f39045a1-2e7c-4c33-b59d-6038b4af6e9c",
-      "type": "OUTPUT",
-      "category": "OUTPUT",
-      "transformationStep": {
-        "id": "f39045a1-2e7c-4c33-b59d-6038b4af6e9c",
-        "title": "stg_shopify_order_items_test",
-        "transformationType": "OUTPUT",
-        "transformObject": {
-          "name": "stg_shopify_order_items_test",
-          "fields": [
-            {
-              "target": "sdc_spreadsheet_id",
-              "source": "sdc_spreadsheet_id",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "sdc_spreadsheet_id",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "sdc_sheet_id",
-              "source": "sdc_sheet_id",
-              "type": "INTEGER",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "sdc_sheet_id",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "sdc_row",
-              "source": "sdc_row",
-              "type": "INTEGER",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "sdc_row",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "name",
-              "source": "name",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "name",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "star",
-              "source": "star",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "star",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "type",
-              "source": "type",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "type",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "tags",
-              "source": "tags",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "tags",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "last_used",
-              "source": "last_used",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "last_used",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "tables",
-              "source": "tables",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "tables",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "rows",
-              "source": "rows",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "rows",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            },
-            {
-              "target": "status",
-              "source": "status",
-              "type": "STRING",
-              "display": true,
-              "changed": false,
-              "description": "",
-              "display_name": "status",
-              "source_alias": "",
-              "applied": false,
-              "sourceTypeChanged": false
-            }
-          ]
-        }
-      },
-      "isGroup": true,
-      "group": "",
-      "location": "-1625.059357724011 1474.1125435034862"
     }
   ],
   "linkDataArray": [
@@ -7692,12 +7542,6 @@
     {
       "from": "9389476a-d2d0-42bf-b87e-b02fede7a8c0",
       "to": "80bf60c8-ea60-4222-a04c-4eb02d24aeb7",
-      "frompid": "OUT",
-      "topid": "IN"
-    },
-    {
-      "from": "63629878-a7ff-4119-99a4-526b59431d65",
-      "to": "f39045a1-2e7c-4c33-b59d-6038b4af6e9c",
       "frompid": "OUT",
       "topid": "IN"
     }
