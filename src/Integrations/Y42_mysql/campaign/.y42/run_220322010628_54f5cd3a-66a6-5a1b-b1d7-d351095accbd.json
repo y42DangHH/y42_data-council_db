@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322010628_54f5cd3a-66a6-5a1b-b1d7-d351095accbd",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "a0e497db-312d-49f5-bf60-6fd285f255ce",
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
@@ -94,7 +94,226 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "eaf42b3d-a14f-4674-8d46-46cf18b37e88",
-    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-mysql/7971662f-438e-417e-b6c4-f93b2d2b62a7"
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-mysql/7971662f-438e-417e-b6c4-f93b2d2b62a7",
+    "import_finished_at": "2022-03-22T01:06:46.624851+00:00",
+    "row_count": 1,
+    "current_import_row_count": 1,
+    "size_in_bytes": 249,
+    "columns": [
+      {
+        "field_name": "winning_combination_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "segment_text",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "fivetran_synced",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "authenticate",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "auto_footer",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "use_conversation",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "timewarp",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "segment_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "title",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "content_type",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "fivetran_deleted",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "reply_to",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "track_html_clicks",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "track_goals",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "fb_comments",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "drag_and_drop",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "track_opens",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "sdc_deleted_at",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "clicktale",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "subject_line",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "wait_time",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "to_name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "send_time",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "create_time",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "folder_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "template_id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "winner_criteria",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "track_text_clicks",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "test_size",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "from_name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "winning_campaign_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "track_ecomm_360",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "auto_tweet",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "long_archive_url",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "inline_css",
+        "data_type": "BOOLEAN",
+        "external_data_type": "BOOLEAN"
+      },
+      {
+        "field_name": "google_analytics",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "list_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "sdc_extracted_at",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "status",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "type",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "archive_url",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322010628_54f5cd3a-66a6-5a1b-b1d7-d351095accbd",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322010628_54f5cd3a-66a6-5a1b-b1d7-d351095accbd&page=table"
   },
-  "_signature": "kryPviY6tbsFZu94uNWnIgt9IncwSySMVXBkokBKmTLE7ZqR8Q83LxBJRTotTAh2FOOwwri5jdqAoGxCDkqXCg=="
+  "finished_at": "2022-03-22T01:06:46.624994+00:00",
+  "_signature": "g4PbFgqb10Zcur3YHrnRx8Fv/TLZ4kBArN2UC2p5gv2kkiBFvX+o6OaPe+kUrnz5Wxqbm3L1Y29ztuS2ATl6CA=="
 }
