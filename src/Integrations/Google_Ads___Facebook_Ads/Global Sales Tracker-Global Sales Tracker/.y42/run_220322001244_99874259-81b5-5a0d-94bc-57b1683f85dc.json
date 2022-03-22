@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322001244_99874259-81b5-5a0d-94bc-57b1683f85dc",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "3901bb35-e2c6-4e32-9194-4194c7220fbe",
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
@@ -63,7 +63,101 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "953938b1-adaf-4946-bff1-448abeb68a4d",
-    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/542d93aa-9c46-4685-b141-a8f9061599c6"
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/542d93aa-9c46-4685-b141-a8f9061599c6",
+    "import_finished_at": "2022-03-22T00:15:17.457820+00:00",
+    "row_count": 7367,
+    "current_import_row_count": 7367,
+    "size_in_bytes": 1424708,
+    "columns": [
+      {
+        "field_name": "sdc_spreadsheet_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "sdc_sheet_id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "sdc_row",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "region",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "country",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "item_type",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "sales_channel",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "order_priority",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "order_date",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "order_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "ship_date",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "units_sold",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "unit_price",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "unit_cost",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "total_revenue",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "total_cost",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "double_field_13",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322001244_99874259-81b5-5a0d-94bc-57b1683f85dc",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322001244_99874259-81b5-5a0d-94bc-57b1683f85dc&page=table"
   },
-  "_signature": "swaUwD+bfNpQSH3/c1iOdUaAwQR0eGuJ8/62dSXiFpyv0DW1KE+HqwQFvUG+iZobJl1RDBzpeO6F1ftdEg8LBw=="
+  "finished_at": "2022-03-22T00:15:17.458003+00:00",
+  "_signature": "KbiiNJFqSirxMkRSsbyQAnhSGHPF/xfwEe087dSLVsuZE9hjQiBHcZ++VA3bSlce2kvmro3GPW1W90OdrLagBA=="
 }
