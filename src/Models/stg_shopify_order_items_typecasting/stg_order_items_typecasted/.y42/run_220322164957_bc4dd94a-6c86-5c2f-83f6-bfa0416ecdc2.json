@@ -1,0 +1,167 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322164957_bc4dd94a-6c86-5c2f-83f6-bfa0416ecdc2",
+  "status": "ready",
+  "request": {
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/ui_model/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/ui_model/0.0.0/table",
+      "output_key": "399eb71c-b45c-4203-bb37-e997b8dd927b"
+    },
+    "created_at": "2022-03-22T16:49:57.374800+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Models/stg_shopify_order_items_typecasting/stg_order_items_typecasted",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "189d8c98a31489982678e99956481e72a8bb7101"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5488",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T16:49:57.374800+00:00",
+  "finished_at": "2022-03-22T16:50:27.960647+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "import_finished_at": "2022-03-22T16:50:27.960516+00:00",
+    "row_count": 42408,
+    "current_import_row_count": 42408,
+    "size_in_bytes": 15346495,
+    "external_id": "678b1bab-5801-44fc-8b98-a0cf3427d3bd",
+    "columns": [
+      {
+        "field_name": "line_item_gross_price",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_total_discount_amount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "order_id",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_id",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_product_id",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_variant_id",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_quantity",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_tax_amount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_tax_rate",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "refund_line_items_quantity",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "refund_line_items_amount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_quantity_after_refund",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "order_level_refund_amount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "gross_sales",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_gross_discount_amount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "net_sales",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_total_gross_refund_amount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "order_total_tax",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "gross_sales_after_discount",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "line_item_product_name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "line_item_product_title",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "line_item_product_sku",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "refund_date",
+        "data_type": "DATETIME",
+        "external_data_type": "DATETIME"
+      }
+    ],
+    "table_name": "220322164957_bc4dd94a-6c86-5c2f-83f6-bfa0416ecdc2",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322164957_bc4dd94a-6c86-5c2f-83f6-bfa0416ecdc2&page=table"
+  },
+  "_signature": "Gt37azxWR5UjMjWydo846lh3vr4mW/fBW7+K4TAqVyO6aSDFxZppMbT9yWBptL5tPuf+cAlHHBDmUoqhnIicCg=="
+}

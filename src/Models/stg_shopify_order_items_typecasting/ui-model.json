@@ -1,0 +1,640 @@
+{
+  "class": "GraphLinksModel",
+  "linkFromPortIdProperty": "frompid",
+  "linkToPortIdProperty": "topid",
+  "nodeDataArray": [
+    {
+      "key": "fcf064f8-4f66-490f-be67-4a602c9635d8",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "fcf064f8-4f66-490f-be67-4a602c9635d8",
+        "title": "stg_shopify_order_items-stg_shopify_order_items",
+        "transformationType": "INPUT",
+        "datasourceName": "stg_shopify_orders",
+        "transformObject": {
+          "source": "src/Integrations/stg_shopify_orders",
+          "table": "src/Integrations/stg_shopify_orders/stg_shopify_order_items-stg_shopify_order_items",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "0 0"
+    },
+    {
+      "key": "5f7979fb-f2c3-4681-9c6d-3b5cbdc07501",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "5f7979fb-f2c3-4681-9c6d-3b5cbdc07501",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "sdc_spreadsheet_id",
+            "source": "sdc_spreadsheet_id",
+            "type": "STRING",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "sdc_spreadsheet_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "sdc_sheet_id",
+            "source": "sdc_sheet_id",
+            "type": "INTEGER",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "sdc_sheet_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "sdc_row",
+            "source": "sdc_row",
+            "type": "INTEGER",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "sdc_row",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_gross_price",
+            "source": "line_item_gross_price",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_gross_price",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_total_discount_amount",
+            "source": "line_item_total_discount_amount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_total_discount_amount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_id",
+            "source": "order_id",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_id",
+            "source": "line_item_id",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_product_id",
+            "source": "line_item_product_id",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_product_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_variant_id",
+            "source": "line_item_variant_id",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_variant_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_quantity",
+            "source": "line_item_quantity",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_quantity",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_tax_amount",
+            "source": "line_item_tax_amount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_tax_amount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_tax_rate",
+            "source": "line_item_tax_rate",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_tax_rate",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "refund_line_items_quantity",
+            "source": "refund_line_items_quantity",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "refund_line_items_quantity",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "refund_line_items_amount",
+            "source": "refund_line_items_amount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "refund_line_items_amount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_quantity_after_refund",
+            "source": "line_item_quantity_after_refund",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_quantity_after_refund",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_level_refund_amount",
+            "source": "order_level_refund_amount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_level_refund_amount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "gross_sales",
+            "source": "gross_sales",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "gross_sales",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_gross_discount_amount",
+            "source": "line_item_gross_discount_amount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_gross_discount_amount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "net_sales",
+            "source": "net_sales",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "net_sales",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_item_total_gross_refund_amount",
+            "source": "line_item_total_gross_refund_amount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "line_item_total_gross_refund_amount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_total_tax",
+            "source": "order_total_tax",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_total_tax",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "gross_sales_after_discount",
+            "source": "gross_sales_after_discount",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "gross_sales_after_discount",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "247 0"
+    },
+    {
+      "key": "67351809-14a1-4c31-b481-18fa839a81d6",
+      "type": "DATE_PARSER",
+      "category": "DATE_PARSER",
+      "transformationStep": {
+        "id": "67351809-14a1-4c31-b481-18fa839a81d6",
+        "title": "",
+        "transformationType": "DATE_PARSER",
+        "transformObject": [
+          {
+            "target": "refund_date",
+            "targetColumn": "refund_date",
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "timeZone": "UTC"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "515 0"
+    },
+    {
+      "key": "399eb71c-b45c-4203-bb37-e997b8dd927b",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "399eb71c-b45c-4203-bb37-e997b8dd927b",
+        "title": "stg_order_items_typecasted",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "stg_order_items_typecasted",
+          "fields": [
+            {
+              "target": "line_item_gross_price",
+              "source": "line_item_gross_price",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_gross_price",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_total_discount_amount",
+              "source": "line_item_total_discount_amount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_total_discount_amount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_id",
+              "source": "order_id",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_id",
+              "source": "line_item_id",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_product_id",
+              "source": "line_item_product_id",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_product_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_variant_id",
+              "source": "line_item_variant_id",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_variant_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_quantity",
+              "source": "line_item_quantity",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_quantity",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_tax_amount",
+              "source": "line_item_tax_amount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_tax_amount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_tax_rate",
+              "source": "line_item_tax_rate",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_tax_rate",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "refund_line_items_quantity",
+              "source": "refund_line_items_quantity",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "refund_line_items_quantity",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "refund_line_items_amount",
+              "source": "refund_line_items_amount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "refund_line_items_amount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_quantity_after_refund",
+              "source": "line_item_quantity_after_refund",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_quantity_after_refund",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_level_refund_amount",
+              "source": "order_level_refund_amount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_level_refund_amount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "gross_sales",
+              "source": "gross_sales",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "gross_sales",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_gross_discount_amount",
+              "source": "line_item_gross_discount_amount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_gross_discount_amount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "net_sales",
+              "source": "net_sales",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "net_sales",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_total_gross_refund_amount",
+              "source": "line_item_total_gross_refund_amount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_total_gross_refund_amount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_total_tax",
+              "source": "order_total_tax",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_total_tax",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "gross_sales_after_discount",
+              "source": "gross_sales_after_discount",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "gross_sales_after_discount",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_product_name",
+              "source": "line_item_product_name",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_product_name",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_product_title",
+              "source": "line_item_product_title",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_product_title",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_item_product_sku",
+              "source": "line_item_product_sku",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "line_item_product_sku",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "refund_date",
+              "source": "refund_date",
+              "type": "DATETIME",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "refund_date",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1030 0"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "to": "5f7979fb-f2c3-4681-9c6d-3b5cbdc07501",
+      "from": "fcf064f8-4f66-490f-be67-4a602c9635d8",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "67351809-14a1-4c31-b481-18fa839a81d6",
+      "from": "5f7979fb-f2c3-4681-9c6d-3b5cbdc07501",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "399eb71c-b45c-4203-bb37-e997b8dd927b",
+      "from": "67351809-14a1-4c31-b481-18fa839a81d6",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ]
+}

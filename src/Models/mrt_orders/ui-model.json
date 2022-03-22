@@ -11,16 +11,16 @@
         "id": "490386fe-21b3-4138-8497-6ac439fa953b",
         "title": "stg_shopify_order_items",
         "transformationType": "INPUT",
-        "datasourceName": "stg_shopify_orders",
+        "datasourceName": "stg_shopify_order_items_typecasting",
         "transformObject": {
-          "source": "src/Integrations/stg_shopify_orders",
-          "table": "src/Integrations/stg_shopify_orders/stg_shopify_order_items-stg_shopify_order_items",
+          "source": "src/Models/stg_shopify_order_items_typecasting",
+          "table": "src/Models/stg_shopify_order_items_typecasting/stg_order_items_typecasted",
           "lang": ""
         }
       },
       "isGroup": true,
       "group": "",
-      "location": "-1048.6578432660003 -97.09360687746573"
+      "location": "-1263.7248077419492 -148.3703160989216"
     },
     {
       "key": "2962cbc9-0270-4b05-b78c-429d56fc1447",
@@ -95,7 +95,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-741.6373557202123 212.10996560891738"
+      "location": "-737.3448911012929 212.10996560891738"
     },
     {
       "key": "9a4c7a5d-c783-4152-a7df-d6d71a19960e",
@@ -105,16 +105,16 @@
         "id": "9a4c7a5d-c783-4152-a7df-d6d71a19960e",
         "title": "stg_shopify_orders",
         "transformationType": "INPUT",
-        "datasourceName": "stg_shopify_orders",
+        "datasourceName": "stg_orders_typecasting",
         "transformObject": {
-          "source": "src/Integrations/stg_shopify_orders",
-          "table": "src/Integrations/stg_shopify_orders/stg_shopify_orders-stg_shopify_orders",
+          "source": "src/Models/stg_orders_typecasting",
+          "table": "src/Models/stg_orders_typecasting/stg_orders_typecasted",
           "lang": ""
         }
       },
       "isGroup": true,
       "group": "",
-      "location": "-1048.6578432660003 515.2955706406351"
+      "location": "-1261.134841902509 502.418176783877"
     },
     {
       "key": "3713b47f-44d6-4997-b44c-500a2a3d7596",
@@ -247,446 +247,446 @@
             {
               "target": "order_created_at_timestamp",
               "source": "order_created_at_timestamp",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_timestamp",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_updated_at_timestamp",
               "source": "order_updated_at_timestamp",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_updated_at_timestamp",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_id",
               "source": "order_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_id",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_name",
               "source": "order_name",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_name",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_number",
               "source": "order_number",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_number",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "currency",
               "source": "currency",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "currency",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer",
               "source": "customer",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_address",
               "source": "shipping_address",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_address",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "taxes_included",
               "source": "taxes_included",
-              "type": "boolean",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "taxes_included",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "fulfillment_status",
               "source": "fulfillment_status",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "fulfillment_status",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "financial_status",
               "source": "financial_status",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "financial_status",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "gateway",
               "source": "gateway",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "gateway",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "cancelled_at",
               "source": "cancelled_at",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "cancelled_at",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_id",
               "source": "customer_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_id",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_email",
               "source": "customer_email",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_email",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_country",
               "source": "shipping_country",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_country",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_province",
               "source": "shipping_province",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_province",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_city",
               "source": "shipping_city",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_city",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "country_code",
               "source": "country_code",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "country_code",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_date",
               "source": "order_created_at_date",
-              "type": "date",
+              "type": "DATE",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_date",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_hour",
               "source": "order_created_at_hour",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_hour",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_rank",
               "source": "order_rank",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_rank",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "discount_codes",
               "source": "discount_codes",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "discount_codes",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_rank_text",
               "source": "order_rank_text",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_rank_text",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_type",
               "source": "customer_type",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_type",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_gross_price",
               "source": "line_item_gross_price",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_gross_price",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_gross_discount_amount",
               "source": "line_item_gross_discount_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_gross_discount_amount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "net_sales",
               "source": "net_sales",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "net_sales",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_tax_rate",
               "source": "line_item_tax_rate",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_tax_rate",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_quantity",
               "source": "line_item_quantity",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_quantity",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_tax_amount",
               "source": "line_item_tax_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_tax_amount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "refund_line_items_quantity",
               "source": "refund_line_items_quantity",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "refund_line_items_quantity",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_quantity_after_refund",
               "source": "line_item_quantity_after_refund",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_quantity_after_refund",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_gross_price",
               "source": "shipping_gross_price",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_gross_price",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "is_cancelled",
               "source": "is_cancelled",
-              "type": "boolean",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "is_cancelled",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_gross_sales_after_discount",
               "source": "line_item_gross_sales_after_discount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_gross_sales_after_discount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_total_gross_refund_amount",
               "source": "line_item_total_gross_refund_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_total_gross_refund_amount",
               "source_alias": "Group By",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "fulfillment_date",
@@ -710,7 +710,7 @@
               "display_name": "refund_date",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             }
           ]
         }
@@ -796,564 +796,588 @@
             {
               "target": "line_item_gross_price",
               "source": "line_item_gross_price",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_gross_price",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_total_discount_amount",
               "source": "line_item_total_discount_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_total_discount_amount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_id",
               "source": "order_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_id",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_id",
               "source": "line_item_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_id",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_product_id",
               "source": "line_item_product_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_product_id",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_product_name",
               "source": "line_item_product_name",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_product_name",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_product_title",
               "source": "line_item_product_title",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_product_title",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_product_sku",
               "source": "line_item_product_sku",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_product_sku",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_variant_id",
               "source": "line_item_variant_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_variant_id",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_quantity",
               "source": "line_item_quantity",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_quantity",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_tax_amount",
               "source": "line_item_tax_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_tax_amount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_tax_rate",
               "source": "line_item_tax_rate",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_tax_rate",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "refund_line_items_quantity",
               "source": "refund_line_items_quantity",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "refund_line_items_quantity",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "refund_line_items_amount",
               "source": "refund_line_items_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "refund_line_items_amount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_quantity_after_refund",
               "source": "line_item_quantity_after_refund",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_quantity_after_refund",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_level_refund_amount",
               "source": "order_level_refund_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_level_refund_amount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "gross_sales",
               "source": "gross_sales",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "gross_sales",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_gross_discount_amount",
               "source": "line_item_gross_discount_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_gross_discount_amount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "net_sales",
               "source": "net_sales",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "net_sales",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_item_total_gross_refund_amount",
               "source": "line_item_total_gross_refund_amount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "line_item_total_gross_refund_amount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_timestamp",
               "source": "order_created_at_timestamp",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_timestamp",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_updated_at_timestamp",
               "source": "order_updated_at_timestamp",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_updated_at_timestamp",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_name",
               "source": "order_name",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_name",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_number",
               "source": "order_number",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_number",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "currency",
               "source": "currency",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "currency",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer",
               "source": "customer",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_address",
               "source": "shipping_address",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_address",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "taxes_included",
               "source": "taxes_included",
-              "type": "boolean",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "taxes_included",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "fulfillment_status",
               "source": "fulfillment_status",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "fulfillment_status",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "financial_status",
               "source": "financial_status",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "financial_status",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "gateway",
               "source": "gateway",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "gateway",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "cancelled_at",
               "source": "cancelled_at",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "cancelled_at",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_id",
               "source": "customer_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_id",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_email",
               "source": "customer_email",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_email",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_country",
               "source": "shipping_country",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_country",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_province",
               "source": "shipping_province",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_province",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_city",
               "source": "shipping_city",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_city",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "country_code",
               "source": "country_code",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "country_code",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_date",
               "source": "order_created_at_date",
-              "type": "date",
+              "type": "DATE",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_date",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_hour",
               "source": "order_created_at_hour",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_hour",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_rank",
               "source": "order_rank",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_rank",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "discount_codes",
               "source": "discount_codes",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "discount_codes",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_rank_text",
               "source": "order_rank_text",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_rank_text",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_type",
               "source": "customer_type",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_type",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "gross_sales_after_discount",
               "source": "gross_sales_after_discount",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "gross_sales_after_discount",
               "source_alias": "stg_shopify_order_items",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_gross_price",
               "source": "shipping_gross_price",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_gross_price",
               "source_alias": "stg_shopify_orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "is_cancelled",
               "source": "is_cancelled",
-              "type": "boolean",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "is_cancelled",
               "source_alias": "stg_shopify_orders",
+              "applied": false,
+              "sourceTypeChanged": true
+            },
+            {
+              "target": "refund_date",
+              "source": "refund_date",
+              "type": "DATETIME",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "refund_date",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fulfillment_date",
+              "source": "fulfillment_date",
+              "type": "DATETIME",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "fulfillment_date",
+              "source_alias": "",
               "applied": false,
               "sourceTypeChanged": false
             }
@@ -1425,7 +1449,7 @@
       "key": "47058d78-480b-4374-a151-c57a9d583dfa",
       "category": "stickyNode",
       "size": "189 93",
-      "location": "-117.31085053161905 -155.77780688354574",
+      "location": "-126.1540124416216 -154.303946565212",
       "background": "#ea9d13ff",
       "text": "Join line items data with order level data ",
       "textColor": "#ffffffff",
