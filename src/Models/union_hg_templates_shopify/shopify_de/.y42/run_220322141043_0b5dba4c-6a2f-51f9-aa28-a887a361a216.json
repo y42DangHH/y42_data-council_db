@@ -1,0 +1,39 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322141043_0b5dba4c-6a2f-51f9-aa28-a887a361a216",
+  "status": "pending",
+  "request": {
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/ui_model/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/ui_model/0.0.0/table",
+      "output_key": "e9339313-6cdd-4a5f-aa72-7d76e9b6e5f1"
+    },
+    "created_at": "2022-03-22T14:10:43.217486+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Models/union_hg_templates_shopify/shopify_de",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "1f9eeed850673394755a0199ecc35abe9086b72c"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5334",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T14:10:43.217486+00:00",
+  "_signature": "BcYdcER7ALcoy5FwdRP3io1mgmJY9+t6JUZuVuRbEtP/7r1b9lGQMCptyT8G1bn8LwXWykoz9Q1gU5DLL3F+Ag=="
+}
