@@ -15,11 +15,13 @@
   },
   "size": {
     "height": 420,
-    "width": 752
+    "width": 807.148036291389
   },
   "zIndex": 5,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/445b5087-4ca9-4d2d-afd5-574eef146e19.json"
+  },
   "styles": {
     "background-color": "#333333",
     "border-color": "#1a1a1a",
