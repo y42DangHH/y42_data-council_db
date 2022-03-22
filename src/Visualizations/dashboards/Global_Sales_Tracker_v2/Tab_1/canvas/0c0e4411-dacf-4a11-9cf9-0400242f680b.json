@@ -19,7 +19,9 @@
   },
   "zIndex": 5,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/72f0d3c1-2c7d-4116-bafa-df902e094010.json"
+  },
   "styles": {
     "background-color": "#ffffff",
     "border-color": "#f5f5f5",
