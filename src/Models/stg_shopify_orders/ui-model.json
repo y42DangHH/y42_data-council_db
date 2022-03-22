@@ -10,10 +10,10 @@
         "id": "ace5521c-7e9c-4a81-a885-69666c833580",
         "title": "orders",
         "transformationType": "INPUT",
-        "datasourceName": "stg_shopify",
+        "datasourceName": "src_shopify_orders",
         "transformObject": {
-          "source": "src/Integrations/stg_shopify",
-          "table": "src/Integrations/stg_shopify/stg_shopify_y42-stg_shopify",
+          "source": "src/Models/src_shopify_orders",
+          "table": "src/Models/src_shopify_orders/src_shopify_orders_1",
           "lang": ""
         }
       },
@@ -34,9 +34,9 @@
             "target": "customer_id",
             "source": "customer",
             "key": "id",
-            "source_type": "Object",
+            "source_type": "ObjectScalar",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "STRING"
           },
           {
             "target": "customer_email",
@@ -44,7 +44,7 @@
             "key": "email",
             "source_type": "ObjectScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           }
         ]
       },
@@ -481,7 +481,7 @@
             "key": "country",
             "source_type": "ObjectScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "shipping_province",
@@ -489,7 +489,7 @@
             "key": "province",
             "source_type": "ObjectScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "shipping_city",
@@ -497,7 +497,7 @@
             "key": "city",
             "source_type": "ObjectScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           },
           {
             "target": "country_code",
@@ -505,7 +505,7 @@
             "key": "country_code",
             "source_type": "ObjectScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           }
         ]
       },
