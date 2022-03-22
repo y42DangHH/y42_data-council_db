@@ -10,19 +10,19 @@
   "$schema": "/json-schema/d.json",
   "type": "Widget",
   "position": {
-    "x": 401.5693664550781,
-    "y": -7.230230331420898
+    "x": 1179.5,
+    "y": 490
   },
   "size": {
-    "height": 262.60339089255126,
-    "width": 381.4942932128906
+    "height": 384,
+    "width": 452
   },
-  "zIndex": 1,
+  "zIndex": 4,
   "angle": 0,
   "typeSettings": null,
   "styles": {
-    "background-color": "#ffffff",
-    "border-color": "#f5f5f5",
+    "background-color": "#333333",
+    "border-color": "#1a1a1a",
     "border-style": "solid",
     "border-width": "1px",
     "border-radius": "0",

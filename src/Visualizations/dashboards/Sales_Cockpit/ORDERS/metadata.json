@@ -1,7 +1,7 @@
 {
-  "name": "MAIN",
+  "name": "ORDERS",
   "filters": [],
   "description": "",
-  "order": 1,
+  "order": 2,
   "$schema": "/json-schema/d.json"
 }
