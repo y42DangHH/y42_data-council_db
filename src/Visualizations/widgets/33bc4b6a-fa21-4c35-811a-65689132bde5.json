@@ -1,0 +1,69 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "33bc4b6a-fa21-4c35-811a-65689132bde5.json",
+  "title": "YTD Total number of orders by region & product",
+  "description": "",
+  "version": 1,
+  "chart_type": 104,
+  "settings": {
+    "series": [
+      {
+        "field_id": "c02e65d9_8a20_4986_b5e1_547efd3024f4",
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "ef463eb3_5452_4640_b3f7_334ab099e342"
+    ],
+    "breakdowns": [
+      "47b8e250_b1a0_4e1a_9664_c9fc5e5040c6"
+    ]
+  },
+  "datasource_table_path": "src/Integrations/Google_Ads___Facebook_Ads/Global Sales Tracker-Global Sales Tracker",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "ef463eb3_5452_4640_b3f7_334ab099e342",
+      "field": "region",
+      "type": "STRING",
+      "alias": "VALUE_region_ef463eb3_5452_4640_b3f7_334ab099e342",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "47b8e250_b1a0_4e1a_9664_c9fc5e5040c6",
+      "field": "item_type",
+      "type": "STRING",
+      "alias": "VALUE_item_type_47b8e250_b1a0_4e1a_9664_c9fc5e5040c6",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "COUNT",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "c02e65d9_8a20_4986_b5e1_547efd3024f4",
+      "field": "total_revenue",
+      "type": "STRING",
+      "alias": "COUNT_total_revenue_c02e65d9_8a20_4986_b5e1_547efd3024f4",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
