@@ -10,8 +10,8 @@
   "$schema": "/json-schema/d.json",
   "type": "Shape",
   "position": {
-    "x": 132.58974098726685,
-    "y": 75.1168041229248
+    "x": 207.2019497887245,
+    "y": 38.87658841935968
   },
   "size": {
     "height": 939.0597534179688,
@@ -24,7 +24,7 @@
   },
   "styles": {
     "background-color": "#ffffffff",
-    "border-color": "#5a9deb",
+    "border-color": "#ffffffff",
     "border-style": "none",
     "border-width": "none",
     "border-radius": "0",

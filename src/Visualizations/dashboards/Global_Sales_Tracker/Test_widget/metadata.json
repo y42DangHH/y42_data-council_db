@@ -1,7 +1,0 @@
-{
-  "name": "Test widget",
-  "filters": [],
-  "description": "",
-  "order": 2,
-  "$schema": "/json-schema/d.json"
-}
