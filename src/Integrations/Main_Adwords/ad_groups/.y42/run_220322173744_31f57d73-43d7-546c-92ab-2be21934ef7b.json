@@ -1,0 +1,60 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220322173744_31f57d73-43d7-546c-92ab-2be21934ef7b",
+  "status": "pending",
+  "request": {
+    "source_credentials": "a2c5f231-d1ae-4a84-b5e1-d562ef058a32",
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/adwords/0.0.0/source",
+      "parent_id": "1630223965,8998031546",
+      "start_date": "2021-03-21T03:25:53Z"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/adwords/0.0.0/table",
+      "columns": [
+        "status",
+        "campaignName",
+        "id",
+        "campaignId",
+        "baseCampaignId",
+        "name",
+        "adGroupType",
+        "settings",
+        "biddingStrategyConfiguration",
+        "baseAdGroupId",
+        "labels",
+        "urlCustomParameters"
+      ],
+      "import": "ad_groups",
+      "_datos_write_settings": {
+        "max_flatten_depth": 0,
+        "decimals": false
+      }
+    },
+    "created_at": "2022-03-22T17:37:44.621620+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/Main_Adwords/ad_groups",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "3eb0c2ff8a44d65e882b0b1800a2a68c57ae1b67"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5239",
+      "trial": false
+    }
+  },
+  "created_at": "2022-03-22T17:37:44.621620+00:00",
+  "_signature": "HoGRESd7kFplzarZs7Hf9jumXdli+rSvCapR7zXzijj0Np9im/55pCZnMguuaYO/1tLUF+x1KLF3o2L5/VrVDQ=="
+}
