@@ -122,27 +122,6 @@
       "location": "247 0"
     },
     {
-      "key": "c39b9e71-abda-42ea-9c50-0b25cce7fcee",
-      "type": "DATE_PARSER",
-      "category": "DATE_PARSER",
-      "transformationStep": {
-        "id": "c39b9e71-abda-42ea-9c50-0b25cce7fcee",
-        "title": "",
-        "transformationType": "DATE_PARSER",
-        "transformObject": [
-          {
-            "target": "day",
-            "targetColumn": "day",
-            "format": "DD.MM.YY",
-            "timeZone": "UTC"
-          }
-        ]
-      },
-      "isGroup": true,
-      "group": "",
-      "location": "515 0"
-    },
-    {
       "key": "279cbe60-6f37-4f2c-bd6d-2d11bf565e1e",
       "type": "OUTPUT",
       "category": "OUTPUT",
@@ -396,7 +375,7 @@
             {
               "target": "day",
               "source": "day",
-              "type": "date",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
@@ -458,12 +437,6 @@
     },
     {
       "from": "cff6e59a-ac2c-4848-a690-7fa90c0fe567",
-      "to": "c39b9e71-abda-42ea-9c50-0b25cce7fcee",
-      "frompid": "OUT",
-      "topid": "IN"
-    },
-    {
-      "from": "c39b9e71-abda-42ea-9c50-0b25cce7fcee",
       "to": "279cbe60-6f37-4f2c-bd6d-2d11bf565e1e",
       "frompid": "OUT",
       "topid": "IN"
