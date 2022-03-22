@@ -1,0 +1,23 @@
+{
+  "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/table",
+  "columns": [
+    "__sdc_spreadsheet_id",
+    "__sdc_sheet_id",
+    "__sdc_row",
+    "Region",
+    "Country",
+    "Item_Type",
+    "Sales_Channel",
+    "Order_Priority",
+    "Order_Date",
+    "Order_ID",
+    "Ship_Date",
+    "Units_Sold",
+    "Unit_Price",
+    "Unit_Cost",
+    "Total_Revenue",
+    "Total_Cost",
+    "double_field_13"
+  ],
+  "import": "Global Sales Tracker-Global Sales Tracker"
+}

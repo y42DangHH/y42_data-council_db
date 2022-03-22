@@ -1,0 +1,1474 @@
+{
+  "class": "GraphLinksModel",
+  "linkFromPortIdProperty": "frompid",
+  "linkToPortIdProperty": "topid",
+  "nodeDataArray": [
+    {
+      "key": "7cd1e5f6-aa6c-4629-88f4-35665ea3ff05",
+      "type": "INPUT",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "7cd1e5f6-aa6c-4629-88f4-35665ea3ff05",
+        "title": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+        "datasourceName": "Google Ads & Facebook Ads",
+        "transformObject": {
+          "source": "src/Integrations/Google_Ads___Facebook_Ads",
+          "table": "src/Integrations/Google_Ads___Facebook_Ads/Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data",
+          "lang": ""
+        },
+        "transformationType": "INPUT"
+      },
+      "category": "INPUT",
+      "location": "0 0"
+    },
+    {
+      "key": "a5f13e36-5a04-4c5e-a17e-5a12db53243c",
+      "type": "FIELDS",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "a5f13e36-5a04-4c5e-a17e-5a12db53243c",
+        "title": "",
+        "transformObject": [
+          {
+            "type": "number",
+            "source": "cost",
+            "target": "spend",
+            "applied": true,
+            "changed": false,
+            "display": true,
+            "description": "",
+            "display_name": "spend",
+            "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+            "sourceTypeChanged": false
+          },
+          {
+            "type": "text",
+            "source": "day",
+            "target": "date",
+            "applied": true,
+            "changed": false,
+            "display": true,
+            "description": "",
+            "display_name": "date",
+            "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+            "sourceTypeChanged": false
+          }
+        ],
+        "transformationType": "FIELDS"
+      },
+      "category": "FIELDS",
+      "location": "247 0"
+    },
+    {
+      "key": "a96468d0-af1b-428b-be5d-c105e030904c",
+      "type": "DATE_PARSER",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "a96468d0-af1b-428b-be5d-c105e030904c",
+        "title": "",
+        "transformObject": [
+          {
+            "format": "DD.MM.YY",
+            "target": "date",
+            "timeZone": "UTC",
+            "targetColumn": "date"
+          }
+        ],
+        "transformationType": "DATE_PARSER"
+      },
+      "category": "DATE_PARSER",
+      "location": "515 0"
+    },
+    {
+      "key": "3abf40a8-62f8-424d-9e34-8d558384f089",
+      "type": "FUNCTIONS",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "3abf40a8-62f8-424d-9e34-8d558384f089",
+        "title": "",
+        "transformObject": [
+          {
+            "target": "spend",
+            "functionTree": {
+              "loc": {
+                "end": {
+                  "line": 1,
+                  "column": 14
+                },
+                "start": {
+                  "line": 1,
+                  "column": 0
+                }
+              },
+              "body": [
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 14
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    }
+                  },
+                  "type": "ExpressionStatement",
+                  "range": [
+                    0,
+                    14
+                  ],
+                  "expression": {
+                    "loc": {
+                      "end": {
+                        "line": 1,
+                        "column": 14
+                      },
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      }
+                    },
+                    "left": {
+                      "loc": {
+                        "end": {
+                          "line": 1,
+                          "column": 6
+                        },
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        }
+                      },
+                      "name": "@spend",
+                      "type": "Identifier",
+                      "range": [
+                        0,
+                        6
+                      ]
+                    },
+                    "type": "BinaryExpression",
+                    "range": [
+                      0,
+                      14
+                    ],
+                    "right": {
+                      "loc": {
+                        "end": {
+                          "line": 1,
+                          "column": 14
+                        },
+                        "start": {
+                          "line": 1,
+                          "column": 7
+                        }
+                      },
+                      "raw": "1000000",
+                      "type": "Literal",
+                      "range": [
+                        7,
+                        14
+                      ],
+                      "value": 1000000
+                    },
+                    "operator": "/"
+                  }
+                }
+              ],
+              "type": "Program",
+              "range": [
+                0,
+                14
+              ],
+              "tokens": [
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 6
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    }
+                  },
+                  "type": "Identifier",
+                  "range": [
+                    0,
+                    6
+                  ],
+                  "value": "@spend"
+                },
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 7
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 6
+                    }
+                  },
+                  "type": "Punctuator",
+                  "range": [
+                    6,
+                    7
+                  ],
+                  "value": "/"
+                },
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 14
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 7
+                    }
+                  },
+                  "type": "Numeric",
+                  "range": [
+                    7,
+                    14
+                  ],
+                  "value": "1000000"
+                }
+              ],
+              "comments": [],
+              "sourceType": "script"
+            },
+            "originalString": "@spend/1000000"
+          }
+        ],
+        "transformationType": "FUNCTIONS"
+      },
+      "category": "FUNCTIONS",
+      "location": "783 0"
+    },
+    {
+      "key": "9de36f05-1e2a-457f-b3a0-c835d7bcd9b5",
+      "type": "OUTPUT",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "9de36f05-1e2a-457f-b3a0-c835d7bcd9b5",
+        "title": "daily_ad_spend",
+        "transformObject": {
+          "name": "daily_ad_spend",
+          "fields": [
+            {
+              "type": "number",
+              "source": "spend",
+              "target": "spend",
+              "applied": false,
+              "changed": false,
+              "display": true,
+              "description": "",
+              "display_name": "spend",
+              "source_alias": "Function Node",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "date",
+              "source": "date",
+              "target": "date",
+              "applied": false,
+              "changed": false,
+              "display": true,
+              "description": "",
+              "display_name": "date",
+              "source_alias": "Date Parser Node",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "index",
+              "target": "index",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "index",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "currency",
+              "target": "currency",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "currency",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "account",
+              "target": "account",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "account",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "adgroupid",
+              "target": "adgroupid",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adgroupid",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "adgroup",
+              "target": "adgroup",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adgroup",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "adgroupstate",
+              "target": "adgroupstate",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adgroupstate",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "network",
+              "target": "network",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "network",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "adtype",
+              "target": "adtype",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adtype",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "campaignid",
+              "target": "campaignid",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "campaignid",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "campaign",
+              "target": "campaign",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "campaign",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "clicks",
+              "target": "clicks",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "clicks",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "conversions",
+              "target": "conversions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "conversions",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "engagements",
+              "target": "engagements",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "engagements",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "ad",
+              "target": "ad",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "ad",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "adid",
+              "target": "adid",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adid",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "impressions",
+              "target": "impressions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "impressions",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "interactions",
+              "target": "interactions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "interactions",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "adstate",
+              "target": "adstate",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adstate",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "views",
+              "target": "views",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "views",
+              "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "platform",
+              "target": "platform",
+              "applied": false,
+              "changed": false,
+              "display": true,
+              "description": "",
+              "display_name": "platform",
+              "source_alias": "Function Node",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "account_currency",
+              "target": "account_currency",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "account_currency",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "account_id",
+              "target": "account_id",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "account_id",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "account_name",
+              "target": "account_name",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "account_name",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "ad_id",
+              "target": "ad_id",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "ad_id",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "ad_name",
+              "target": "ad_name",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "ad_name",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "adset_id",
+              "target": "adset_id",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adset_id",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "adset_name",
+              "target": "adset_name",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "adset_name",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "campaign_id",
+              "target": "campaign_id",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "campaign_id",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "campaign_name",
+              "target": "campaign_name",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "campaign_name",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "canvas_avg_view_percent",
+              "target": "canvas_avg_view_percent",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "canvas_avg_view_percent",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "canvas_avg_view_time",
+              "target": "canvas_avg_view_time",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "canvas_avg_view_time",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "conversion_rate_ranking",
+              "target": "conversion_rate_ranking",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "conversion_rate_ranking",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cost_per_inline_link_click",
+              "target": "cost_per_inline_link_click",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_inline_link_click",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cost_per_inline_post_engagement",
+              "target": "cost_per_inline_post_engagement",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_inline_post_engagement",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cost_per_unique_click",
+              "target": "cost_per_unique_click",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_unique_click",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cost_per_unique_inline_link_click",
+              "target": "cost_per_unique_inline_link_click",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_unique_inline_link_click",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cpc",
+              "target": "cpc",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cpc",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cpm",
+              "target": "cpm",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cpm",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "cpp",
+              "target": "cpp",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cpp",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "ctr",
+              "target": "ctr",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "ctr",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "date_stop",
+              "target": "date_stop",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "date_stop",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "engagement_rate_ranking",
+              "target": "engagement_rate_ranking",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "engagement_rate_ranking",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "frequency",
+              "target": "frequency",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "frequency",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "inline_link_click_ctr",
+              "target": "inline_link_click_ctr",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "inline_link_click_ctr",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "inline_link_clicks",
+              "target": "inline_link_clicks",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "inline_link_clicks",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "inline_post_engagement",
+              "target": "inline_post_engagement",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "inline_post_engagement",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "objective",
+              "target": "objective",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "objective",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "quality_ranking",
+              "target": "quality_ranking",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "quality_ranking",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "reach",
+              "target": "reach",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "reach",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "social_spend",
+              "target": "social_spend",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "social_spend",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "unique_clicks",
+              "target": "unique_clicks",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "unique_clicks",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "unique_ctr",
+              "target": "unique_ctr",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "unique_ctr",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "unique_inline_link_click_ctr",
+              "target": "unique_inline_link_click_ctr",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "unique_inline_link_click_ctr",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "unique_inline_link_clicks",
+              "target": "unique_inline_link_clicks",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "unique_inline_link_clicks",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "unique_link_clicks_ctr",
+              "target": "unique_link_clicks_ctr",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "unique_link_clicks_ctr",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "action_values",
+              "target": "action_values",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "action_values",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "actions",
+              "target": "actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "cost_per_action_type",
+              "target": "cost_per_action_type",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_action_type",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "cost_per_conversion",
+              "target": "cost_per_conversion",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_conversion",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "cost_per_unique_action_type",
+              "target": "cost_per_unique_action_type",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "cost_per_unique_action_type",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "outbound_clicks",
+              "target": "outbound_clicks",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "outbound_clicks",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "unique_actions",
+              "target": "unique_actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "unique_actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "video_30_sec_watched_actions",
+              "target": "video_30_sec_watched_actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "video_30_sec_watched_actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "video_p100_watched_actions",
+              "target": "video_p100_watched_actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "video_p100_watched_actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "video_p25_watched_actions",
+              "target": "video_p25_watched_actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "video_p25_watched_actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "text",
+              "source": "video_p50_watched_actions",
+              "target": "video_p50_watched_actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "video_p50_watched_actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            },
+            {
+              "type": "number",
+              "source": "video_p75_watched_actions",
+              "target": "video_p75_watched_actions",
+              "applied": false,
+              "changed": false,
+              "display": false,
+              "description": "",
+              "display_name": "video_p75_watched_actions",
+              "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": false
+            }
+          ]
+        },
+        "transformationType": "OUTPUT"
+      },
+      "category": "OUTPUT",
+      "location": "1834 0"
+    },
+    {
+      "key": "5c50d00a-daf6-44ba-83b9-91e3e6b9bdbb",
+      "type": "INPUT",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "5c50d00a-daf6-44ba-83b9-91e3e6b9bdbb",
+        "title": "Beginner's Journey Facebook Ads Data - ads_insights",
+        "datasourceName": "Google Ads & Facebook Ads",
+        "transformObject": {
+          "source": "src/Integrations/Google_Ads___Facebook_Ads",
+          "table": "src/Integrations/Google_Ads___Facebook_Ads/Beginner's Journey Facebook Ads Data-Beginner's Journey Facebook Ads Data",
+          "lang": ""
+        },
+        "transformationType": "INPUT"
+      },
+      "category": "INPUT",
+      "location": "0 133"
+    },
+    {
+      "key": "825377b8-7b94-473c-8d2f-5d167f84f465",
+      "type": "FIELDS",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "825377b8-7b94-473c-8d2f-5d167f84f465",
+        "title": "",
+        "transformObject": [
+          {
+            "type": "text",
+            "source": "date_start",
+            "target": "date",
+            "applied": true,
+            "changed": false,
+            "display": true,
+            "description": "",
+            "display_name": "date",
+            "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+            "sourceTypeChanged": false
+          }
+        ],
+        "transformationType": "FIELDS"
+      },
+      "category": "FIELDS",
+      "location": "247 133"
+    },
+    {
+      "key": "f75816de-66fb-41d1-a2b8-ac293c0da63c",
+      "type": "DATE_PARSER",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "f75816de-66fb-41d1-a2b8-ac293c0da63c",
+        "title": "",
+        "transformObject": [
+          {
+            "format": "YYYY-MM-DD",
+            "target": "date",
+            "timeZone": "UTC",
+            "targetColumn": "date"
+          }
+        ],
+        "transformationType": "DATE_PARSER"
+      },
+      "category": "DATE_PARSER",
+      "location": "783 133"
+    },
+    {
+      "key": "9f80a486-f68c-4265-af6e-50940abd9a0e",
+      "type": "TEXT_EXTRACTION",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "9f80a486-f68c-4265-af6e-50940abd9a0e",
+        "title": "",
+        "transformObject": {
+          "source": "date",
+          "target": "date",
+          "conditions": [
+            {
+              "operation": "BEFORE",
+              "valueType": "number",
+              "valueOrOffset": "11",
+              "matchCondition": "FIRST"
+            }
+          ]
+        },
+        "transformationType": "TEXT_EXTRACTION"
+      },
+      "category": "TEXT_EXTRACTION",
+      "location": "515 133"
+    },
+    {
+      "key": "3de5989e-a84a-4b7d-b086-eea6740bc9fc",
+      "type": "FUNCTIONS",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "3de5989e-a84a-4b7d-b086-eea6740bc9fc",
+        "title": "",
+        "transformObject": [
+          {
+            "target": "platform",
+            "functionTree": {
+              "loc": {
+                "end": {
+                  "line": 1,
+                  "column": 8
+                },
+                "start": {
+                  "line": 1,
+                  "column": 0
+                }
+              },
+              "body": [
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 8
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    }
+                  },
+                  "type": "ExpressionStatement",
+                  "range": [
+                    0,
+                    8
+                  ],
+                  "directive": "Google",
+                  "expression": {
+                    "loc": {
+                      "end": {
+                        "line": 1,
+                        "column": 8
+                      },
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      }
+                    },
+                    "raw": "\"Google\"",
+                    "type": "Literal",
+                    "range": [
+                      0,
+                      8
+                    ],
+                    "value": "Google"
+                  }
+                }
+              ],
+              "type": "Program",
+              "range": [
+                0,
+                8
+              ],
+              "tokens": [
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 8
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    }
+                  },
+                  "type": "String",
+                  "range": [
+                    0,
+                    8
+                  ],
+                  "value": "\"Google\""
+                }
+              ],
+              "comments": [],
+              "sourceType": "script"
+            },
+            "originalString": "\"Google\""
+          }
+        ],
+        "transformationType": "FUNCTIONS"
+      },
+      "category": "FUNCTIONS",
+      "location": "1051 0"
+    },
+    {
+      "key": "4fd5fafe-c02d-44b0-892b-c2e3be7830ef",
+      "type": "FUNCTIONS",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "4fd5fafe-c02d-44b0-892b-c2e3be7830ef",
+        "title": "",
+        "transformObject": [
+          {
+            "target": "platform",
+            "functionTree": {
+              "loc": {
+                "end": {
+                  "line": 1,
+                  "column": 10
+                },
+                "start": {
+                  "line": 1,
+                  "column": 0
+                }
+              },
+              "body": [
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 10
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    }
+                  },
+                  "type": "ExpressionStatement",
+                  "range": [
+                    0,
+                    10
+                  ],
+                  "directive": "Facebook",
+                  "expression": {
+                    "loc": {
+                      "end": {
+                        "line": 1,
+                        "column": 10
+                      },
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      }
+                    },
+                    "raw": "\"Facebook\"",
+                    "type": "Literal",
+                    "range": [
+                      0,
+                      10
+                    ],
+                    "value": "Facebook"
+                  }
+                }
+              ],
+              "type": "Program",
+              "range": [
+                0,
+                10
+              ],
+              "tokens": [
+                {
+                  "loc": {
+                    "end": {
+                      "line": 1,
+                      "column": 10
+                    },
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    }
+                  },
+                  "type": "String",
+                  "range": [
+                    0,
+                    10
+                  ],
+                  "value": "\"Facebook\""
+                }
+              ],
+              "comments": [],
+              "sourceType": "script"
+            },
+            "originalString": "\"Facebook\""
+          }
+        ],
+        "transformationType": "FUNCTIONS"
+      },
+      "category": "FUNCTIONS",
+      "location": "1051 133"
+    },
+    {
+      "key": "699831ba-f56c-4ef6-8cc7-30a6c32b6e5d",
+      "type": "UNION",
+      "group": "",
+      "isGroup": true,
+      "transformationStep": {
+        "id": "699831ba-f56c-4ef6-8cc7-30a6c32b6e5d",
+        "title": "",
+        "transformObject": {
+          "fields": [],
+          "tables": [
+            "3de5989e-a84a-4b7d-b086-eea6740bc9fc",
+            "4fd5fafe-c02d-44b0-892b-c2e3be7830ef"
+          ]
+        },
+        "transformationType": "UNION"
+      },
+      "category": "UNION",
+      "location": "1319 0"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "to": "a5f13e36-5a04-4c5e-a17e-5a12db53243c",
+      "from": "7cd1e5f6-aa6c-4629-88f4-35665ea3ff05",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "a96468d0-af1b-428b-be5d-c105e030904c",
+      "from": "a5f13e36-5a04-4c5e-a17e-5a12db53243c",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "3abf40a8-62f8-424d-9e34-8d558384f089",
+      "from": "a96468d0-af1b-428b-be5d-c105e030904c",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "825377b8-7b94-473c-8d2f-5d167f84f465",
+      "from": "5c50d00a-daf6-44ba-83b9-91e3e6b9bdbb",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "9f80a486-f68c-4265-af6e-50940abd9a0e",
+      "from": "825377b8-7b94-473c-8d2f-5d167f84f465",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "f75816de-66fb-41d1-a2b8-ac293c0da63c",
+      "from": "9f80a486-f68c-4265-af6e-50940abd9a0e",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "3de5989e-a84a-4b7d-b086-eea6740bc9fc",
+      "from": "3abf40a8-62f8-424d-9e34-8d558384f089",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "4fd5fafe-c02d-44b0-892b-c2e3be7830ef",
+      "from": "f75816de-66fb-41d1-a2b8-ac293c0da63c",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "699831ba-f56c-4ef6-8cc7-30a6c32b6e5d",
+      "from": "3de5989e-a84a-4b7d-b086-eea6740bc9fc",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "699831ba-f56c-4ef6-8cc7-30a6c32b6e5d",
+      "from": "4fd5fafe-c02d-44b0-892b-c2e3be7830ef",
+      "topid": "IN",
+      "frompid": "OUT"
+    },
+    {
+      "to": "9de36f05-1e2a-457f-b3a0-c835d7bcd9b5",
+      "from": "699831ba-f56c-4ef6-8cc7-30a6c32b6e5d",
+      "topid": "IN",
+      "frompid": "OUT"
+    }
+  ]
+}

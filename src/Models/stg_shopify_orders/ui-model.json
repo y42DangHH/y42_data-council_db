@@ -1,0 +1,3918 @@
+{
+  "class": "GraphLinksModel",
+  "linkFromPortIdProperty": "frompid",
+  "linkToPortIdProperty": "topid",
+  "nodeDataArray": [
+    {
+      "key": "ace5521c-7e9c-4a81-a885-69666c833580",
+      "type": "INPUT",
+      "transformationStep": {
+        "id": "ace5521c-7e9c-4a81-a885-69666c833580",
+        "title": "orders",
+        "transformationType": "INPUT",
+        "datasourceName": "stg_shopify",
+        "transformObject": {
+          "source": "src/Integrations/stg_shopify",
+          "table": "src/Integrations/stg_shopify/stg_shopify_y42-stg_shopify",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "category": "INPUT",
+      "location": "-901.6507305496477 901.2709785418522"
+    },
+    {
+      "key": "a29dd581-18b2-4de1-a704-5e9a8cc7cd86",
+      "type": "JSON_EXTRACTION",
+      "transformationStep": {
+        "id": "a29dd581-18b2-4de1-a704-5e9a8cc7cd86",
+        "title": "customer",
+        "transformationType": "JSON_EXTRACTION",
+        "transformObject": [
+          {
+            "target": "customer_id",
+            "source": "customer",
+            "key": "id",
+            "source_type": "Object",
+            "key_index": -1,
+            "output_type": "number"
+          },
+          {
+            "target": "customer_email",
+            "source": "customer",
+            "key": "email",
+            "source_type": "ObjectScalar",
+            "key_index": -1,
+            "output_type": "text"
+          }
+        ]
+      },
+      "isGroup": true,
+      "category": "JSON_EXTRACTION",
+      "location": "-237.08027720316818 901.872498126565"
+    },
+    {
+      "key": "b3028abb-95e7-4d15-a44b-7737106ba2df",
+      "type": "FUNCTIONS",
+      "transformationStep": {
+        "id": "b3028abb-95e7-4d15-a44b-7737106ba2df",
+        "title": "order_date & hour",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "order_created_at_date",
+            "originalString": "CONVERT_TO_DATE(@order_created_at_timestamp)",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "CONVERT_TO_DATE",
+                      "range": [
+                        0,
+                        15
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 15
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "@order_created_at_timestamp",
+                        "range": [
+                          16,
+                          43
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 16
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 43
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      44
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 44
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    44
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 44
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                44
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 44
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "CONVERT_TO_DATE",
+                  "range": [
+                    0,
+                    15
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 15
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    15,
+                    16
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 16
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@order_created_at_timestamp",
+                  "range": [
+                    16,
+                    43
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    43,
+                    44
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 43
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 44
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          },
+          {
+            "target": "order_created_at_hour",
+            "originalString": "FORMAT_TIMESTAMP(@order_created_at_timestamp, '%H')",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "FORMAT_TIMESTAMP",
+                      "range": [
+                        0,
+                        16
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 16
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "@order_created_at_timestamp",
+                        "range": [
+                          17,
+                          44
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 17
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 44
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "'%H'",
+                        "value": "%H",
+                        "range": [
+                          46,
+                          50
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 46
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 50
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      51
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 51
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    51
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 51
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                51
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 51
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "FORMAT_TIMESTAMP",
+                  "range": [
+                    0,
+                    16
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 16
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    16,
+                    17
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 17
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@order_created_at_timestamp",
+                  "range": [
+                    17,
+                    44
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 44
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    44,
+                    45
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 44
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 45
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "'%H'",
+                  "range": [
+                    46,
+                    50
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 46
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 50
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    50,
+                    51
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 50
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 51
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "category": "FUNCTIONS",
+      "location": "314.8028664506452 902.0582474133234"
+    },
+    {
+      "key": "9cb8acd3-8de5-456f-9fc7-8716da123ef6",
+      "type": "JSON_EXTRACTION",
+      "category": "JSON_EXTRACTION",
+      "transformationStep": {
+        "id": "9cb8acd3-8de5-456f-9fc7-8716da123ef6",
+        "title": "shipping_address",
+        "transformationType": "JSON_EXTRACTION",
+        "transformObject": [
+          {
+            "target": "shipping_country",
+            "source": "shipping_address",
+            "key": "country",
+            "source_type": "ObjectScalar",
+            "key_index": -1,
+            "output_type": "text"
+          },
+          {
+            "target": "shipping_province",
+            "source": "shipping_address",
+            "key": "province",
+            "source_type": "ObjectScalar",
+            "key_index": -1,
+            "output_type": "text"
+          },
+          {
+            "target": "shipping_city",
+            "source": "shipping_address",
+            "key": "city",
+            "source_type": "ObjectScalar",
+            "key_index": -1,
+            "output_type": "text"
+          },
+          {
+            "target": "country_code",
+            "source": "shipping_address",
+            "key": "country_code",
+            "source_type": "ObjectScalar",
+            "key_index": -1,
+            "output_type": "text"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "39.31452291183837 901.8880783965135"
+    },
+    {
+      "key": "1acd61eb-73d8-49b0-a4a4-f474f8621476",
+      "type": "PARTITION",
+      "category": "PARTITION",
+      "transformationStep": {
+        "id": "1acd61eb-73d8-49b0-a4a4-f474f8621476",
+        "title": "order_rank",
+        "transformationType": "PARTITION",
+        "transformObject": [
+          {
+            "target": "order_rank",
+            "source": "",
+            "constant": null,
+            "func": "ROW_NUMBER",
+            "over": {
+              "partition": [
+                "customer_id"
+              ],
+              "row_range": {
+                "is_between": true,
+                "from": {
+                  "range": "",
+                  "action": ""
+                },
+                "to": {
+                  "range": "",
+                  "action": ""
+                }
+              },
+              "order": [
+                {
+                  "field": "order_created_at_timestamp",
+                  "direction": "ASC"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1825.435661111901 915.4598763789327"
+    },
+    {
+      "key": "f276abe0-2f15-453b-8165-5d80f459a094",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "f276abe0-2f15-453b-8165-5d80f459a094",
+        "title": "stg_shopify_orders",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "stg_shopify_orders",
+          "fields": [
+            {
+              "target": "order_total_tax",
+              "source": "order_total_tax",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_total_tax",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_created_at_timestamp",
+              "source": "order_created_at_timestamp",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_created_at_timestamp",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_updated_at_timestamp",
+              "source": "order_updated_at_timestamp",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_updated_at_timestamp",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_id",
+              "source": "order_id",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_id",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_name",
+              "source": "order_name",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_name",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_price",
+              "source": "total_price",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_price",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_number",
+              "source": "order_number",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_number",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_discounts",
+              "source": "total_discounts",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_discounts",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_line_items_price",
+              "source": "total_line_items_price",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_line_items_price",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "currency",
+              "source": "currency",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "currency",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer",
+              "source": "customer",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_address",
+              "source": "shipping_address",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_address",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "taxes_included",
+              "source": "taxes_included",
+              "type": "boolean",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "taxes_included",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "discount_codes",
+              "source": "discount_codes",
+              "type": "text",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "discount_codes",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fulfillment_status",
+              "source": "fulfillment_status",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "fulfillment_status",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "financial_status",
+              "source": "financial_status",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "financial_status",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "gateway",
+              "source": "gateway",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "gateway",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "cancelled_at",
+              "source": "cancelled_at",
+              "type": "TIMESTAMP",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "cancelled_at",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_id",
+              "source": "customer_id",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer_id",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_email",
+              "source": "customer_email",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer_email",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_country",
+              "source": "shipping_country",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_country",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_province",
+              "source": "shipping_province",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_province",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_city",
+              "source": "shipping_city",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_city",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "country_code",
+              "source": "country_code",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "country_code",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_created_at_date",
+              "source": "order_created_at_date",
+              "type": "date",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_created_at_date",
+              "source_alias": "Function Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_created_at_hour",
+              "source": "order_created_at_hour",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_created_at_hour",
+              "source_alias": "Function Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_rank",
+              "source": "order_rank",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_rank",
+              "source_alias": "Partition Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "discount_codes",
+              "source": "discount_codes_extracted",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "discount_codes",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "max_order_rank",
+              "source": "max_order_rank",
+              "type": "number",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "max_order_rank",
+              "source_alias": "Partition Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_rank_text",
+              "source": "order_rank_text",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_rank_text",
+              "source_alias": "Function Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_type",
+              "source": "customer_type",
+              "type": "text",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer_type",
+              "source_alias": "Function Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_lines",
+              "source": "shipping_lines",
+              "type": "text",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_lines",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_gross_price",
+              "source": "shipping_gross_price",
+              "type": "number",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_gross_price",
+              "source_alias": "Json Extraction",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "is_cancelled",
+              "source": "is_cancelled",
+              "type": "boolean",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "is_cancelled",
+              "source_alias": "Function Bin Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "line_items",
+              "source": "line_items",
+              "type": "text",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "line_items",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "refunds",
+              "source": "refunds",
+              "type": "text",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "refunds",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fulfillments",
+              "source": "fulfillments",
+              "type": "text",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "fulfillments",
+              "source_alias": "orders",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fulfillment_date",
+              "source": "fulfillment_date",
+              "type": "DATETIME",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "fulfillment_date",
+              "source_alias": "Date Parser Node",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "3115.7976509505597 927.4726559980421"
+    },
+    {
+      "key": "add95984-e2ae-4b4d-bdeb-e52fd2a3c175",
+      "type": "JSON_EXTRACTION",
+      "category": "JSON_EXTRACTION",
+      "transformationStep": {
+        "id": "add95984-e2ae-4b4d-bdeb-e52fd2a3c175",
+        "title": "",
+        "transformationType": "JSON_EXTRACTION",
+        "transformObject": [
+          {
+            "target": "discount_codes",
+            "source": "discount_codes",
+            "key": "code",
+            "source_type": "ArrayScalar",
+            "key_index": -1,
+            "output_type": "text"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "263.601932856426 1184.176405726872"
+    },
+    {
+      "key": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+      "type": "JOIN",
+      "category": "JOIN",
+      "transformationStep": {
+        "id": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+        "title": "",
+        "transformationType": "JOIN",
+        "transformObject": {
+          "type": "left",
+          "left": "b3028abb-95e7-4d15-a44b-7737106ba2df",
+          "right": "d036c80d-92d7-4b0f-9c97-d914c79d96e9",
+          "joinConditions": [
+            {
+              "left": "order_id",
+              "right": "order_id"
+            }
+          ],
+          "customMapping": {
+            "order_id": "order_id",
+            "discount_codes": "discount_codes_extracted"
+          }
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "673.0337831759025 915.0242603735031"
+    },
+    {
+      "key": "ac117a98-efe3-4ce3-8165-8fa77d9249aa",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "ac117a98-efe3-4ce3-8165-8fa77d9249aa",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "order_total_tax",
+            "source": "order_total_tax",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_total_tax",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_timestamp",
+            "source": "order_created_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_updated_at_timestamp",
+            "source": "order_updated_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_updated_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_name",
+            "source": "order_name",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_name",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_price",
+            "source": "total_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_number",
+            "source": "order_number",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_number",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_discounts",
+            "source": "total_discounts",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_discounts",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_line_items_price",
+            "source": "total_line_items_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_line_items_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "currency",
+            "source": "currency",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "currency",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer",
+            "source": "customer",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_address",
+            "source": "shipping_address",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_address",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "taxes_included",
+            "source": "taxes_included",
+            "type": "boolean",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "taxes_included",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "fulfillment_status",
+            "source": "fulfillment_status",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "fulfillment_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "financial_status",
+            "source": "financial_status",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "financial_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "gateway",
+            "source": "gateway",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "gateway",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "cancelled_at",
+            "source": "cancelled_at",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "cancelled_at",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_id",
+            "source": "customer_id",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer_id",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_email",
+            "source": "customer_email",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer_email",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_country",
+            "source": "shipping_country",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_country",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_province",
+            "source": "shipping_province",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_province",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_city",
+            "source": "shipping_city",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_city",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "country_code",
+            "source": "country_code",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "country_code",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_date",
+            "source": "order_created_at_date",
+            "type": "date",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_date",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_hour",
+            "source": "order_created_at_hour",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_hour",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "524.1470466655329 1184.0148240579965"
+    },
+    {
+      "key": "70c777aa-2d2e-4e4b-baf5-5368cba430fd",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "70c777aa-2d2e-4e4b-baf5-5368cba430fd",
+        "title": "customer type",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "order_rank_text",
+            "originalString": "IF(\n        @order_rank=1, 'first order',\n        'subsequent order')",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "IF",
+                      "range": [
+                        0,
+                        2
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 2
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "==",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "@order_rank",
+                          "range": [
+                            12,
+                            23
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 19
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": 1,
+                          "raw": "1",
+                          "range": [
+                            24,
+                            25
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 21
+                            }
+                          }
+                        },
+                        "range": [
+                          12,
+                          25
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 21
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "'first order'",
+                        "value": "first order",
+                        "range": [
+                          27,
+                          40
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 23
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 36
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "'subsequent order'",
+                        "value": "subsequent order",
+                        "range": [
+                          50,
+                          68
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 26
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      69
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 27
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    69
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 27
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                69
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 3,
+                  "column": 27
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "IF",
+                  "range": [
+                    0,
+                    2
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 2
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    2,
+                    3
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 3
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@order_rank",
+                  "range": [
+                    12,
+                    23
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 19
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "=",
+                  "range": [
+                    23,
+                    24
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 19
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 20
+                    }
+                  }
+                },
+                {
+                  "type": "Numeric",
+                  "value": "1",
+                  "range": [
+                    24,
+                    25
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 20
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 21
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    25,
+                    26
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 21
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 22
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "'first order'",
+                  "range": [
+                    27,
+                    40
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 36
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    40,
+                    41
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 36
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 37
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "'subsequent order'",
+                  "range": [
+                    50,
+                    68
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 26
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    68,
+                    69
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 27
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          },
+          {
+            "target": "customer_type",
+            "originalString": "IF(\n    @max_order_rank = 1, 'new customer',\n    'recurring customer')",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "IF",
+                      "range": [
+                        0,
+                        2
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 2
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "==",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "@max_order_rank",
+                          "range": [
+                            8,
+                            23
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 19
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": 1,
+                          "raw": "1",
+                          "range": [
+                            26,
+                            27
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 22
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 23
+                            }
+                          }
+                        },
+                        "range": [
+                          8,
+                          27
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 23
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "'new customer'",
+                        "value": "new customer",
+                        "range": [
+                          29,
+                          43
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 39
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "raw": "'recurring customer'",
+                        "value": "recurring customer",
+                        "range": [
+                          49,
+                          69
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 24
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      70
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 25
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    70
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 25
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                70
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 3,
+                  "column": 25
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "IF",
+                  "range": [
+                    0,
+                    2
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 2
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    2,
+                    3
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 3
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@max_order_rank",
+                  "range": [
+                    8,
+                    23
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 19
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "=",
+                  "range": [
+                    24,
+                    25
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 20
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 21
+                    }
+                  }
+                },
+                {
+                  "type": "Numeric",
+                  "value": "1",
+                  "range": [
+                    26,
+                    27
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 22
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 23
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    27,
+                    28
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 24
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "'new customer'",
+                  "range": [
+                    29,
+                    43
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 25
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 39
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ",",
+                  "range": [
+                    43,
+                    44
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 39
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 40
+                    }
+                  }
+                },
+                {
+                  "type": "String",
+                  "value": "'recurring customer'",
+                  "range": [
+                    49,
+                    69
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 24
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    69,
+                    70
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 25
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "2486.304372503588 931.119174748042"
+    },
+    {
+      "key": "4bd7f313-7f68-486b-971f-01f8e36b1220",
+      "type": "PARTITION",
+      "category": "PARTITION",
+      "transformationStep": {
+        "id": "4bd7f313-7f68-486b-971f-01f8e36b1220",
+        "title": "order rank category",
+        "transformationType": "PARTITION",
+        "transformObject": [
+          {
+            "target": "max_order_rank",
+            "source": "order_rank",
+            "constant": null,
+            "func": "MAX",
+            "over": {
+              "partition": [
+                "customer_id"
+              ],
+              "row_range": {
+                "is_between": true,
+                "from": {
+                  "range": "",
+                  "action": ""
+                },
+                "to": {
+                  "range": "",
+                  "action": ""
+                }
+              },
+              "order": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "2138.545748269558 922.0089080504848"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "926c72eb-5efd-4237-9484-2b89a7e14de1",
+      "category": "stickyNode",
+      "size": "207 116",
+      "location": "-112.94581003891813 810.3853386473645",
+      "background": "#ea9d13ff",
+      "text": "extracting customer_id & email from customer JSON column",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "4218f5b4-1d75-4ea0-b20d-7ad17af8232a",
+      "category": "stickyNode",
+      "size": "207 116",
+      "location": "166.1779672795799 809.5458772977702",
+      "background": "#ea9d13ff",
+      "text": "extracting shipping country, city etc. from shipping_address JSON column",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "de3413d0-da0a-4d63-84dd-f8d4a62ee262",
+      "category": "stickyNode",
+      "size": "432 71",
+      "location": "634.4220999792724 1359.5985288294057",
+      "background": "#ea9d13ff",
+      "text": "extracting discount codes from discount_codes JSON column",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "1959d63b-6f35-49d6-8d81-a5d7c1648c46",
+      "category": "stickyNode",
+      "size": "207 141",
+      "location": "437.7899974172029 809.6405601029428",
+      "background": "#ea9d13ff",
+      "text": "parsed purchase date column from purchase timestamp column and added purchase hour",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "0ec80bf9-f1e5-4474-9e29-a5ade6ca8dfc",
+      "category": "stickyNode",
+      "size": "207 63",
+      "location": "1949.1362425596608 859.2032882953879",
+      "background": "#ea9d13ff",
+      "text": "added order rank\n(1,2,3,...)",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "c41c657f-0bf2-4c6f-89d8-c34820abc1b9",
+      "category": "stickyNode",
+      "size": "282 71",
+      "location": "2256.530832588403 863.1803203891116",
+      "background": "#ea9d13ff",
+      "text": "added supporting column for customer type category",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "7075b0aa-1825-4484-b492-ff6dbce236a4",
+      "category": "stickyNode",
+      "size": "337 71",
+      "location": "2609.700283130749 862.2279791954695",
+      "background": "#ea9d13ff",
+      "text": "added customer type category \n(new customer, recurring customer)",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "b4ac1aea-05be-466e-b7a2-c689586b50f0",
+      "category": "stickyNode",
+      "size": "497 152",
+      "location": "-1197.6270192319273 951.9374761261788",
+      "background": "#553798ff",
+      "text": "In this model we are taking the original order table from Shopify and enriching this table with all informations we need",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 30px BlinkMacSystemFont",
+      "group": "",
+      "layerName": "bringToFront",
+      "zOrder": 2,
+      "textAlignment": "center"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "be26a74a-64d3-489a-852c-667a4d352010",
+      "category": "stickyNode",
+      "size": "497 98",
+      "location": "3649.6754249325363 987.3063943744107",
+      "background": "#553798ff",
+      "text": "The output table still has the same granularity as the original input table",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 30px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 2,
+      "textAlignment": "center"
+    },
+    {
+      "key": "d036c80d-92d7-4b0f-9c97-d914c79d96e9",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "d036c80d-92d7-4b0f-9c97-d914c79d96e9",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "discount_codes",
+            "originalString": "UCASE(@discount_codes)",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "UCASE",
+                      "range": [
+                        0,
+                        5
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 5
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "@discount_codes",
+                        "range": [
+                          6,
+                          21
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 6
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 21
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      22
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 22
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    22
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 22
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                22
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 22
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "UCASE",
+                  "range": [
+                    0,
+                    5
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 5
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    5,
+                    6
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 6
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@discount_codes",
+                  "range": [
+                    6,
+                    21
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 21
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    21,
+                    22
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 21
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 22
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "774.3042996283799 1182.7993178079967"
+    },
+    {
+      "key": "5bde869a-6afc-42a5-86b1-24864008a36f",
+      "type": "JSON_EXTRACTION",
+      "category": "JSON_EXTRACTION",
+      "transformationStep": {
+        "id": "5bde869a-6afc-42a5-86b1-24864008a36f",
+        "title": "",
+        "transformationType": "JSON_EXTRACTION",
+        "transformObject": [
+          {
+            "target": "shipping_gross_price",
+            "source": "shipping_lines",
+            "key": "price",
+            "source_type": "ArrayScalar",
+            "key_index": -1,
+            "output_type": "number"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "825.1193747669863 648.8044672699758"
+    },
+    {
+      "key": "aa7c055a-8882-465c-9657-b984cd7908b6",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "aa7c055a-8882-465c-9657-b984cd7908b6",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "order_total_tax",
+            "source": "order_total_tax",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_total_tax",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_name",
+            "source": "order_name",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_name",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_timestamp",
+            "source": "order_created_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_updated_at_timestamp",
+            "source": "order_updated_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_updated_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_price",
+            "source": "total_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_number",
+            "source": "order_number",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_number",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_discounts",
+            "source": "total_discounts",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_discounts",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_line_items_price",
+            "source": "total_line_items_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_line_items_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "currency",
+            "source": "currency",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "currency",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer",
+            "source": "customer",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_address",
+            "source": "shipping_address",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_address",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "taxes_included",
+            "source": "taxes_included",
+            "type": "boolean",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "taxes_included",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "discount_codes",
+            "source": "discount_codes",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "discount_codes",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "fulfillment_status",
+            "source": "fulfillment_status",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "fulfillment_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "financial_status",
+            "source": "financial_status",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "financial_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "gateway",
+            "source": "gateway",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "gateway",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "cancelled_at",
+            "source": "cancelled_at",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "cancelled_at",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_lines",
+            "source": "shipping_lines",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_lines",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_id",
+            "source": "customer_id",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer_id",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_email",
+            "source": "customer_email",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer_email",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_country",
+            "source": "shipping_country",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_country",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_province",
+            "source": "shipping_province",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_province",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_city",
+            "source": "shipping_city",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_city",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "country_code",
+            "source": "country_code",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "country_code",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_date",
+            "source": "order_created_at_date",
+            "type": "date",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_date",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_hour",
+            "source": "order_created_at_hour",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_hour",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "discount_codes_extracted",
+            "source": "discount_codes_extracted",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "discount_codes_extracted",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1081.7832776779878 648.8044672699758"
+    },
+    {
+      "key": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+      "type": "JOIN",
+      "category": "JOIN",
+      "transformationStep": {
+        "id": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+        "title": "",
+        "transformationType": "JOIN",
+        "transformObject": {
+          "type": "left",
+          "left": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+          "right": "aa7c055a-8882-465c-9657-b984cd7908b6",
+          "joinConditions": [
+            {
+              "left": "order_id",
+              "right": "order_id"
+            }
+          ],
+          "customMapping": {
+            "order_id": "order_id"
+          }
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1183.6063897547972 927.4814652386355"
+    },
+    {
+      "key": "478e144b-5b42-4f91-b9a4-36fbd280f895",
+      "type": "FUNCTIONS_BIN",
+      "category": "FUNCTIONS_BIN",
+      "transformationStep": {
+        "id": "478e144b-5b42-4f91-b9a4-36fbd280f895",
+        "title": "",
+        "transformationType": "FUNCTIONS_BIN",
+        "transformObject": [
+          {
+            "target": "is_cancelled",
+            "elseCase": "true",
+            "outputType": "boolean",
+            "name": "func",
+            "parameters": [
+              {
+                "filterString": "IS_NULL(@cancelled_at)",
+                "name": "false",
+                "filterFunctionTree": {
+                  "type": "Program",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "IS_NULL",
+                          "range": [
+                            0,
+                            7
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 1,
+                              "column": 0
+                            },
+                            "end": {
+                              "line": 1,
+                              "column": 7
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "@cancelled_at",
+                            "range": [
+                              8,
+                              21
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 1,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 1,
+                                "column": 21
+                              }
+                            }
+                          }
+                        ],
+                        "optional": false,
+                        "range": [
+                          0,
+                          22
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 0
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 22
+                          }
+                        }
+                      },
+                      "range": [
+                        0,
+                        22
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 22
+                        }
+                      }
+                    }
+                  ],
+                  "sourceType": "script",
+                  "range": [
+                    0,
+                    22
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 22
+                    }
+                  },
+                  "tokens": [
+                    {
+                      "type": "Identifier",
+                      "value": "IS_NULL",
+                      "range": [
+                        0,
+                        7
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 7
+                        }
+                      }
+                    },
+                    {
+                      "type": "Punctuator",
+                      "value": "(",
+                      "range": [
+                        7,
+                        8
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 7
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 8
+                        }
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "value": "@cancelled_at",
+                      "range": [
+                        8,
+                        21
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 21
+                        }
+                      }
+                    },
+                    {
+                      "type": "Punctuator",
+                      "value": ")",
+                      "range": [
+                        21,
+                        22
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 21
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 22
+                        }
+                      }
+                    }
+                  ],
+                  "comments": []
+                },
+                "nameFunctionTree": {
+                  "type": "Program",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "Literal",
+                        "value": false,
+                        "raw": "false",
+                        "range": [
+                          0,
+                          5
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 0
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 5
+                          }
+                        }
+                      },
+                      "range": [
+                        0,
+                        5
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 5
+                        }
+                      }
+                    }
+                  ],
+                  "sourceType": "script",
+                  "range": [
+                    0,
+                    5
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 5
+                    }
+                  },
+                  "tokens": [
+                    {
+                      "type": "Boolean",
+                      "value": "false",
+                      "range": [
+                        0,
+                        5
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 5
+                        }
+                      }
+                    }
+                  ],
+                  "comments": []
+                }
+              }
+            ],
+            "elseCaseFunctionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "Literal",
+                    "value": true,
+                    "raw": "true",
+                    "range": [
+                      0,
+                      4
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 4
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    4
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 4
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                4
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 4
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Boolean",
+                  "value": "true",
+                  "range": [
+                    0,
+                    4
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 4
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "2818.3002213971063 928.15528252989"
+    },
+    {
+      "key": "0d10f207-2fa6-403c-8240-d6db9eade4af",
+      "type": "JSON_EXTRACTION",
+      "category": "JSON_EXTRACTION",
+      "transformationStep": {
+        "id": "0d10f207-2fa6-403c-8240-d6db9eade4af",
+        "title": "",
+        "transformationType": "JSON_EXTRACTION",
+        "transformObject": [
+          {
+            "target": "fulfillment_date",
+            "source": "fulfillments",
+            "key": "created_at",
+            "source_type": "Array",
+            "key_index": -1,
+            "output_type": "text"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1161.8150909945684 1213.599964482749"
+    },
+    {
+      "key": "2e13efff-162a-4526-88e1-bb2135af2b07",
+      "type": "REPLACE",
+      "category": "REPLACE",
+      "transformationStep": {
+        "id": "2e13efff-162a-4526-88e1-bb2135af2b07",
+        "title": "",
+        "transformationType": "REPLACE",
+        "transformObject": [
+          {
+            "target": "fulfillment_date",
+            "outputType": "text",
+            "manipulationType": "Replace",
+            "manipulation": {
+              "targetColumn": "fulfillment_date",
+              "cases": [
+                {
+                  "token": "\"",
+                  "fullMatch": false,
+                  "caseSensitive": false,
+                  "replaceWith": "",
+                  "isNull": false
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1444.8882637496033 1212.384458232749"
+    },
+    {
+      "key": "d0f8bc52-386e-4049-86f0-3b2a2435eedc",
+      "type": "DATE_PARSER",
+      "category": "DATE_PARSER",
+      "transformationStep": {
+        "id": "d0f8bc52-386e-4049-86f0-3b2a2435eedc",
+        "title": "",
+        "transformationType": "DATE_PARSER",
+        "transformObject": [
+          {
+            "target": "fulfillment_date",
+            "targetColumn": "fulfillment_date",
+            "format": "YYYY-MM-DDTHH:mm:ss.000000Z",
+            "timeZone": "UTC"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1732.372598999602 1212.3844582327488"
+    },
+    {
+      "key": "472b1dae-106d-482a-a7eb-93dc92566524",
+      "type": "JOIN",
+      "category": "JOIN",
+      "transformationStep": {
+        "id": "472b1dae-106d-482a-a7eb-93dc92566524",
+        "title": "",
+        "transformationType": "JOIN",
+        "transformObject": {
+          "type": "left",
+          "left": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+          "right": "22561802-8154-4d2e-bcfe-9417b09a1143",
+          "joinConditions": [
+            {
+              "left": "order_id",
+              "right": "order_id"
+            }
+          ],
+          "customMapping": {
+            "order_id": "order_id"
+          }
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1546.115624249602 915.0242603735031"
+    },
+    {
+      "key": "46f8dfde-ce55-4fbb-95c8-a915e262871a",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "46f8dfde-ce55-4fbb-95c8-a915e262871a",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "order_total_tax",
+            "source": "order_total_tax",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_total_tax",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_name",
+            "source": "order_name",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_name",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_timestamp",
+            "source": "order_created_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_updated_at_timestamp",
+            "source": "order_updated_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_updated_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_price",
+            "source": "total_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_number",
+            "source": "order_number",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_number",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_discounts",
+            "source": "total_discounts",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_discounts",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_line_items_price",
+            "source": "total_line_items_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "total_line_items_price",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "currency",
+            "source": "currency",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "currency",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer",
+            "source": "customer",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_address",
+            "source": "shipping_address",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_address",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "taxes_included",
+            "source": "taxes_included",
+            "type": "boolean",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "taxes_included",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "discount_codes",
+            "source": "discount_codes",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "discount_codes",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "fulfillment_status",
+            "source": "fulfillment_status",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "fulfillment_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "financial_status",
+            "source": "financial_status",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "financial_status",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "gateway",
+            "source": "gateway",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "gateway",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "cancelled_at",
+            "source": "cancelled_at",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "cancelled_at",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_lines",
+            "source": "shipping_lines",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_lines",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "line_items",
+            "source": "line_items",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "line_items",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "refunds",
+            "source": "refunds",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "refunds",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "fulfillments",
+            "source": "fulfillments",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "fulfillments",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_id",
+            "source": "customer_id",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer_id",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_email",
+            "source": "customer_email",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "customer_email",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_country",
+            "source": "shipping_country",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_country",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_province",
+            "source": "shipping_province",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_province",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_city",
+            "source": "shipping_city",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_city",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "country_code",
+            "source": "country_code",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "country_code",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_date",
+            "source": "order_created_at_date",
+            "type": "date",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_date",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_hour",
+            "source": "order_created_at_hour",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_hour",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "discount_codes_extracted",
+            "source": "discount_codes_extracted",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "discount_codes_extracted",
+            "source_alias": "Function Node",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_gross_price",
+            "source": "shipping_gross_price",
+            "type": "number",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_gross_price",
+            "source_alias": "Json Extraction",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1977.425861999611 1212.3844582327488"
+    },
+    {
+      "isSidebarType": true,
+      "version": 1,
+      "key": "3a2ff3e5-0293-4de9-bbc8-77cf5c7c23bb",
+      "category": "stickyNode",
+      "size": "692 71",
+      "location": "1684.9480470464603 1414.3349109037615",
+      "background": "#ea9d13ff",
+      "text": "extracting fulfillment date from fulfillments JSON column",
+      "textColor": "#ffffffff",
+      "shadowColor": "#00000050",
+      "shadowOffset": "1 12",
+      "shadowBlur": 7,
+      "font": "normal 20px BlinkMacSystemFont",
+      "layerName": "bringToFront",
+      "zOrder": 1,
+      "textAlignment": "center"
+    },
+    {
+      "key": "22561802-8154-4d2e-bcfe-9417b09a1143",
+      "type": "GROUP_BY",
+      "category": "GROUP_BY",
+      "transformationStep": {
+        "id": "22561802-8154-4d2e-bcfe-9417b09a1143",
+        "title": "",
+        "transformationType": "GROUP_BY",
+        "transformObject": {
+          "columns": [
+            {
+              "name": "fulfillment_date",
+              "alias": "fulfillment_date",
+              "func": "MAX"
+            }
+          ],
+          "groupBy": [
+            "order_id"
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "2229.770960098858 1213.599964482749"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "from": "a29dd581-18b2-4de1-a704-5e9a8cc7cd86",
+      "to": "9cb8acd3-8de5-456f-9fc7-8716da123ef6",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "9cb8acd3-8de5-456f-9fc7-8716da123ef6",
+      "to": "b3028abb-95e7-4d15-a44b-7737106ba2df",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "b3028abb-95e7-4d15-a44b-7737106ba2df",
+      "to": "add95984-e2ae-4b4d-bdeb-e52fd2a3c175",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+      "from": "b3028abb-95e7-4d15-a44b-7737106ba2df",
+      "frompid": "OUT",
+      "topid": "L"
+    },
+    {
+      "to": "ac117a98-efe3-4ce3-8165-8fa77d9249aa",
+      "from": "add95984-e2ae-4b4d-bdeb-e52fd2a3c175",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "4bd7f313-7f68-486b-971f-01f8e36b1220",
+      "from": "1acd61eb-73d8-49b0-a4a4-f474f8621476",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "4bd7f313-7f68-486b-971f-01f8e36b1220",
+      "to": "70c777aa-2d2e-4e4b-baf5-5368cba430fd",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "d036c80d-92d7-4b0f-9c97-d914c79d96e9",
+      "from": "ac117a98-efe3-4ce3-8165-8fa77d9249aa",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "d036c80d-92d7-4b0f-9c97-d914c79d96e9",
+      "to": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+      "frompid": "OUT",
+      "topid": "R"
+    },
+    {
+      "from": "ace5521c-7e9c-4a81-a885-69666c833580",
+      "to": "a29dd581-18b2-4de1-a704-5e9a8cc7cd86",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "5bde869a-6afc-42a5-86b1-24864008a36f",
+      "from": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "aa7c055a-8882-465c-9657-b984cd7908b6",
+      "from": "5bde869a-6afc-42a5-86b1-24864008a36f",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "293ed6d6-6e50-4f2a-bcda-1467073e1583",
+      "to": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+      "frompid": "OUT",
+      "topid": "L"
+    },
+    {
+      "from": "aa7c055a-8882-465c-9657-b984cd7908b6",
+      "to": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+      "frompid": "OUT",
+      "topid": "R"
+    },
+    {
+      "to": "478e144b-5b42-4f91-b9a4-36fbd280f895",
+      "from": "70c777aa-2d2e-4e4b-baf5-5368cba430fd",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "478e144b-5b42-4f91-b9a4-36fbd280f895",
+      "to": "f276abe0-2f15-453b-8165-5d80f459a094",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+      "to": "0d10f207-2fa6-403c-8240-d6db9eade4af",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "2e13efff-162a-4526-88e1-bb2135af2b07",
+      "from": "0d10f207-2fa6-403c-8240-d6db9eade4af",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "d0f8bc52-386e-4049-86f0-3b2a2435eedc",
+      "from": "2e13efff-162a-4526-88e1-bb2135af2b07",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "1acd61eb-73d8-49b0-a4a4-f474f8621476",
+      "from": "472b1dae-106d-482a-a7eb-93dc92566524",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "472b1dae-106d-482a-a7eb-93dc92566524",
+      "from": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
+      "frompid": "OUT",
+      "topid": "L"
+    },
+    {
+      "to": "46f8dfde-ce55-4fbb-95c8-a915e262871a",
+      "from": "d0f8bc52-386e-4049-86f0-3b2a2435eedc",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "22561802-8154-4d2e-bcfe-9417b09a1143",
+      "from": "46f8dfde-ce55-4fbb-95c8-a915e262871a",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "22561802-8154-4d2e-bcfe-9417b09a1143",
+      "to": "472b1dae-106d-482a-a7eb-93dc92566524",
+      "frompid": "OUT",
+      "topid": "R"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://s.y42.com/integrations/mysql/0.0.0/table",
+  "columns": [
+    "member_id",
+    "segment_id",
+    "list_id",
+    "_fivetran_deleted",
+    "_fivetran_synced",
+    "sdc_deleted_at",
+    "sdc_extracted_at"
+  ],
+  "import": "tmp_test_data-segment_member"
+}
