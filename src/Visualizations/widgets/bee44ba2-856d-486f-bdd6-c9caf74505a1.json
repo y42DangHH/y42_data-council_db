@@ -1,0 +1,73 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "bee44ba2-856d-486f-bdd6-c9caf74505a1.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 111,
+  "settings": {
+    "series": [
+      {
+        "field_id": "67fcfdb5_9a01_4d64_8c0c_a7d2c4cf047f",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "b47e0661_eeee_4af0_bc79_d4f9e92d68e4"
+    ],
+    "breakdowns": [],
+    "show_as_donut": false,
+    "digit_format": false
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "AVG",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "67fcfdb5_9a01_4d64_8c0c_a7d2c4cf047f",
+      "field": "line_item_gross_sales_after_discount",
+      "type": "NUMERIC",
+      "alias": "AVG_line_item_gross_sales_after_discount_67fcfdb5_9a01_4d64_8c0c_a7d2c4cf047f",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "b47e0661_eeee_4af0_bc79_d4f9e92d68e4",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_b47e0661_eeee_4af0_bc79_d4f9e92d68e4",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
