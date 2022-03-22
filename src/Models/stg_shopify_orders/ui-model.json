@@ -2887,355 +2887,6 @@
       "location": "1183.6063897547972 927.4814652386355"
     },
     {
-      "key": "478e144b-5b42-4f91-b9a4-36fbd280f895",
-      "type": "FUNCTIONS_BIN",
-      "category": "FUNCTIONS_BIN",
-      "transformationStep": {
-        "id": "478e144b-5b42-4f91-b9a4-36fbd280f895",
-        "title": "",
-        "transformationType": "FUNCTIONS_BIN",
-        "transformObject": [
-          {
-            "target": "is_cancelled",
-            "elseCase": "true",
-            "outputType": "boolean",
-            "name": "func",
-            "parameters": [
-              {
-                "filterString": "IS_NULL(@cancelled_at)",
-                "name": "false",
-                "filterFunctionTree": {
-                  "type": "Program",
-                  "body": [
-                    {
-                      "type": "ExpressionStatement",
-                      "expression": {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "Identifier",
-                          "name": "IS_NULL",
-                          "range": [
-                            0,
-                            7
-                          ],
-                          "loc": {
-                            "start": {
-                              "line": 1,
-                              "column": 0
-                            },
-                            "end": {
-                              "line": 1,
-                              "column": 7
-                            }
-                          }
-                        },
-                        "arguments": [
-                          {
-                            "type": "Identifier",
-                            "name": "@cancelled_at",
-                            "range": [
-                              8,
-                              21
-                            ],
-                            "loc": {
-                              "start": {
-                                "line": 1,
-                                "column": 8
-                              },
-                              "end": {
-                                "line": 1,
-                                "column": 21
-                              }
-                            }
-                          }
-                        ],
-                        "optional": false,
-                        "range": [
-                          0,
-                          22
-                        ],
-                        "loc": {
-                          "start": {
-                            "line": 1,
-                            "column": 0
-                          },
-                          "end": {
-                            "line": 1,
-                            "column": 22
-                          }
-                        }
-                      },
-                      "range": [
-                        0,
-                        22
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 0
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 22
-                        }
-                      }
-                    }
-                  ],
-                  "sourceType": "script",
-                  "range": [
-                    0,
-                    22
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 1,
-                      "column": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 22
-                    }
-                  },
-                  "tokens": [
-                    {
-                      "type": "Identifier",
-                      "value": "IS_NULL",
-                      "range": [
-                        0,
-                        7
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 0
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 7
-                        }
-                      }
-                    },
-                    {
-                      "type": "Punctuator",
-                      "value": "(",
-                      "range": [
-                        7,
-                        8
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 7
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 8
-                        }
-                      }
-                    },
-                    {
-                      "type": "Identifier",
-                      "value": "@cancelled_at",
-                      "range": [
-                        8,
-                        21
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 8
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 21
-                        }
-                      }
-                    },
-                    {
-                      "type": "Punctuator",
-                      "value": ")",
-                      "range": [
-                        21,
-                        22
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 21
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 22
-                        }
-                      }
-                    }
-                  ],
-                  "comments": []
-                },
-                "nameFunctionTree": {
-                  "type": "Program",
-                  "body": [
-                    {
-                      "type": "ExpressionStatement",
-                      "expression": {
-                        "type": "Literal",
-                        "value": false,
-                        "raw": "false",
-                        "range": [
-                          0,
-                          5
-                        ],
-                        "loc": {
-                          "start": {
-                            "line": 1,
-                            "column": 0
-                          },
-                          "end": {
-                            "line": 1,
-                            "column": 5
-                          }
-                        }
-                      },
-                      "range": [
-                        0,
-                        5
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 0
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 5
-                        }
-                      }
-                    }
-                  ],
-                  "sourceType": "script",
-                  "range": [
-                    0,
-                    5
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 1,
-                      "column": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 5
-                    }
-                  },
-                  "tokens": [
-                    {
-                      "type": "Boolean",
-                      "value": "false",
-                      "range": [
-                        0,
-                        5
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 1,
-                          "column": 0
-                        },
-                        "end": {
-                          "line": 1,
-                          "column": 5
-                        }
-                      }
-                    }
-                  ],
-                  "comments": []
-                }
-              }
-            ],
-            "elseCaseFunctionTree": {
-              "type": "Program",
-              "body": [
-                {
-                  "type": "ExpressionStatement",
-                  "expression": {
-                    "type": "Literal",
-                    "value": true,
-                    "raw": "true",
-                    "range": [
-                      0,
-                      4
-                    ],
-                    "loc": {
-                      "start": {
-                        "line": 1,
-                        "column": 0
-                      },
-                      "end": {
-                        "line": 1,
-                        "column": 4
-                      }
-                    }
-                  },
-                  "range": [
-                    0,
-                    4
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 1,
-                      "column": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 4
-                    }
-                  }
-                }
-              ],
-              "sourceType": "script",
-              "range": [
-                0,
-                4
-              ],
-              "loc": {
-                "start": {
-                  "line": 1,
-                  "column": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 4
-                }
-              },
-              "tokens": [
-                {
-                  "type": "Boolean",
-                  "value": "true",
-                  "range": [
-                    0,
-                    4
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 1,
-                      "column": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 4
-                    }
-                  }
-                }
-              ],
-              "comments": []
-            }
-          }
-        ]
-      },
-      "isGroup": true,
-      "group": "",
-      "location": "2818.3002213971063 928.15528252989"
-    },
-    {
       "key": "0d10f207-2fa6-403c-8240-d6db9eade4af",
       "type": "JSON_EXTRACTION",
       "category": "JSON_EXTRACTION",
@@ -3767,6 +3418,285 @@
       "isGroup": true,
       "group": "",
       "location": "2229.770960098858 1213.599964482749"
+    },
+    {
+      "key": "3be8e486-685c-461f-9511-f3259c4b2cb6",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "3be8e486-685c-461f-9511-f3259c4b2cb6",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "is_cancelled",
+            "originalString": "NOT(IS_NULL(@cancelled_at))",
+            "functionTree": {
+              "type": "Program",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "NOT",
+                      "range": [
+                        0,
+                        3
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 0
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 3
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "IS_NULL",
+                          "range": [
+                            4,
+                            11
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 1,
+                              "column": 4
+                            },
+                            "end": {
+                              "line": 1,
+                              "column": 11
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "@cancelled_at",
+                            "range": [
+                              12,
+                              25
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 1,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 1,
+                                "column": 25
+                              }
+                            }
+                          }
+                        ],
+                        "optional": false,
+                        "range": [
+                          4,
+                          26
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 26
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      0,
+                      27
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 0
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 27
+                      }
+                    }
+                  },
+                  "range": [
+                    0,
+                    27
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 27
+                    }
+                  }
+                }
+              ],
+              "sourceType": "script",
+              "range": [
+                0,
+                27
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 27
+                }
+              },
+              "tokens": [
+                {
+                  "type": "Identifier",
+                  "value": "NOT",
+                  "range": [
+                    0,
+                    3
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 3
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    3,
+                    4
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 4
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "IS_NULL",
+                  "range": [
+                    4,
+                    11
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 11
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": "(",
+                  "range": [
+                    11,
+                    12
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 12
+                    }
+                  }
+                },
+                {
+                  "type": "Identifier",
+                  "value": "@cancelled_at",
+                  "range": [
+                    12,
+                    25
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 12
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 25
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    25,
+                    26
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 25
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 26
+                    }
+                  }
+                },
+                {
+                  "type": "Punctuator",
+                  "value": ")",
+                  "range": [
+                    26,
+                    27
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 27
+                    }
+                  }
+                }
+              ],
+              "comments": []
+            }
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "2808.735782482485 920.0789447466885"
     }
   ],
   "linkDataArray": [
@@ -3855,18 +3785,6 @@
       "topid": "R"
     },
     {
-      "to": "478e144b-5b42-4f91-b9a4-36fbd280f895",
-      "from": "70c777aa-2d2e-4e4b-baf5-5368cba430fd",
-      "frompid": "OUT",
-      "topid": "IN"
-    },
-    {
-      "from": "478e144b-5b42-4f91-b9a4-36fbd280f895",
-      "to": "f276abe0-2f15-453b-8165-5d80f459a094",
-      "frompid": "OUT",
-      "topid": "IN"
-    },
-    {
       "from": "2f4e5d5e-2958-432d-b73c-f0071edbc9ce",
       "to": "0d10f207-2fa6-403c-8240-d6db9eade4af",
       "frompid": "OUT",
@@ -3913,6 +3831,18 @@
       "to": "472b1dae-106d-482a-a7eb-93dc92566524",
       "frompid": "OUT",
       "topid": "R"
+    },
+    {
+      "from": "70c777aa-2d2e-4e4b-baf5-5368cba430fd",
+      "to": "3be8e486-685c-461f-9511-f3259c4b2cb6",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "3be8e486-685c-461f-9511-f3259c4b2cb6",
+      "to": "f276abe0-2f15-453b-8165-5d80f459a094",
+      "frompid": "OUT",
+      "topid": "IN"
     }
   ]
 }
