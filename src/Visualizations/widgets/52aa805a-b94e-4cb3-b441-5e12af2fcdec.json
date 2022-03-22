@@ -1,5 +1,5 @@
 {
-  "$schema": "/json-schema/i.json",
+  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
   "name": "52aa805a-b94e-4cb3-b441-5e12af2fcdec.json",
   "title": "",
   "description": "",
@@ -280,5 +280,13 @@
       "lowCodeString": null
     }
   ],
-  "property": ""
+  "property": "",
+  "extra_echarts_config": {
+    "xAxis": {
+      "position": "top"
+    },
+    "legend": {
+      "icon": "triangle"
+    }
+  }
 }
