@@ -360,8 +360,8 @@
     "table_name": "220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0",
     "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0&page=table"
   },
-  "failed_at": "2022-03-22T14:15:02.010960+00:00",
+  "failed_at": "2022-03-22T14:16:03.583525+00:00",
   "error_code": 422,
   "error_message": "",
-  "_signature": "ec0OoM29fqtzQ7QP9L9hwhQo8lhH2yexDr4nxG2nZrrrS17IEy/EQ/Sc8tmzjgoTHOSJAE0rIc5qlzaFJwi0Aw=="
+  "_signature": "VZHGw9f+Kq34a2AbtlqorEHcC3OgPUQkmNgWCqOS3RL5+9Vplp1bpNFUlGnmfJbkHm11U9xduQpaNrcBEWuKDQ=="
 }
