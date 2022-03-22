@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322144417_11de878c-5ec5-59d1-b6d0-4fc5132506be",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
     "source_settings": {
@@ -35,5 +35,138 @@
     }
   },
   "created_at": "2022-03-22T14:44:17.712245+00:00",
-  "_signature": "0IDd+RD15+ajs89IBUpWAsSbk67dKnTV1TaE6xWhPBNUpS1EbWGLDHF5Foh2laKszXnK8Yy/P4Lr62VQ6cvOCw=="
+  "finished_at": "2022-03-22T14:44:32.832512+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "import_finished_at": "2022-03-22T14:44:32.832396+00:00",
+    "row_count": 4505,
+    "current_import_row_count": 4505,
+    "size_in_bytes": 1553624,
+    "external_id": "ba42e2d1-7a36-402e-b4fd-661257f3981c",
+    "columns": [
+      {
+        "field_name": "clicks",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "conversions",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "cost",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "engagements",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "impressions",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "interactions",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "views",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "sdc_spreadsheet_id",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "sdc_sheet_id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "sdc_row",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "index",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "currency",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "account",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgroupid",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgroup",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgroupstate",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "network",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adtype",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "campaignid",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "campaign",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "day",
+        "data_type": "DATE",
+        "external_data_type": "DATE"
+      },
+      {
+        "field_name": "ad",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adid",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adstate",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220322144417_11de878c-5ec5-59d1-b6d0-4fc5132506be",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322144417_11de878c-5ec5-59d1-b6d0-4fc5132506be&page=table"
+  },
+  "_signature": "YSPs3Y6ETb/MNo1+COog8JyN/trDey0/B+vgS8TKN0Pb0dgep/hVQWbXIhBGxgKQfnXN4AbrxzV3MEmfHRQLDg=="
 }
