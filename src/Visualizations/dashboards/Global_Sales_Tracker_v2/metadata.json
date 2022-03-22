@@ -4,5 +4,5 @@
   "description": "Updated version of our killer dashboard!",
   "tags": [],
   "theme": "Global Sales Tracker v2a590ec49-8995-4f78-852d-e5a810c85847.json",
-  "last_used_datasource_table_path": "src/Models/Google_Ads_Data/daily_ads_data"
+  "last_used_datasource_table_path": "src/Models/Global_Sales_Tracker_conversion/global_sales_tracker_conversion"
 }

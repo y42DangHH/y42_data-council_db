@@ -1,0 +1,72 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "26852afd-be8d-4453-87a5-601034070df9.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 102,
+  "settings": {
+    "series": [
+      {
+        "field_id": "a9d64552_1c06_4219_924b_46209fbe006a",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [],
+    "breakdowns": [
+      "e17bf568_58f6_405a_a881_aada028952c5"
+    ],
+    "show_as_donut": true
+  },
+  "datasource_table_path": "src/Models/Global_Sales_Tracker_conversion/global_sales_tracker_conversion",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "e17bf568_58f6_405a_a881_aada028952c5",
+      "field": "item_type",
+      "type": "STRING",
+      "alias": "VALUE_item_type_e17bf568_58f6_405a_a881_aada028952c5",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "a9d64552_1c06_4219_924b_46209fbe006a",
+      "field": "total_revenue",
+      "type": "NUMERIC",
+      "alias": "SUM_total_revenue_a9d64552_1c06_4219_924b_46209fbe006a",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

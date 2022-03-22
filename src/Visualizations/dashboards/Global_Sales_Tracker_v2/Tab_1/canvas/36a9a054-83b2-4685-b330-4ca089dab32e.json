@@ -11,15 +11,17 @@
   "type": "Widget",
   "position": {
     "x": 1428,
-    "y": 534
+    "y": 482
   },
   "size": {
-    "width": 559,
-    "height": 315
+    "height": 367,
+    "width": 559
   },
   "zIndex": 7,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/ec87459e-64fe-42ab-a9f7-16ad4a2017ee.json"
+  },
   "styles": {
     "background-color": "#ffffff",
     "border-color": "#f5f5f5",

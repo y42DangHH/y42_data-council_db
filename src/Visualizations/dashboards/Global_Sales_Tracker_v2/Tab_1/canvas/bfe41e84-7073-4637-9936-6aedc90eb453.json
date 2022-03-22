@@ -14,12 +14,14 @@
     "y": 165
   },
   "size": {
-    "height": 360,
+    "height": 308,
     "width": 559
   },
   "zIndex": 6,
   "angle": 0,
-  "typeSettings": null,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/widgets/26852afd-be8d-4453-87a5-601034070df9.json"
+  },
   "styles": {
     "background-color": "#ffffff",
     "border-color": "#f5f5f5",
