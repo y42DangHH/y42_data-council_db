@@ -18,11 +18,11 @@
     },
     {
       "from": "4e76b5d9-4b58-421c-9430-542b882041c1",
-      "to": "0852bc52-b11f-4618-96e7-8839eb67d517"
+      "to": "6d993bc2-cb68-41dc-b2d5-1d03dfadee93"
     },
     {
       "from": "674db822-55c5-444c-b2d3-394025eec7ac",
-      "to": "0852bc52-b11f-4618-96e7-8839eb67d517"
+      "to": "6d993bc2-cb68-41dc-b2d5-1d03dfadee93"
     }
   ],
   "nodeDataArray": [
@@ -36,7 +36,7 @@
       },
       "is_automation": false,
       "type": "singer-google-sheets",
-      "location": "0 7.105427357601002e-15",
+      "location": "0 0",
       "ignore_failure": false,
       "settings": "src/Integrations/Google_Ads___Facebook_Ads"
     },
@@ -92,7 +92,7 @@
       },
       "is_automation": false,
       "type": "ui_model",
-      "location": "513.5228474983077 3.552713678800501e-14",
+      "location": "513.522847498308 0",
       "ignore_failure": false,
       "settings": "src/Models/Daily_Ad_spend"
     },
@@ -111,18 +111,18 @@
       "settings": "src/Models/Google_Ads_Data"
     },
     {
-      "key": "0852bc52-b11f-4618-96e7-8839eb67d517",
+      "key": "6d993bc2-cb68-41dc-b2d5-1d03dfadee93",
       "task_type": "IMPORT",
       "category": "IMPORT",
       "inputs": {
-        "entry_id": "src_shopify_orders",
-        "sub_entry_id": "src_shopify_orders"
+        "entry_id": "Global_Sales_Tracker_conversion",
+        "sub_entry_id": "global_sales_tracker_conversion"
       },
       "is_automation": false,
       "type": "ui_model",
-      "location": "1048.1522013364606 97.08992916328113",
+      "location": "1027.045694996616 1.4210854715202004e-14",
       "ignore_failure": false,
-      "settings": "src/Models/src_shopify_orders"
+      "settings": "src/Models/Global_Sales_Tracker_conversion"
     }
   ]
 }
