@@ -1,0 +1,252 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "ae384e66-9b24-4abc-bf6d-140f36f42781.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 100,
+  "settings": {
+    "series": [
+      {
+        "field_id": "86ecfcd3_bf94_49fb_8ea8_7eba3646c8ed",
+        "mark": "bar",
+        "stack_name": 1,
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "tooltip": {
+          "show": true,
+          "field_ids": []
+        },
+        "show_right_axis": false,
+        "format": "inherit",
+        "cumulative": false,
+        "hidden": false
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "e9c65465_b333_453a_819b_2cf9e9a17f0d"
+    ],
+    "breakdowns": [
+      "4e512758_4a62_4f74_90d1_8e119b2ab6d2"
+    ],
+    "series_on_y": true,
+    "serieAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "value",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "right",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "dimensionAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "time",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "center",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "show_stack_by": true,
+    "show_stack_by_100_percent": false,
+    "sort": {
+      "order": "NONE",
+      "sort_by": "SERIES",
+      "sortByField": true,
+      "fieldSortKey": null,
+      "stackNameSortKey": null
+    },
+    "show_total_for_stacks": []
+  },
+  "datasource_table_path": "src/Models/Daily_Ad_spend/daily_ad_spend",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "e9c65465_b333_453a_819b_2cf9e9a17f0d",
+      "field": "date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_date_e9c65465_b333_453a_819b_2cf9e9a17f0d",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "4e512758_4a62_4f74_90d1_8e119b2ab6d2",
+      "field": "platform",
+      "type": "STRING",
+      "alias": "VALUE_platform_4e512758_4a62_4f74_90d1_8e119b2ab6d2",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "SUM",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "86ecfcd3_bf94_49fb_8ea8_7eba3646c8ed",
+      "field": "spend",
+      "type": "NUMERIC",
+      "alias": "SUM_spend_86ecfcd3_bf94_49fb_8ea8_7eba3646c8ed",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}

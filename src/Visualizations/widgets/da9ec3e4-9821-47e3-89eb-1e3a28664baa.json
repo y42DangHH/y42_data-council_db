@@ -1,0 +1,56 @@
+{
+  "$schema": "/json-schema/i.json",
+  "name": "da9ec3e4-9821-47e3-89eb-1e3a28664baa.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 104,
+  "settings": {
+    "series": [
+      {
+        "field_id": "b20d577e_d730_4881_a5fc_5734ae46a06f",
+        "format": "inherit"
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "963169a7_d258_4328_a108_e0cc9dd575ff"
+    ],
+    "breakdowns": []
+  },
+  "datasource_table_path": "src/Models/Global_Sales_Tracker_conversion/global_sales_tracker_conversion",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "VALUE",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "963169a7_d258_4328_a108_e0cc9dd575ff",
+      "field": "region",
+      "type": "STRING",
+      "alias": "VALUE_region_963169a7_d258_4328_a108_e0cc9dd575ff",
+      "filters": [],
+      "lowCodeString": null
+    },
+    {
+      "aggregation": "AVG",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "b20d577e_d730_4881_a5fc_5734ae46a06f",
+      "field": "total_revenue",
+      "type": "NUMERIC",
+      "alias": "AVG_total_revenue_b20d577e_d730_4881_a5fc_5734ae46a06f",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
