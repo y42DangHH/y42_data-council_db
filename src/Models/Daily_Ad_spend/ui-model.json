@@ -11,10 +11,10 @@
       "transformationStep": {
         "id": "7cd1e5f6-aa6c-4629-88f4-35665ea3ff05",
         "title": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-        "datasourceName": "Google Ads & Facebook Ads",
+        "datasourceName": "Google_Ads_data_conversion",
         "transformObject": {
-          "source": "src/Integrations/Google_Ads___Facebook_Ads",
-          "table": "src/Integrations/Google_Ads___Facebook_Ads/Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data",
+          "source": "src/Models/Google_Ads_data_conversion",
+          "table": "src/Models/Google_Ads_data_conversion/google_ads_data_conversion",
           "lang": ""
         },
         "transformationType": "INPUT"
@@ -32,11 +32,11 @@
         "title": "",
         "transformObject": [
           {
-            "type": "number",
+            "type": "NUMERIC",
             "source": "cost",
             "target": "spend",
             "applied": true,
-            "changed": false,
+            "changed": true,
             "display": true,
             "description": "",
             "display_name": "spend",
@@ -44,11 +44,11 @@
             "sourceTypeChanged": false
           },
           {
-            "type": "text",
+            "type": "STRING",
             "source": "day",
             "target": "date",
             "applied": true,
-            "changed": false,
+            "changed": true,
             "display": true,
             "description": "",
             "display_name": "date",
@@ -262,7 +262,7 @@
           "name": "daily_ad_spend",
           "fields": [
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "spend",
               "target": "spend",
               "applied": false,
@@ -271,7 +271,7 @@
               "description": "",
               "display_name": "spend",
               "source_alias": "Function Node",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "type": "date",
@@ -286,7 +286,7 @@
               "sourceTypeChanged": false
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "index",
               "target": "index",
               "applied": false,
@@ -295,10 +295,10 @@
               "description": "",
               "display_name": "index",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "currency",
               "target": "currency",
               "applied": false,
@@ -307,10 +307,10 @@
               "description": "",
               "display_name": "currency",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "account",
               "target": "account",
               "applied": false,
@@ -319,10 +319,10 @@
               "description": "",
               "display_name": "account",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "adgroupid",
               "target": "adgroupid",
               "applied": false,
@@ -331,10 +331,10 @@
               "description": "",
               "display_name": "adgroupid",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "adgroup",
               "target": "adgroup",
               "applied": false,
@@ -343,10 +343,10 @@
               "description": "",
               "display_name": "adgroup",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "adgroupstate",
               "target": "adgroupstate",
               "applied": false,
@@ -355,10 +355,10 @@
               "description": "",
               "display_name": "adgroupstate",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "network",
               "target": "network",
               "applied": false,
@@ -367,10 +367,10 @@
               "description": "",
               "display_name": "network",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "adtype",
               "target": "adtype",
               "applied": false,
@@ -379,10 +379,10 @@
               "description": "",
               "display_name": "adtype",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "campaignid",
               "target": "campaignid",
               "applied": false,
@@ -391,10 +391,10 @@
               "description": "",
               "display_name": "campaignid",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "campaign",
               "target": "campaign",
               "applied": false,
@@ -403,10 +403,10 @@
               "description": "",
               "display_name": "campaign",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "clicks",
               "target": "clicks",
               "applied": false,
@@ -415,10 +415,10 @@
               "description": "",
               "display_name": "clicks",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "conversions",
               "target": "conversions",
               "applied": false,
@@ -427,10 +427,10 @@
               "description": "",
               "display_name": "conversions",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "engagements",
               "target": "engagements",
               "applied": false,
@@ -439,10 +439,10 @@
               "description": "",
               "display_name": "engagements",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "ad",
               "target": "ad",
               "applied": false,
@@ -451,10 +451,10 @@
               "description": "",
               "display_name": "ad",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "adid",
               "target": "adid",
               "applied": false,
@@ -463,10 +463,10 @@
               "description": "",
               "display_name": "adid",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "impressions",
               "target": "impressions",
               "applied": false,
@@ -475,10 +475,10 @@
               "description": "",
               "display_name": "impressions",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "interactions",
               "target": "interactions",
               "applied": false,
@@ -487,10 +487,10 @@
               "description": "",
               "display_name": "interactions",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "adstate",
               "target": "adstate",
               "applied": false,
@@ -499,10 +499,10 @@
               "description": "",
               "display_name": "adstate",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "views",
               "target": "views",
               "applied": false,
@@ -511,10 +511,10 @@
               "description": "",
               "display_name": "views",
               "source_alias": "Beginner's Journey Google Ads Data - AD_PERFORMANCE_REPORT",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "platform",
               "target": "platform",
               "applied": false,
@@ -523,10 +523,10 @@
               "description": "",
               "display_name": "platform",
               "source_alias": "Function Node",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "account_currency",
               "target": "account_currency",
               "applied": false,
@@ -535,10 +535,10 @@
               "description": "",
               "display_name": "account_currency",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "account_id",
               "target": "account_id",
               "applied": false,
@@ -547,10 +547,10 @@
               "description": "",
               "display_name": "account_id",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "account_name",
               "target": "account_name",
               "applied": false,
@@ -559,10 +559,10 @@
               "description": "",
               "display_name": "account_name",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "ad_id",
               "target": "ad_id",
               "applied": false,
@@ -571,10 +571,10 @@
               "description": "",
               "display_name": "ad_id",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "ad_name",
               "target": "ad_name",
               "applied": false,
@@ -583,10 +583,10 @@
               "description": "",
               "display_name": "ad_name",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "adset_id",
               "target": "adset_id",
               "applied": false,
@@ -595,10 +595,10 @@
               "description": "",
               "display_name": "adset_id",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "adset_name",
               "target": "adset_name",
               "applied": false,
@@ -607,10 +607,10 @@
               "description": "",
               "display_name": "adset_name",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "STRING",
               "source": "campaign_id",
               "target": "campaign_id",
               "applied": false,
@@ -619,10 +619,10 @@
               "description": "",
               "display_name": "campaign_id",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "campaign_name",
               "target": "campaign_name",
               "applied": false,
@@ -631,10 +631,10 @@
               "description": "",
               "display_name": "campaign_name",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "NUMERIC",
               "source": "canvas_avg_view_percent",
               "target": "canvas_avg_view_percent",
               "applied": false,
@@ -643,10 +643,10 @@
               "description": "",
               "display_name": "canvas_avg_view_percent",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "NUMERIC",
               "source": "canvas_avg_view_time",
               "target": "canvas_avg_view_time",
               "applied": false,
@@ -655,10 +655,10 @@
               "description": "",
               "display_name": "canvas_avg_view_time",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "conversion_rate_ranking",
               "target": "conversion_rate_ranking",
               "applied": false,
@@ -667,10 +667,10 @@
               "description": "",
               "display_name": "conversion_rate_ranking",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cost_per_inline_link_click",
               "target": "cost_per_inline_link_click",
               "applied": false,
@@ -679,10 +679,10 @@
               "description": "",
               "display_name": "cost_per_inline_link_click",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cost_per_inline_post_engagement",
               "target": "cost_per_inline_post_engagement",
               "applied": false,
@@ -691,10 +691,10 @@
               "description": "",
               "display_name": "cost_per_inline_post_engagement",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cost_per_unique_click",
               "target": "cost_per_unique_click",
               "applied": false,
@@ -703,10 +703,10 @@
               "description": "",
               "display_name": "cost_per_unique_click",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cost_per_unique_inline_link_click",
               "target": "cost_per_unique_inline_link_click",
               "applied": false,
@@ -715,10 +715,10 @@
               "description": "",
               "display_name": "cost_per_unique_inline_link_click",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cpc",
               "target": "cpc",
               "applied": false,
@@ -727,10 +727,10 @@
               "description": "",
               "display_name": "cpc",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cpm",
               "target": "cpm",
               "applied": false,
@@ -739,10 +739,10 @@
               "description": "",
               "display_name": "cpm",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "cpp",
               "target": "cpp",
               "applied": false,
@@ -751,10 +751,10 @@
               "description": "",
               "display_name": "cpp",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "ctr",
               "target": "ctr",
               "applied": false,
@@ -763,10 +763,10 @@
               "description": "",
               "display_name": "ctr",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "date_stop",
               "target": "date_stop",
               "applied": false,
@@ -775,10 +775,10 @@
               "description": "",
               "display_name": "date_stop",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "engagement_rate_ranking",
               "target": "engagement_rate_ranking",
               "applied": false,
@@ -787,10 +787,10 @@
               "description": "",
               "display_name": "engagement_rate_ranking",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "frequency",
               "target": "frequency",
               "applied": false,
@@ -799,10 +799,10 @@
               "description": "",
               "display_name": "frequency",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "inline_link_click_ctr",
               "target": "inline_link_click_ctr",
               "applied": false,
@@ -811,10 +811,10 @@
               "description": "",
               "display_name": "inline_link_click_ctr",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "inline_link_clicks",
               "target": "inline_link_clicks",
               "applied": false,
@@ -823,10 +823,10 @@
               "description": "",
               "display_name": "inline_link_clicks",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "inline_post_engagement",
               "target": "inline_post_engagement",
               "applied": false,
@@ -835,10 +835,10 @@
               "description": "",
               "display_name": "inline_post_engagement",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "objective",
               "target": "objective",
               "applied": false,
@@ -847,10 +847,10 @@
               "description": "",
               "display_name": "objective",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "quality_ranking",
               "target": "quality_ranking",
               "applied": false,
@@ -859,10 +859,10 @@
               "description": "",
               "display_name": "quality_ranking",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "reach",
               "target": "reach",
               "applied": false,
@@ -871,10 +871,10 @@
               "description": "",
               "display_name": "reach",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "social_spend",
               "target": "social_spend",
               "applied": false,
@@ -883,10 +883,10 @@
               "description": "",
               "display_name": "social_spend",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "unique_clicks",
               "target": "unique_clicks",
               "applied": false,
@@ -895,10 +895,10 @@
               "description": "",
               "display_name": "unique_clicks",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "unique_ctr",
               "target": "unique_ctr",
               "applied": false,
@@ -907,10 +907,10 @@
               "description": "",
               "display_name": "unique_ctr",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "unique_inline_link_click_ctr",
               "target": "unique_inline_link_click_ctr",
               "applied": false,
@@ -919,10 +919,10 @@
               "description": "",
               "display_name": "unique_inline_link_click_ctr",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "unique_inline_link_clicks",
               "target": "unique_inline_link_clicks",
               "applied": false,
@@ -931,10 +931,10 @@
               "description": "",
               "display_name": "unique_inline_link_clicks",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "unique_link_clicks_ctr",
               "target": "unique_link_clicks_ctr",
               "applied": false,
@@ -943,10 +943,10 @@
               "description": "",
               "display_name": "unique_link_clicks_ctr",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "action_values",
               "target": "action_values",
               "applied": false,
@@ -955,10 +955,10 @@
               "description": "",
               "display_name": "action_values",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "actions",
               "target": "actions",
               "applied": false,
@@ -967,10 +967,10 @@
               "description": "",
               "display_name": "actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "cost_per_action_type",
               "target": "cost_per_action_type",
               "applied": false,
@@ -979,10 +979,10 @@
               "description": "",
               "display_name": "cost_per_action_type",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "cost_per_conversion",
               "target": "cost_per_conversion",
               "applied": false,
@@ -991,10 +991,10 @@
               "description": "",
               "display_name": "cost_per_conversion",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "cost_per_unique_action_type",
               "target": "cost_per_unique_action_type",
               "applied": false,
@@ -1003,10 +1003,10 @@
               "description": "",
               "display_name": "cost_per_unique_action_type",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "outbound_clicks",
               "target": "outbound_clicks",
               "applied": false,
@@ -1015,10 +1015,10 @@
               "description": "",
               "display_name": "outbound_clicks",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "unique_actions",
               "target": "unique_actions",
               "applied": false,
@@ -1027,10 +1027,10 @@
               "description": "",
               "display_name": "unique_actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "video_30_sec_watched_actions",
               "target": "video_30_sec_watched_actions",
               "applied": false,
@@ -1039,10 +1039,10 @@
               "description": "",
               "display_name": "video_30_sec_watched_actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "video_p100_watched_actions",
               "target": "video_p100_watched_actions",
               "applied": false,
@@ -1051,10 +1051,10 @@
               "description": "",
               "display_name": "video_p100_watched_actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "video_p25_watched_actions",
               "target": "video_p25_watched_actions",
               "applied": false,
@@ -1063,10 +1063,10 @@
               "description": "",
               "display_name": "video_p25_watched_actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "text",
+              "type": "STRING",
               "source": "video_p50_watched_actions",
               "target": "video_p50_watched_actions",
               "applied": false,
@@ -1075,10 +1075,10 @@
               "description": "",
               "display_name": "video_p50_watched_actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
-              "type": "number",
+              "type": "NUMERIC",
               "source": "video_p75_watched_actions",
               "target": "video_p75_watched_actions",
               "applied": false,
@@ -1087,6 +1087,42 @@
               "description": "",
               "display_name": "video_p75_watched_actions",
               "source_alias": "Beginner's Journey Facebook Ads Data - ads_insights",
+              "sourceTypeChanged": true
+            },
+            {
+              "target": "sdc_spreadsheet_id",
+              "source": "sdc_spreadsheet_id",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "sdc_spreadsheet_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sdc_sheet_id",
+              "source": "sdc_sheet_id",
+              "type": "INTEGER",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "sdc_sheet_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sdc_row",
+              "source": "sdc_row",
+              "type": "INTEGER",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "display_name": "sdc_row",
+              "source_alias": "",
+              "applied": false,
               "sourceTypeChanged": false
             }
           ]
@@ -1104,10 +1140,10 @@
       "transformationStep": {
         "id": "5c50d00a-daf6-44ba-83b9-91e3e6b9bdbb",
         "title": "Beginner's Journey Facebook Ads Data - ads_insights",
-        "datasourceName": "Google Ads & Facebook Ads",
+        "datasourceName": "Facebook_Ads_data_conversion",
         "transformObject": {
-          "source": "src/Integrations/Google_Ads___Facebook_Ads",
-          "table": "src/Integrations/Google_Ads___Facebook_Ads/Beginner's Journey Facebook Ads Data-Beginner's Journey Facebook Ads Data",
+          "source": "src/Models/Facebook_Ads_data_conversion",
+          "table": "src/Models/Facebook_Ads_data_conversion/facebook_ads_data_conversion",
           "lang": ""
         },
         "transformationType": "INPUT"
@@ -1125,11 +1161,11 @@
         "title": "",
         "transformObject": [
           {
-            "type": "text",
+            "type": "DATETIME",
             "source": "date_start",
             "target": "date",
             "applied": true,
-            "changed": false,
+            "changed": true,
             "display": true,
             "description": "",
             "display_name": "date",
