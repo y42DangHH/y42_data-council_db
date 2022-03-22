@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322160101_adbd4a6f-5efa-50d0-a4a9-4cff444e8fd0",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
     "source_settings": {
@@ -35,5 +35,178 @@
     }
   },
   "created_at": "2022-03-22T16:01:01.095476+00:00",
-  "_signature": "jn8sJZdK/jhTz4FmdazL6I619gefs7UCK8m1ZCcDFU3yK+NC1sW4kD+lqaCtV6g5zlZZflEek4bv9BaXULeZCw=="
+  "finished_at": "2022-03-22T16:01:36.343780+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "import_finished_at": "2022-03-22T16:01:36.343637+00:00",
+    "row_count": 14760,
+    "current_import_row_count": 14760,
+    "size_in_bytes": 23203809,
+    "external_id": "9dae9c6d-ede5-43d5-adae-e9a26226d3ff",
+    "columns": [
+      {
+        "field_name": "order_total_tax",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "order_created_at_timestamp",
+        "data_type": "DATETIME",
+        "external_data_type": "DATETIME"
+      },
+      {
+        "field_name": "order_updated_at_timestamp",
+        "data_type": "DATETIME",
+        "external_data_type": "DATETIME"
+      },
+      {
+        "field_name": "order_id",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "total_price",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "order_number",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "total_discounts",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "total_line_items_price",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "taxes_included",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "cancelled_at",
+        "data_type": "DATETIME",
+        "external_data_type": "DATETIME"
+      },
+      {
+        "field_name": "customer_id",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "order_rank",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "shipping_gross_price",
+        "data_type": "NUMERIC",
+        "external_data_type": "NUMERIC"
+      },
+      {
+        "field_name": "is_cancelled",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "order_name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "currency",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "customer",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "shipping_address",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "fulfillment_status",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "financial_status",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "gateway",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "customer_email",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "shipping_country",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "shipping_province",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "shipping_city",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "country_code",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "order_created_at_date",
+        "data_type": "DATE",
+        "external_data_type": "DATE"
+      },
+      {
+        "field_name": "order_created_at_hour",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "discount_codes",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "order_rank_text",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "customer_type",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "fulfillment_date",
+        "data_type": "DATETIME",
+        "external_data_type": "DATETIME"
+      }
+    ],
+    "table_name": "220322160101_adbd4a6f-5efa-50d0-a4a9-4cff444e8fd0",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322160101_adbd4a6f-5efa-50d0-a4a9-4cff444e8fd0&page=table"
+  },
+  "_signature": "sNbFDqo8Y+mRXoytQo/OLZjc9UWovahx369ZJ8j89qX0ONmUMf2Cx27j72elohCHR/A5Eu7t3LNJhIquKcDtCw=="
 }
