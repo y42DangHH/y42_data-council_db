@@ -1,8 +1,806 @@
 {
-  "class": "go.GraphLinksModel",
+  "class": "GraphLinksModel",
   "nodeCategoryProperty": "category",
   "linkFromPortIdProperty": "frompid",
   "linkToPortIdProperty": "topid",
-  "nodeDataArray": [],
-  "linkDataArray": []
+  "nodeDataArray": [
+    {
+      "key": "f7d3f60e-6c4e-4a78-89fb-48c5781a866b",
+      "type": "INPUT",
+      "category": "INPUT",
+      "transformationStep": {
+        "id": "f7d3f60e-6c4e-4a78-89fb-48c5781a866b",
+        "title": "stg_shopify_orders-stg_shopify_orders",
+        "transformationType": "INPUT",
+        "datasourceName": "stg_shopify_orders",
+        "transformObject": {
+          "source": "src/Integrations/stg_shopify_orders",
+          "table": "src/Integrations/stg_shopify_orders/stg_shopify_orders-stg_shopify_orders",
+          "lang": ""
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "0 0"
+    },
+    {
+      "key": "ea6571b8-a72e-43af-bec0-cab4978de19e",
+      "type": "FIELDS",
+      "category": "FIELDS",
+      "transformationStep": {
+        "id": "ea6571b8-a72e-43af-bec0-cab4978de19e",
+        "title": "",
+        "transformationType": "FIELDS",
+        "transformObject": [
+          {
+            "target": "sdc_spreadsheet_id",
+            "source": "sdc_spreadsheet_id",
+            "type": "STRING",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "sdc_spreadsheet_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "sdc_sheet_id",
+            "source": "sdc_sheet_id",
+            "type": "INTEGER",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "sdc_sheet_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "sdc_row",
+            "source": "sdc_row",
+            "type": "INTEGER",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "sdc_row",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_total_tax",
+            "source": "order_total_tax",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_total_tax",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_created_at_timestamp",
+            "source": "order_created_at_timestamp",
+            "type": "STRING",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_created_at_timestamp",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_updated_at_timestamp",
+            "source": "order_updated_at_timestamp",
+            "type": "STRING",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_updated_at_timestamp",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_id",
+            "source": "order_id",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_price",
+            "source": "total_price",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "total_price",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_number",
+            "source": "order_number",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_number",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_discounts",
+            "source": "total_discounts",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "total_discounts",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "total_line_items_price",
+            "source": "total_line_items_price",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "total_line_items_price",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "taxes_included",
+            "source": "taxes_included",
+            "type": "BOOLEAN",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "taxes_included",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "cancelled_at",
+            "source": "cancelled_at",
+            "type": "STRING",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "cancelled_at",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "customer_id",
+            "source": "customer_id",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "customer_id",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_rank",
+            "source": "order_rank",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "order_rank",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_gross_price",
+            "source": "shipping_gross_price",
+            "type": "NUMERIC",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "shipping_gross_price",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "is_cancelled",
+            "source": "is_cancelled",
+            "type": "BOOLEAN",
+            "display": true,
+            "changed": true,
+            "description": "",
+            "display_name": "is_cancelled",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1051 0"
+    },
+    {
+      "key": "e73e337e-6356-41f9-99e4-f6e77cac8f59",
+      "type": "DATE_PARSER",
+      "category": "DATE_PARSER",
+      "transformationStep": {
+        "id": "e73e337e-6356-41f9-99e4-f6e77cac8f59",
+        "title": "",
+        "transformationType": "DATE_PARSER",
+        "transformObject": [
+          {
+            "target": "fulfillment_date",
+            "targetColumn": "fulfillment_date",
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "timeZone": "UTC"
+          },
+          {
+            "target": "order_created_at_date",
+            "targetColumn": "order_created_at_date",
+            "format": "YYYY-MM-DD",
+            "timeZone": "UTC"
+          },
+          {
+            "target": "order_created_at_timestamp",
+            "targetColumn": "order_created_at_timestamp",
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "timeZone": "UTC"
+          },
+          {
+            "target": "order_updated_at_timestamp",
+            "targetColumn": "order_updated_at_timestamp",
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "timeZone": "UTC"
+          },
+          {
+            "target": "cancelled_at",
+            "targetColumn": "cancelled_at",
+            "format": "YYYY-MM-DD HH:mm:ss",
+            "timeZone": "UTC"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1319 0"
+    },
+    {
+      "key": "73c75059-105b-4224-987f-dc60e28bd8ad",
+      "type": "TEXT_EXTRACTION",
+      "category": "TEXT_EXTRACTION",
+      "transformationStep": {
+        "id": "73c75059-105b-4224-987f-dc60e28bd8ad",
+        "title": "order_created",
+        "transformationType": "TEXT_EXTRACTION",
+        "transformObject": {
+          "target": "order_created_at_timestamp",
+          "source": "order_created_at_timestamp",
+          "conditions": [
+            {
+              "operation": "BEFORE",
+              "matchCondition": "FIRST",
+              "valueType": "NUMERIC",
+              "valueOrOffset": "20"
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "247 0"
+    },
+    {
+      "key": "28f5d92c-5593-4bb6-8b20-79cbf0100761",
+      "type": "TEXT_EXTRACTION",
+      "category": "TEXT_EXTRACTION",
+      "transformationStep": {
+        "id": "28f5d92c-5593-4bb6-8b20-79cbf0100761",
+        "title": "updated_at",
+        "transformationType": "TEXT_EXTRACTION",
+        "transformObject": {
+          "target": "order_updated_at_timestamp",
+          "source": "order_updated_at_timestamp",
+          "conditions": [
+            {
+              "operation": "BEFORE",
+              "matchCondition": "FIRST",
+              "valueType": "NUMERIC",
+              "valueOrOffset": "20"
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "515 0"
+    },
+    {
+      "key": "924d8778-fd85-464a-b6e3-950bcd7a3787",
+      "type": "TEXT_EXTRACTION",
+      "category": "TEXT_EXTRACTION",
+      "transformationStep": {
+        "id": "924d8778-fd85-464a-b6e3-950bcd7a3787",
+        "title": "",
+        "transformationType": "TEXT_EXTRACTION",
+        "transformObject": {
+          "target": "cancelled_at",
+          "source": "cancelled_at",
+          "conditions": [
+            {
+              "operation": "BEFORE",
+              "matchCondition": "FIRST",
+              "valueType": "NUMERIC",
+              "valueOrOffset": "20"
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "783 0"
+    },
+    {
+      "key": "22b1b6f1-5cad-4b8c-83d3-287a25215f7a",
+      "type": "OUTPUT",
+      "category": "OUTPUT",
+      "transformationStep": {
+        "id": "22b1b6f1-5cad-4b8c-83d3-287a25215f7a",
+        "title": "stg_orders_typecasted",
+        "transformationType": "OUTPUT",
+        "transformObject": {
+          "name": "stg_orders_typecasted",
+          "fields": [
+            {
+              "target": "order_total_tax",
+              "source": "order_total_tax",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_total_tax",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_created_at_timestamp",
+              "source": "order_created_at_timestamp",
+              "type": "DATETIME",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_created_at_timestamp",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_updated_at_timestamp",
+              "source": "order_updated_at_timestamp",
+              "type": "DATETIME",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_updated_at_timestamp",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_id",
+              "source": "order_id",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_price",
+              "source": "total_price",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_price",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_number",
+              "source": "order_number",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_number",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_discounts",
+              "source": "total_discounts",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_discounts",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "total_line_items_price",
+              "source": "total_line_items_price",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "total_line_items_price",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "taxes_included",
+              "source": "taxes_included",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "taxes_included",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "cancelled_at",
+              "source": "cancelled_at",
+              "type": "DATETIME",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "cancelled_at",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_id",
+              "source": "customer_id",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer_id",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_rank",
+              "source": "order_rank",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_rank",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_gross_price",
+              "source": "shipping_gross_price",
+              "type": "NUMERIC",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_gross_price",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "is_cancelled",
+              "source": "is_cancelled",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "is_cancelled",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_name",
+              "source": "order_name",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_name",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "currency",
+              "source": "currency",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "currency",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer",
+              "source": "customer",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_address",
+              "source": "shipping_address",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_address",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fulfillment_status",
+              "source": "fulfillment_status",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "fulfillment_status",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "financial_status",
+              "source": "financial_status",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "financial_status",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "gateway",
+              "source": "gateway",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "gateway",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_email",
+              "source": "customer_email",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer_email",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_country",
+              "source": "shipping_country",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_country",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_province",
+              "source": "shipping_province",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_province",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "shipping_city",
+              "source": "shipping_city",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "shipping_city",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "country_code",
+              "source": "country_code",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "country_code",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_created_at_date",
+              "source": "order_created_at_date",
+              "type": "date",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_created_at_date",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_created_at_hour",
+              "source": "order_created_at_hour",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_created_at_hour",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "discount_codes",
+              "source": "discount_codes",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "discount_codes",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "order_rank_text",
+              "source": "order_rank_text",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "order_rank_text",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "customer_type",
+              "source": "customer_type",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "customer_type",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "fulfillment_date",
+              "source": "fulfillment_date",
+              "type": "DATETIME",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "display_name": "fulfillment_date",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "1642.6043016325473 7.067248044592247"
+    }
+  ],
+  "linkDataArray": [
+    {
+      "to": "e73e337e-6356-41f9-99e4-f6e77cac8f59",
+      "from": "ea6571b8-a72e-43af-bec0-cab4978de19e",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "73c75059-105b-4224-987f-dc60e28bd8ad",
+      "from": "f7d3f60e-6c4e-4a78-89fb-48c5781a866b",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "28f5d92c-5593-4bb6-8b20-79cbf0100761",
+      "from": "73c75059-105b-4224-987f-dc60e28bd8ad",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "924d8778-fd85-464a-b6e3-950bcd7a3787",
+      "from": "28f5d92c-5593-4bb6-8b20-79cbf0100761",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "ea6571b8-a72e-43af-bec0-cab4978de19e",
+      "from": "924d8778-fd85-464a-b6e3-950bcd7a3787",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "22b1b6f1-5cad-4b8c-83d3-287a25215f7a",
+      "from": "e73e337e-6356-41f9-99e4-f6e77cac8f59",
+      "frompid": "OUT",
+      "topid": "IN"
+    }
+  ]
 }
