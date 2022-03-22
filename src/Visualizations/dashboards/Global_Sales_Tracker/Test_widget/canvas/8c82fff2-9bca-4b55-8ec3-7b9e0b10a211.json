@@ -8,25 +8,25 @@
     "rotatable": true
   },
   "$schema": "/json-schema/d.json",
-  "type": "Shape",
+  "type": "Widget",
   "position": {
-    "x": 132.58974098726685,
-    "y": 75.1168041229248
+    "x": 355,
+    "y": 227
   },
   "size": {
-    "height": 939.0597534179688,
-    "width": 1580.8916127724988
+    "height": 433,
+    "width": 660.0000000000001
   },
-  "zIndex": 0,
+  "zIndex": 1,
   "angle": 0,
   "typeSettings": {
-    "shapePath": "M 512 512 H 0 V 0 h 512 v 512 Z"
+    "widgetPath": "src/Visualizations/widgets/dd9b01a9-6352-4ffa-bfb5-ed3fd8ca03c0.json"
   },
   "styles": {
-    "background-color": "#ffffffff",
-    "border-color": "#5a9deb",
-    "border-style": "none",
-    "border-width": "none",
+    "background-color": "#ffffff",
+    "border-color": "#f5f5f5",
+    "border-style": "solid",
+    "border-width": "1px",
     "border-radius": "0",
     "filter": "drop-shadow(0px 0px 0px #939393)"
   }
