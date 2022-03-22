@@ -2,14 +2,14 @@
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0",
   "status": "ready",
-  "finished_at": "2022-03-22T12:54:48.130572+00:00",
+  "finished_at": "2022-03-22T12:59:03.166455+00:00",
   "details": {
     "invalid_rows": 0,
-    "import_finished_at": "2022-03-22T12:54:48.130363+00:00",
+    "import_finished_at": "2022-03-22T12:59:03.166135+00:00",
     "row_count": 14760,
     "current_import_row_count": 14760,
     "size_in_bytes": 170621968,
-    "external_id": "2d6c7c4c-d5e9-4220-ba55-18662dfbb1d6",
+    "external_id": "d3e91d6d-32da-493c-b65c-a3033325b103",
     "columns": [
       {
         "field_name": "presentment_currency",
@@ -360,5 +360,5 @@
     "table_name": "220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0",
     "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220322125351_ae053564-2908-58d3-ac57-1aa6dac245a0&page=table"
   },
-  "_signature": "dQO28S1DUo8KUp9gsHK/8Ii+Nn/1DIccgdLZzu9PcdrXu63AgH0BJ8TRcsBc/932sp9yeWqSYbvvecEWAB1NBA=="
+  "_signature": "EptbA6HybYlGXvOEh5c9Q1DWK2+TJP30/KbfXTXnay1Dekg3mAYD4u/2XV3FTnA5RPs50gvSnLNxuffNINyqBw=="
 }
