@@ -570,14 +570,14 @@
             {
               "target": "order_total_tax",
               "source": "order_total_tax",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_total_tax",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_timestamp",
@@ -606,410 +606,410 @@
             {
               "target": "order_id",
               "source": "order_id",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_id",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_name",
               "source": "order_name",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_name",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "total_price",
               "source": "total_price",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "total_price",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_number",
               "source": "order_number",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_number",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "total_discounts",
               "source": "total_discounts",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "total_discounts",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "total_line_items_price",
               "source": "total_line_items_price",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "total_line_items_price",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "currency",
               "source": "currency",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "currency",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer",
               "source": "customer",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_address",
               "source": "shipping_address",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_address",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "taxes_included",
               "source": "taxes_included",
-              "type": "boolean",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "taxes_included",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "discount_codes",
               "source": "discount_codes",
-              "type": "text",
+              "type": "STRING",
               "display": false,
               "changed": false,
               "description": "",
               "display_name": "discount_codes",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "fulfillment_status",
               "source": "fulfillment_status",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "fulfillment_status",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "financial_status",
               "source": "financial_status",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "financial_status",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "gateway",
               "source": "gateway",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "gateway",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "cancelled_at",
               "source": "cancelled_at",
-              "type": "TIMESTAMP",
+              "type": "DATETIME",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "cancelled_at",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_id",
               "source": "customer_id",
-              "type": "number",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_id",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_email",
               "source": "customer_email",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_email",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_country",
               "source": "shipping_country",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_country",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_province",
               "source": "shipping_province",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_province",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_city",
               "source": "shipping_city",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_city",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "country_code",
               "source": "country_code",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "country_code",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_date",
               "source": "order_created_at_date",
-              "type": "date",
+              "type": "DATE",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_date",
               "source_alias": "Function Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_created_at_hour",
               "source": "order_created_at_hour",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_created_at_hour",
               "source_alias": "Function Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_rank",
               "source": "order_rank",
-              "type": "number",
+              "type": "NUMERIC",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_rank",
               "source_alias": "Partition Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "discount_codes",
               "source": "discount_codes_extracted",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "discount_codes",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "max_order_rank",
               "source": "max_order_rank",
-              "type": "number",
+              "type": "NUMERIC",
               "display": false,
               "changed": false,
               "description": "",
               "display_name": "max_order_rank",
               "source_alias": "Partition Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "order_rank_text",
               "source": "order_rank_text",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "order_rank_text",
               "source_alias": "Function Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "customer_type",
               "source": "customer_type",
-              "type": "text",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "customer_type",
               "source_alias": "Function Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_lines",
               "source": "shipping_lines",
-              "type": "text",
+              "type": "STRING",
               "display": false,
               "changed": false,
               "description": "",
               "display_name": "shipping_lines",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "shipping_gross_price",
               "source": "shipping_gross_price",
-              "type": "number",
+              "type": "STRING",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "shipping_gross_price",
               "source_alias": "Json Extraction",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "is_cancelled",
               "source": "is_cancelled",
-              "type": "boolean",
+              "type": "BOOLEAN",
               "display": true,
               "changed": false,
               "description": "",
               "display_name": "is_cancelled",
               "source_alias": "Function Bin Node",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "line_items",
               "source": "line_items",
-              "type": "text",
+              "type": "STRING",
               "display": false,
               "changed": false,
               "description": "",
               "display_name": "line_items",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "refunds",
               "source": "refunds",
-              "type": "text",
+              "type": "STRING",
               "display": false,
               "changed": false,
               "description": "",
               "display_name": "refunds",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "fulfillments",
               "source": "fulfillments",
-              "type": "text",
+              "type": "STRING",
               "display": false,
               "changed": false,
               "description": "",
               "display_name": "fulfillments",
               "source_alias": "orders",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "fulfillment_date",
@@ -1045,7 +1045,7 @@
             "key": "code",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           }
         ]
       },
@@ -1395,7 +1395,7 @@
         "transformObject": [
           {
             "target": "order_rank_text",
-            "originalString": "IF(\n        @order_rank=1, 'first order',\n        'subsequent order')",
+            "originalString": "IF(@order_rank=1, 'first order', 'subsequent order')",
             "functionTree": {
               "type": "Program",
               "body": [
@@ -1429,17 +1429,17 @@
                           "type": "Identifier",
                           "name": "@order_rank",
                           "range": [
-                            12,
-                            23
+                            3,
+                            14
                           ],
                           "loc": {
                             "start": {
-                              "line": 2,
-                              "column": 8
+                              "line": 1,
+                              "column": 3
                             },
                             "end": {
-                              "line": 2,
-                              "column": 19
+                              "line": 1,
+                              "column": 14
                             }
                           }
                         },
@@ -1448,32 +1448,32 @@
                           "value": 1,
                           "raw": "1",
                           "range": [
-                            24,
-                            25
+                            15,
+                            16
                           ],
                           "loc": {
                             "start": {
-                              "line": 2,
-                              "column": 20
+                              "line": 1,
+                              "column": 15
                             },
                             "end": {
-                              "line": 2,
-                              "column": 21
+                              "line": 1,
+                              "column": 16
                             }
                           }
                         },
                         "range": [
-                          12,
-                          25
+                          3,
+                          16
                         ],
                         "loc": {
                           "start": {
-                            "line": 2,
-                            "column": 8
+                            "line": 1,
+                            "column": 3
                           },
                           "end": {
-                            "line": 2,
-                            "column": 21
+                            "line": 1,
+                            "column": 16
                           }
                         }
                       },
@@ -1482,17 +1482,17 @@
                         "raw": "'first order'",
                         "value": "first order",
                         "range": [
-                          27,
-                          40
+                          18,
+                          31
                         ],
                         "loc": {
                           "start": {
-                            "line": 2,
-                            "column": 23
+                            "line": 1,
+                            "column": 18
                           },
                           "end": {
-                            "line": 2,
-                            "column": 36
+                            "line": 1,
+                            "column": 31
                           }
                         }
                       },
@@ -1501,17 +1501,17 @@
                         "raw": "'subsequent order'",
                         "value": "subsequent order",
                         "range": [
-                          50,
-                          68
+                          33,
+                          51
                         ],
                         "loc": {
                           "start": {
-                            "line": 3,
-                            "column": 8
+                            "line": 1,
+                            "column": 33
                           },
                           "end": {
-                            "line": 3,
-                            "column": 26
+                            "line": 1,
+                            "column": 51
                           }
                         }
                       }
@@ -1519,7 +1519,7 @@
                     "optional": false,
                     "range": [
                       0,
-                      69
+                      52
                     ],
                     "loc": {
                       "start": {
@@ -1527,14 +1527,14 @@
                         "column": 0
                       },
                       "end": {
-                        "line": 3,
-                        "column": 27
+                        "line": 1,
+                        "column": 52
                       }
                     }
                   },
                   "range": [
                     0,
-                    69
+                    52
                   ],
                   "loc": {
                     "start": {
@@ -1542,8 +1542,8 @@
                       "column": 0
                     },
                     "end": {
-                      "line": 3,
-                      "column": 27
+                      "line": 1,
+                      "column": 52
                     }
                   }
                 }
@@ -1551,7 +1551,7 @@
               "sourceType": "script",
               "range": [
                 0,
-                69
+                52
               ],
               "loc": {
                 "start": {
@@ -1559,8 +1559,8 @@
                   "column": 0
                 },
                 "end": {
-                  "line": 3,
-                  "column": 27
+                  "line": 1,
+                  "column": 52
                 }
               },
               "tokens": [
@@ -1604,17 +1604,17 @@
                   "type": "Identifier",
                   "value": "@order_rank",
                   "range": [
-                    12,
-                    23
+                    3,
+                    14
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 8
+                      "line": 1,
+                      "column": 3
                     },
                     "end": {
-                      "line": 2,
-                      "column": 19
+                      "line": 1,
+                      "column": 14
                     }
                   }
                 },
@@ -1622,17 +1622,17 @@
                   "type": "Punctuator",
                   "value": "=",
                   "range": [
-                    23,
-                    24
+                    14,
+                    15
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 19
+                      "line": 1,
+                      "column": 14
                     },
                     "end": {
-                      "line": 2,
-                      "column": 20
+                      "line": 1,
+                      "column": 15
                     }
                   }
                 },
@@ -1640,17 +1640,17 @@
                   "type": "Numeric",
                   "value": "1",
                   "range": [
-                    24,
-                    25
+                    15,
+                    16
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 20
+                      "line": 1,
+                      "column": 15
                     },
                     "end": {
-                      "line": 2,
-                      "column": 21
+                      "line": 1,
+                      "column": 16
                     }
                   }
                 },
@@ -1658,17 +1658,17 @@
                   "type": "Punctuator",
                   "value": ",",
                   "range": [
-                    25,
-                    26
+                    16,
+                    17
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 21
+                      "line": 1,
+                      "column": 16
                     },
                     "end": {
-                      "line": 2,
-                      "column": 22
+                      "line": 1,
+                      "column": 17
                     }
                   }
                 },
@@ -1676,17 +1676,17 @@
                   "type": "String",
                   "value": "'first order'",
                   "range": [
-                    27,
-                    40
+                    18,
+                    31
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 23
+                      "line": 1,
+                      "column": 18
                     },
                     "end": {
-                      "line": 2,
-                      "column": 36
+                      "line": 1,
+                      "column": 31
                     }
                   }
                 },
@@ -1694,17 +1694,17 @@
                   "type": "Punctuator",
                   "value": ",",
                   "range": [
-                    40,
-                    41
+                    31,
+                    32
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 36
+                      "line": 1,
+                      "column": 31
                     },
                     "end": {
-                      "line": 2,
-                      "column": 37
+                      "line": 1,
+                      "column": 32
                     }
                   }
                 },
@@ -1712,17 +1712,17 @@
                   "type": "String",
                   "value": "'subsequent order'",
                   "range": [
-                    50,
-                    68
+                    33,
+                    51
                   ],
                   "loc": {
                     "start": {
-                      "line": 3,
-                      "column": 8
+                      "line": 1,
+                      "column": 33
                     },
                     "end": {
-                      "line": 3,
-                      "column": 26
+                      "line": 1,
+                      "column": 51
                     }
                   }
                 },
@@ -1730,17 +1730,17 @@
                   "type": "Punctuator",
                   "value": ")",
                   "range": [
-                    68,
-                    69
+                    51,
+                    52
                   ],
                   "loc": {
                     "start": {
-                      "line": 3,
-                      "column": 26
+                      "line": 1,
+                      "column": 51
                     },
                     "end": {
-                      "line": 3,
-                      "column": 27
+                      "line": 1,
+                      "column": 52
                     }
                   }
                 }
@@ -1750,7 +1750,7 @@
           },
           {
             "target": "customer_type",
-            "originalString": "IF(\n    @max_order_rank = 1, 'new customer',\n    'recurring customer')",
+            "originalString": "IF(@max_order_rank = 1, 'new customer',\n    'recurring customer')",
             "functionTree": {
               "type": "Program",
               "body": [
@@ -1784,17 +1784,17 @@
                           "type": "Identifier",
                           "name": "@max_order_rank",
                           "range": [
-                            8,
-                            23
+                            3,
+                            18
                           ],
                           "loc": {
                             "start": {
-                              "line": 2,
-                              "column": 4
+                              "line": 1,
+                              "column": 3
                             },
                             "end": {
-                              "line": 2,
-                              "column": 19
+                              "line": 1,
+                              "column": 18
                             }
                           }
                         },
@@ -1803,32 +1803,32 @@
                           "value": 1,
                           "raw": "1",
                           "range": [
-                            26,
-                            27
+                            21,
+                            22
                           ],
                           "loc": {
                             "start": {
-                              "line": 2,
-                              "column": 22
+                              "line": 1,
+                              "column": 21
                             },
                             "end": {
-                              "line": 2,
-                              "column": 23
+                              "line": 1,
+                              "column": 22
                             }
                           }
                         },
                         "range": [
-                          8,
-                          27
+                          3,
+                          22
                         ],
                         "loc": {
                           "start": {
-                            "line": 2,
-                            "column": 4
+                            "line": 1,
+                            "column": 3
                           },
                           "end": {
-                            "line": 2,
-                            "column": 23
+                            "line": 1,
+                            "column": 22
                           }
                         }
                       },
@@ -1837,17 +1837,17 @@
                         "raw": "'new customer'",
                         "value": "new customer",
                         "range": [
-                          29,
-                          43
+                          24,
+                          38
                         ],
                         "loc": {
                           "start": {
-                            "line": 2,
-                            "column": 25
+                            "line": 1,
+                            "column": 24
                           },
                           "end": {
-                            "line": 2,
-                            "column": 39
+                            "line": 1,
+                            "column": 38
                           }
                         }
                       },
@@ -1856,16 +1856,16 @@
                         "raw": "'recurring customer'",
                         "value": "recurring customer",
                         "range": [
-                          49,
-                          69
+                          44,
+                          64
                         ],
                         "loc": {
                           "start": {
-                            "line": 3,
+                            "line": 2,
                             "column": 4
                           },
                           "end": {
-                            "line": 3,
+                            "line": 2,
                             "column": 24
                           }
                         }
@@ -1874,7 +1874,7 @@
                     "optional": false,
                     "range": [
                       0,
-                      70
+                      65
                     ],
                     "loc": {
                       "start": {
@@ -1882,14 +1882,14 @@
                         "column": 0
                       },
                       "end": {
-                        "line": 3,
+                        "line": 2,
                         "column": 25
                       }
                     }
                   },
                   "range": [
                     0,
-                    70
+                    65
                   ],
                   "loc": {
                     "start": {
@@ -1897,7 +1897,7 @@
                       "column": 0
                     },
                     "end": {
-                      "line": 3,
+                      "line": 2,
                       "column": 25
                     }
                   }
@@ -1906,7 +1906,7 @@
               "sourceType": "script",
               "range": [
                 0,
-                70
+                65
               ],
               "loc": {
                 "start": {
@@ -1914,7 +1914,7 @@
                   "column": 0
                 },
                 "end": {
-                  "line": 3,
+                  "line": 2,
                   "column": 25
                 }
               },
@@ -1959,17 +1959,17 @@
                   "type": "Identifier",
                   "value": "@max_order_rank",
                   "range": [
-                    8,
-                    23
+                    3,
+                    18
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 4
+                      "line": 1,
+                      "column": 3
                     },
                     "end": {
-                      "line": 2,
-                      "column": 19
+                      "line": 1,
+                      "column": 18
                     }
                   }
                 },
@@ -1977,17 +1977,17 @@
                   "type": "Punctuator",
                   "value": "=",
                   "range": [
-                    24,
-                    25
+                    19,
+                    20
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 20
+                      "line": 1,
+                      "column": 19
                     },
                     "end": {
-                      "line": 2,
-                      "column": 21
+                      "line": 1,
+                      "column": 20
                     }
                   }
                 },
@@ -1995,17 +1995,17 @@
                   "type": "Numeric",
                   "value": "1",
                   "range": [
-                    26,
-                    27
+                    21,
+                    22
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 22
+                      "line": 1,
+                      "column": 21
                     },
                     "end": {
-                      "line": 2,
-                      "column": 23
+                      "line": 1,
+                      "column": 22
                     }
                   }
                 },
@@ -2013,17 +2013,17 @@
                   "type": "Punctuator",
                   "value": ",",
                   "range": [
-                    27,
-                    28
+                    22,
+                    23
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 23
+                      "line": 1,
+                      "column": 22
                     },
                     "end": {
-                      "line": 2,
-                      "column": 24
+                      "line": 1,
+                      "column": 23
                     }
                   }
                 },
@@ -2031,17 +2031,17 @@
                   "type": "String",
                   "value": "'new customer'",
                   "range": [
-                    29,
-                    43
+                    24,
+                    38
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 25
+                      "line": 1,
+                      "column": 24
                     },
                     "end": {
-                      "line": 2,
-                      "column": 39
+                      "line": 1,
+                      "column": 38
                     }
                   }
                 },
@@ -2049,17 +2049,17 @@
                   "type": "Punctuator",
                   "value": ",",
                   "range": [
-                    43,
-                    44
+                    38,
+                    39
                   ],
                   "loc": {
                     "start": {
-                      "line": 2,
-                      "column": 39
+                      "line": 1,
+                      "column": 38
                     },
                     "end": {
-                      "line": 2,
-                      "column": 40
+                      "line": 1,
+                      "column": 39
                     }
                   }
                 },
@@ -2067,16 +2067,16 @@
                   "type": "String",
                   "value": "'recurring customer'",
                   "range": [
-                    49,
-                    69
+                    44,
+                    64
                   ],
                   "loc": {
                     "start": {
-                      "line": 3,
+                      "line": 2,
                       "column": 4
                     },
                     "end": {
-                      "line": 3,
+                      "line": 2,
                       "column": 24
                     }
                   }
@@ -2085,16 +2085,16 @@
                   "type": "Punctuator",
                   "value": ")",
                   "range": [
-                    69,
-                    70
+                    64,
+                    65
                   ],
                   "loc": {
                     "start": {
-                      "line": 3,
+                      "line": 2,
                       "column": 24
                     },
                     "end": {
-                      "line": 3,
+                      "line": 2,
                       "column": 25
                     }
                   }
@@ -2512,7 +2512,7 @@
             "key": "price",
             "source_type": "ArrayScalar",
             "key_index": -1,
-            "output_type": "number"
+            "output_type": "STRING"
           }
         ]
       },
@@ -2529,6 +2529,30 @@
         "title": "",
         "transformationType": "FIELDS",
         "transformObject": [
+          {
+            "target": "order_created_at_timestamp",
+            "source": "order_created_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_created_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "order_updated_at_timestamp",
+            "source": "order_updated_at_timestamp",
+            "type": "TIMESTAMP",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "order_updated_at_timestamp",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
           {
             "target": "order_total_tax",
             "source": "order_total_tax",
@@ -2554,25 +2578,13 @@
             "sourceTypeChanged": false
           },
           {
-            "target": "order_created_at_timestamp",
-            "source": "order_created_at_timestamp",
+            "target": "cancelled_at",
+            "source": "cancelled_at",
             "type": "TIMESTAMP",
             "display": false,
             "changed": false,
             "description": "",
-            "display_name": "order_created_at_timestamp",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "order_updated_at_timestamp",
-            "source": "order_updated_at_timestamp",
-            "type": "TIMESTAMP",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "order_updated_at_timestamp",
+            "display_name": "cancelled_at",
             "source_alias": "orders",
             "applied": true,
             "sourceTypeChanged": false
@@ -2626,6 +2638,30 @@
             "sourceTypeChanged": false
           },
           {
+            "target": "taxes_included",
+            "source": "taxes_included",
+            "type": "boolean",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "taxes_included",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
+            "target": "shipping_lines",
+            "source": "shipping_lines",
+            "type": "text",
+            "display": false,
+            "changed": false,
+            "description": "",
+            "display_name": "shipping_lines",
+            "source_alias": "orders",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
             "target": "currency",
             "source": "currency",
             "type": "text",
@@ -2657,18 +2693,6 @@
             "changed": false,
             "description": "",
             "display_name": "shipping_address",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "taxes_included",
-            "source": "taxes_included",
-            "type": "boolean",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "taxes_included",
             "source_alias": "orders",
             "applied": true,
             "sourceTypeChanged": false
@@ -2717,30 +2741,6 @@
             "changed": false,
             "description": "",
             "display_name": "gateway",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "cancelled_at",
-            "source": "cancelled_at",
-            "type": "TIMESTAMP",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "cancelled_at",
-            "source_alias": "orders",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "shipping_lines",
-            "source": "shipping_lines",
-            "type": "text",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "display_name": "shipping_lines",
             "source_alias": "orders",
             "applied": true,
             "sourceTypeChanged": false
@@ -3250,7 +3250,7 @@
             "key": "created_at",
             "source_type": "Array",
             "key_index": -1,
-            "output_type": "text"
+            "output_type": "STRING"
           }
         ]
       },
@@ -3269,7 +3269,7 @@
         "transformObject": [
           {
             "target": "fulfillment_date",
-            "outputType": "text",
+            "outputType": "STRING",
             "manipulationType": "Replace",
             "manipulation": {
               "targetColumn": "fulfillment_date",
