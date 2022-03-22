@@ -1,0 +1,33 @@
+{
+  "layer": "default",
+  "locked": false,
+  "objectProperties": {
+    "resizable": true,
+    "movable": true,
+    "selectable": true,
+    "rotatable": true
+  },
+  "$schema": "/json-schema/d.json",
+  "type": "Picture",
+  "position": {
+    "x": 1641.7968820127353,
+    "y": 979.67431640625
+  },
+  "size": {
+    "height": 39.74331993441524,
+    "width": 114.31786408101462
+  },
+  "zIndex": 4,
+  "angle": 0,
+  "typeSettings": {
+    "url": "https://storage.googleapis.com/datos-d/images/67A1YRwAFCZrctRnkkym85ArfijRQ5rBDo7rGvhJ.png"
+  },
+  "styles": {
+    "background-color": "none",
+    "border-color": "none",
+    "border-style": "none",
+    "border-width": "none",
+    "border-radius": "0",
+    "filter": "drop-shadow(0px 0px 0px #939393)"
+  }
+}

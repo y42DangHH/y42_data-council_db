@@ -10,14 +10,14 @@
   "$schema": "/json-schema/d.json",
   "type": "Widget",
   "position": {
-    "x": 1173,
-    "y": -10.078008651733398
+    "x": 549.3934326171875,
+    "y": 793.4888305664062
   },
   "size": {
-    "height": 264,
-    "width": 343
+    "height": 268.44891357421875,
+    "width": 963.7889970514084
   },
-  "zIndex": 3,
+  "zIndex": 4,
   "angle": 0,
   "typeSettings": null,
   "styles": {
