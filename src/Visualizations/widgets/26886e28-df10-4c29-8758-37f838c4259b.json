@@ -1,5 +1,5 @@
 {
-  "$schema": "/json-schema/i.json",
+  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
   "name": "26886e28-df10-4c29-8758-37f838c4259b.json",
   "title": "",
   "description": "",
@@ -266,5 +266,8 @@
       "lowCodeString": null
     }
   ],
-  "property": ""
+  "property": "",
+  "extra_echarts_config": {
+    "animationEasing": "elasticOut"
+  }
 }
