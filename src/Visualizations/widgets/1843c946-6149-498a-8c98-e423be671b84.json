@@ -1,0 +1,728 @@
+{
+  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
+  "name": "1843c946-6149-498a-8c98-e423be671b84.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 111,
+  "settings": {
+    "series": [
+      {
+        "field_id": "69b30287_51bf_45de_97ca_f1528fbfe904",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": true,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "show_tooltip": true,
+        "show_right_axis": false,
+        "format": "0.00%",
+        "formatConfig": {
+          "numeralFormat": "0.00%",
+          "formatType": "PERCENTAGE",
+          "decimalPlaces": 2,
+          "negativeSymbol": {
+            "show": true,
+            "type": "symbol"
+          },
+          "displayType": "DISPLAY_UNITS",
+          "separator": "NONE",
+          "locale": "",
+          "prefixOrSuffix": "suffix",
+          "customFormat": ""
+        }
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "3dcb5f90_4725_473d_9f36_48bf879000fa"
+    ],
+    "breakdowns": [],
+    "show_as_donut": false,
+    "digit_format": false
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "CALC",
+      "functionTree": {
+        "type": "Program",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "/",
+              "left": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "COUNT_DISTINCT",
+                  "range": [
+                    0,
+                    14
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 14
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "IF",
+                      "range": [
+                        16,
+                        18
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 16
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 18
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "==",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "@customer_type",
+                          "range": [
+                            19,
+                            33
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 1,
+                              "column": 19
+                            },
+                            "end": {
+                              "line": 1,
+                              "column": 33
+                            }
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "raw": "'recurring'",
+                          "value": "recurring",
+                          "range": [
+                            36,
+                            47
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 1,
+                              "column": 36
+                            },
+                            "end": {
+                              "line": 1,
+                              "column": 47
+                            }
+                          }
+                        },
+                        "range": [
+                          19,
+                          47
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 19
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 47
+                          }
+                        }
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "@customer_id",
+                        "range": [
+                          49,
+                          61
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 49
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 61
+                          }
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0",
+                        "range": [
+                          63,
+                          64
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 63
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 64
+                          }
+                        }
+                      }
+                    ],
+                    "optional": false,
+                    "range": [
+                      16,
+                      65
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 16
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 65
+                      }
+                    }
+                  }
+                ],
+                "optional": false,
+                "range": [
+                  0,
+                  67
+                ],
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 0
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 67
+                  }
+                }
+              },
+              "right": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "COUNT_DISTINCT",
+                  "range": [
+                    70,
+                    84
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 70
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 84
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "@customer_id",
+                    "range": [
+                      85,
+                      97
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 85
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 97
+                      }
+                    }
+                  }
+                ],
+                "optional": false,
+                "range": [
+                  70,
+                  98
+                ],
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 70
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 98
+                  }
+                }
+              },
+              "range": [
+                0,
+                98
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 98
+                }
+              }
+            },
+            "range": [
+              0,
+              98
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 98
+              }
+            }
+          }
+        ],
+        "sourceType": "script",
+        "range": [
+          0,
+          98
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 98
+          }
+        },
+        "tokens": [
+          {
+            "type": "Identifier",
+            "value": "COUNT_DISTINCT",
+            "range": [
+              0,
+              14
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 14
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "(",
+            "range": [
+              14,
+              15
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 14
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "(",
+            "range": [
+              15,
+              16
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 15
+              },
+              "end": {
+                "line": 1,
+                "column": 16
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "IF",
+            "range": [
+              16,
+              18
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 16
+              },
+              "end": {
+                "line": 1,
+                "column": 18
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "(",
+            "range": [
+              18,
+              19
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 18
+              },
+              "end": {
+                "line": 1,
+                "column": 19
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "@customer_type",
+            "range": [
+              19,
+              33
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 19
+              },
+              "end": {
+                "line": 1,
+                "column": 33
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "=",
+            "range": [
+              34,
+              35
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 34
+              },
+              "end": {
+                "line": 1,
+                "column": 35
+              }
+            }
+          },
+          {
+            "type": "String",
+            "value": "'recurring'",
+            "range": [
+              36,
+              47
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 36
+              },
+              "end": {
+                "line": 1,
+                "column": 47
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ",",
+            "range": [
+              47,
+              48
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 47
+              },
+              "end": {
+                "line": 1,
+                "column": 48
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "@customer_id",
+            "range": [
+              49,
+              61
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 49
+              },
+              "end": {
+                "line": 1,
+                "column": 61
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ",",
+            "range": [
+              61,
+              62
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 61
+              },
+              "end": {
+                "line": 1,
+                "column": 62
+              }
+            }
+          },
+          {
+            "type": "Numeric",
+            "value": "0",
+            "range": [
+              63,
+              64
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 63
+              },
+              "end": {
+                "line": 1,
+                "column": 64
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ")",
+            "range": [
+              64,
+              65
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 64
+              },
+              "end": {
+                "line": 1,
+                "column": 65
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ")",
+            "range": [
+              65,
+              66
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 65
+              },
+              "end": {
+                "line": 1,
+                "column": 66
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ")",
+            "range": [
+              66,
+              67
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 66
+              },
+              "end": {
+                "line": 1,
+                "column": 67
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "/",
+            "range": [
+              68,
+              69
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 68
+              },
+              "end": {
+                "line": 1,
+                "column": 69
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "COUNT_DISTINCT",
+            "range": [
+              70,
+              84
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 70
+              },
+              "end": {
+                "line": 1,
+                "column": 84
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "(",
+            "range": [
+              84,
+              85
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 84
+              },
+              "end": {
+                "line": 1,
+                "column": 85
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "@customer_id",
+            "range": [
+              85,
+              97
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 85
+              },
+              "end": {
+                "line": 1,
+                "column": 97
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ")",
+            "range": [
+              97,
+              98
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 97
+              },
+              "end": {
+                "line": 1,
+                "column": 98
+              }
+            }
+          }
+        ],
+        "comments": []
+      },
+      "show_in_percentage": false,
+      "id": "69b30287_51bf_45de_97ca_f1528fbfe904",
+      "field": "perc_recurring_customers__calculated_field__",
+      "type": "NUMERIC",
+      "alias": "CALC_perc_recurring_customers__calculated_field___69b30287_51bf_45de_97ca_f1528fbfe904",
+      "filters": [],
+      "lowCodeString": "COUNT_DISTINCT((IF(@customer_type = 'recurring', @customer_id, 0))) / COUNT_DISTINCT(@customer_id)"
+    },
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "3dcb5f90_4725_473d_9f36_48bf879000fa",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_3dcb5f90_4725_473d_9f36_48bf879000fa",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
