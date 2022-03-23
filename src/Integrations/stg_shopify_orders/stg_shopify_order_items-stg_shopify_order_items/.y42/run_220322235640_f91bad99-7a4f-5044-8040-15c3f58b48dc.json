@@ -64,5 +64,15 @@
     }
   },
   "created_at": "2022-03-22T23:56:40.594256+00:00",
-  "_signature": "cA1lDbjBulbbYEhBKI0c9kfwVcZhL2I7AvcWvx53usc3tUCqg4+YQu1BaXBsZ3p1leqUey8w4KzNCo1jpfwjBg=="
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-03-23T00:01:15.179588+00:00",
+    "external_state": {
+      "schema_hash": "67b72586c9ca0179f7e3a46128ad1909"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "f99996cf-911a-424e-8ccb-98d4ce895c48",
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-google-sheets/3f4a793a-34d5-45ca-b8a0-cb0415934566"
+  },
+  "_signature": "KMZCfWK6/mDC6/PA3o4riqp7Gh9jc7pzJnFQs1jIBhKJD0fEqhppGaH5iXfaF+kL29O23IlQN4HowfxcZbgyCQ=="
 }
