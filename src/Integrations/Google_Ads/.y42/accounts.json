@@ -1,0 +1,21 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/tap_account_list.json",
+  "accounts": [
+    {
+      "id": "8302692009",
+      "name": "Y42 Ads Manager",
+      "description": "Google Ads Account"
+    },
+    {
+      "id": "6839813425",
+      "name": "Y42 Ads",
+      "description": "managed by Y42 Ads Manager"
+    },
+    {
+      "id": "6839813425",
+      "name": "Y42 Ads",
+      "description": "Google Ads Account"
+    }
+  ],
+  "_signature": "72YcI+xkWuNr8Mco9A8ncyAlm/nJu6+SAatL4MBt20asW0BWt1kqlO2NHrkMjkog2LLSwe/OVv9pxu3sNhQ7Bg=="
+}
