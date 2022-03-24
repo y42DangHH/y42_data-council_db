@@ -1,0 +1,657 @@
+{
+  "$schema": "https://json-schema.datos-d.com/json-schema/VisualizationWidgetGitModelWithEcharts.json",
+  "name": "db92fb43-024d-44ad-b5fa-21c5d47b761f.json",
+  "title": "",
+  "description": "",
+  "version": 1,
+  "chart_type": 100,
+  "settings": {
+    "series": [
+      {
+        "field_id": "90890486_13f3_4715_ad0f_a87319c1f31a",
+        "mark": "area",
+        "stack_name": 1,
+        "label": {
+          "show": false,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "tooltip": {
+          "show": true,
+          "field_ids": []
+        },
+        "show_right_axis": false,
+        "format": "0a",
+        "cumulative": false,
+        "hidden": false,
+        "formatConfig": {
+          "numeralFormat": "0a",
+          "formatType": "NUMBER",
+          "decimalPlaces": 0,
+          "negativeSymbol": {
+            "show": true,
+            "type": "symbol"
+          },
+          "displayType": "DISPLAY_UNITS",
+          "separator": "NONE",
+          "locale": "",
+          "prefixOrSuffix": "suffix",
+          "customFormat": "0%"
+        }
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [
+      "66bd5cb8_434d_480a_b7dc_cfdd0d1f52cc"
+    ],
+    "breakdowns": [],
+    "series_on_y": true,
+    "serieAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "value",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "right",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "dimensionAxis": {
+      "min": null,
+      "max": null,
+      "show": true,
+      "type": "time",
+      "axisName": {
+        "name": "",
+        "nameRotate": 0,
+        "nameGap": 10,
+        "nameLocation": "middle",
+        "nameTextStyle": {
+          "backgroundColor": "transparent",
+          "borderColor": "#f4f4fb",
+          "borderWidth": 0,
+          "fontSize": 12,
+          "align": "center",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "verticalAlign": "middle",
+          "fontFamily": "Arial",
+          "borderRadius": 0,
+          "padding": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "color": "#a7a7a7",
+          "colorTo": "#a7a7a7"
+        }
+      },
+      "axisLine": {
+        "showLabel": true,
+        "symbol": "none",
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "axisLabel": {
+        "backgroundColor": "transparent",
+        "borderColor": "#f4f4fb",
+        "borderWidth": 0,
+        "fontSize": 12,
+        "align": "center",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "verticalAlign": "middle",
+        "fontFamily": "Arial",
+        "borderRadius": 0,
+        "padding": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "show": true,
+        "rotate": 0,
+        "margin": 22,
+        "suffix": "",
+        "max_characters": null,
+        "value_conversion": "Automatic",
+        "date_format": "",
+        "value_format": "inherit"
+      },
+      "splitLine": {
+        "showLabel": false,
+        "lineStyle": {
+          "type": "solid",
+          "opacity": 1
+        }
+      },
+      "dataZoom": {
+        "show": false,
+        "start": 0,
+        "end": 100
+      }
+    },
+    "show_stack_by": false,
+    "show_stack_by_100_percent": false,
+    "sort": {
+      "order": "NONE",
+      "sort_by": "SERIES",
+      "sortByField": true,
+      "fieldSortKey": null,
+      "stackNameSortKey": null
+    },
+    "show_total_for_stacks": []
+  },
+  "datasource_table_path": "src/Models/mrt_orders/mrt_orders",
+  "filters": [],
+  "fields": [
+    {
+      "aggregation": "CALC",
+      "functionTree": {
+        "type": "Program",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "/",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": "*",
+                "left": {
+                  "type": "Literal",
+                  "value": 100,
+                  "raw": "100",
+                  "range": [
+                    0,
+                    3
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 3
+                    }
+                  }
+                },
+                "right": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "SUM",
+                    "range": [
+                      5,
+                      8
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 8
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "@line_item_gross_discount_amount",
+                      "range": [
+                        9,
+                        41
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 9
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 41
+                        }
+                      }
+                    }
+                  ],
+                  "optional": false,
+                  "range": [
+                    5,
+                    42
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42
+                    }
+                  }
+                },
+                "range": [
+                  0,
+                  42
+                ],
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 0
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 42
+                  }
+                }
+              },
+              "right": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "SUM",
+                  "range": [
+                    45,
+                    48
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 48
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "@line_item_gross_price",
+                    "range": [
+                      49,
+                      71
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 1,
+                        "column": 49
+                      },
+                      "end": {
+                        "line": 1,
+                        "column": 71
+                      }
+                    }
+                  }
+                ],
+                "optional": false,
+                "range": [
+                  45,
+                  72
+                ],
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 45
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 72
+                  }
+                }
+              },
+              "range": [
+                0,
+                72
+              ],
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 72
+                }
+              }
+            },
+            "range": [
+              0,
+              72
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 72
+              }
+            }
+          }
+        ],
+        "sourceType": "script",
+        "range": [
+          0,
+          72
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 72
+          }
+        },
+        "tokens": [
+          {
+            "type": "Numeric",
+            "value": "100",
+            "range": [
+              0,
+              3
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "*",
+            "range": [
+              3,
+              4
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 3
+              },
+              "end": {
+                "line": 1,
+                "column": 4
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "SUM",
+            "range": [
+              5,
+              8
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 5
+              },
+              "end": {
+                "line": 1,
+                "column": 8
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "(",
+            "range": [
+              8,
+              9
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 8
+              },
+              "end": {
+                "line": 1,
+                "column": 9
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "@line_item_gross_discount_amount",
+            "range": [
+              9,
+              41
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 41
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ")",
+            "range": [
+              41,
+              42
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 41
+              },
+              "end": {
+                "line": 1,
+                "column": 42
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "/",
+            "range": [
+              43,
+              44
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 43
+              },
+              "end": {
+                "line": 1,
+                "column": 44
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "SUM",
+            "range": [
+              45,
+              48
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 45
+              },
+              "end": {
+                "line": 1,
+                "column": 48
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": "(",
+            "range": [
+              48,
+              49
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 48
+              },
+              "end": {
+                "line": 1,
+                "column": 49
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "value": "@line_item_gross_price",
+            "range": [
+              49,
+              71
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 49
+              },
+              "end": {
+                "line": 1,
+                "column": 71
+              }
+            }
+          },
+          {
+            "type": "Punctuator",
+            "value": ")",
+            "range": [
+              71,
+              72
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 71
+              },
+              "end": {
+                "line": 1,
+                "column": 72
+              }
+            }
+          }
+        ],
+        "comments": []
+      },
+      "show_in_percentage": false,
+      "id": "90890486_13f3_4715_ad0f_a87319c1f31a",
+      "field": "avg_discount__calculated_field__",
+      "type": "NUMERIC",
+      "alias": "CALC_avg_discount__calculated_field___90890486_13f3_4715_ad0f_a87319c1f31a",
+      "filters": [],
+      "lowCodeString": "100* SUM(@line_item_gross_discount_amount) / SUM(@line_item_gross_price)"
+    },
+    {
+      "aggregation": "MONTH_YEAR",
+      "functionTree": null,
+      "show_in_percentage": false,
+      "id": "66bd5cb8_434d_480a_b7dc_cfdd0d1f52cc",
+      "field": "order_created_at_date",
+      "type": "DATE",
+      "alias": "MONTH_YEAR_order_created_at_date_66bd5cb8_434d_480a_b7dc_cfdd0d1f52cc",
+      "filters": [],
+      "lowCodeString": null
+    }
+  ],
+  "property": ""
+}
