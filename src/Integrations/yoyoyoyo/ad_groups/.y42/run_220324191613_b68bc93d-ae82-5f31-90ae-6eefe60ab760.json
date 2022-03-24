@@ -1,7 +1,7 @@
 {
   "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
   "request_id": "220324191613_b68bc93d-ae82-5f31-90ae-6eefe60ab760",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "4b8c4217-79cd-4c9b-b7f6-d95d4df220e7",
     "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
@@ -64,7 +64,76 @@
     },
     "write_disposition": "TRUNCATE",
     "external_id": "6347a4df-3949-490e-8fa1-4add213821f3",
-    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-adwords/9cdbd3c4-83ee-44ac-9fc7-5e07c47ad844"
+    "storage_file": "gs://datos-d-bq-exchange/userUploads/v2/tap-adwords/9cdbd3c4-83ee-44ac-9fc7-5e07c47ad844",
+    "import_finished_at": "2022-03-24T19:17:08.297078+00:00",
+    "row_count": 24,
+    "current_import_row_count": 24,
+    "size_in_bytes": 9074,
+    "columns": [
+      {
+        "field_name": "status",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "campaignname",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "id",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "campaignid",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "basecampaignid",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "name",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "adgrouptype",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "settings",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "biddingstrategyconfiguration",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "baseadgroupid",
+        "data_type": "INTEGER",
+        "external_data_type": "INTEGER"
+      },
+      {
+        "field_name": "labels",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      },
+      {
+        "field_name": "urlcustomparameters",
+        "data_type": "STRING",
+        "external_data_type": "STRING"
+      }
+    ],
+    "table_name": "220324191613_b68bc93d-ae82-5f31-90ae-6eefe60ab760",
+    "external_url": "https://console.cloud.google.com/bigquery?p=datos-tech&d=datos_d_customer_data&t=220324191613_b68bc93d-ae82-5f31-90ae-6eefe60ab760&page=table"
   },
-  "_signature": "Dyz6INC0ABAWSUs03Jp0t2PMxb81QVxCnnQ7vBGhPTq1MiqwtqzooQlcmVzhacP8ShYFcKkEjPtk5UL4pOnnAA=="
+  "finished_at": "2022-03-24T19:17:08.297188+00:00",
+  "_signature": "7ttb7zsaq+sWiQYTdbJOf5T41IO/Jh/Lxl4d8JmjlggcSASNbInid19Faaq+ohgJB16NO82CGcgPYDsp4uU4Cw=="
 }
