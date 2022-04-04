@@ -1,0 +1,66 @@
+{
+  "$schema": "https://storage.googleapis.com/y42-json-schema/settings/0.2.0/imports.json",
+  "request_id": "220404122916_f08270e7-5806-53e7-8716-ff9afb5d608d",
+  "status": "pending",
+  "request": {
+    "source_credentials": "f5e92475-e895-47dc-9b73-9c84b4f5cecf",
+    "target_credentials": "9ca7d88e-a94f-11ec-a18e-42010a9c0015",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/source"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/table",
+      "columns": [
+        "__sdc_spreadsheet_id",
+        "__sdc_sheet_id",
+        "__sdc_row",
+        "Index",
+        "currency",
+        "account",
+        "adgroupid",
+        "adgroup",
+        "adgroupstate",
+        "network",
+        "adtype",
+        "campaignid",
+        "campaign",
+        "clicks",
+        "conversions",
+        "cost",
+        "day",
+        "engagements",
+        "ad",
+        "adid",
+        "impressions",
+        "interactions",
+        "adstate",
+        "views"
+      ],
+      "import": "Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data"
+    },
+    "created_at": "2022-04-04T12:29:16.745590+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/Google_Oauth/Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data",
+        "id": "141:8e3d2b1f-13db-4d85-99a5-beb4e9643949",
+        "branch": "master"
+      },
+      "info": {
+        "app_id": "",
+        "owner": "y42DangHH",
+        "repo": "y42_data-council_db",
+        "commit_sha": "0e23ea211c08cbf4c3a283caa7a75779b6f48dbc"
+      }
+    },
+    "context": {
+      "company_id": 141,
+      "company_slug": "data-council",
+      "triggered_by_type": "user",
+      "triggered_by_id": "5488",
+      "trial": false
+    }
+  },
+  "created_at": "2022-04-04T12:29:16.745590+00:00",
+  "_signature": "MMFn2ub+FUKYSZamQEgz9gIvfwYAzXCiPOoTmveBwKmUWwalRfwqnvUJl0kfZJVnjRgaeUKqkVqw7GfGQB9sAg=="
+}
