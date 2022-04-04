@@ -1,0 +1,30 @@
+{
+  "$schema": "https://s.y42.com/integrations/singer-google-sheets/0.0.0/table",
+  "columns": [
+    "__sdc_spreadsheet_id",
+    "__sdc_sheet_id",
+    "__sdc_row",
+    "Index",
+    "currency",
+    "account",
+    "adgroupid",
+    "adgroup",
+    "adgroupstate",
+    "network",
+    "adtype",
+    "campaignid",
+    "campaign",
+    "clicks",
+    "conversions",
+    "cost",
+    "day",
+    "engagements",
+    "ad",
+    "adid",
+    "impressions",
+    "interactions",
+    "adstate",
+    "views"
+  ],
+  "import": "Beginner's Journey Google Ads Data-Beginner's Journey Google Ads Data"
+}
