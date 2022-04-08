@@ -10,8 +10,8 @@
   "$schema": "/json-schema/d.json",
   "type": "Widget",
   "position": {
-    "x": 401.5693664550781,
-    "y": 272
+    "x": 404.79248580832234,
+    "y": 274
   },
   "size": {
     "height": 420,

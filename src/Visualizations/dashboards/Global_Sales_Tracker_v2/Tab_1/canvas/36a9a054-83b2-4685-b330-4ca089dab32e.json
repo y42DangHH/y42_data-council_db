@@ -11,10 +11,10 @@
   "type": "Widget",
   "position": {
     "x": 1428,
-    "y": 482
+    "y": 483
   },
   "size": {
-    "height": 367,
+    "height": 365,
     "width": 559
   },
   "zIndex": 7,

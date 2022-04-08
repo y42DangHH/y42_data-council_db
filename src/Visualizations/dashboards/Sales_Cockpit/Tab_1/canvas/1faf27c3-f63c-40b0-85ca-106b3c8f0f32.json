@@ -10,8 +10,8 @@
   "$schema": "/json-schema/d.json",
   "type": "Shape",
   "position": {
-    "x": 364.558837890625,
-    "y": -62.67187219109201
+    "x": 352.9952039118948,
+    "y": -77.07964867060343
   },
   "size": {
     "height": 1348.3732767626252,
@@ -23,7 +23,7 @@
     "shapePath": "M 512 512 H 0 V 0 h 512 v 512 Z"
   },
   "styles": {
-    "background-color": "#393939ff",
+    "background-color": "#434242ff",
     "border-color": "#5a9deb",
     "border-style": "none",
     "border-width": "none",
